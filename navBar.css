@@ -213,6 +213,10 @@ img {
     .menu li {
         padding: 5px;
     }
+    .bars{
+        display: flex;
+        
+    }
 }
 
 
