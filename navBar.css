@@ -64,7 +64,7 @@ a {
     background: white;
     display: inline-block;
     height: 2px;
-    position: absolute;
+    position: relative;
     width: 18px;
 }
 
@@ -90,7 +90,7 @@ img {
     width: 3em;
 
 }
-/* Menu Burger*/
+/* Desktop Part*/
 
 @media screen and (min-width: 1029px) {
     .item {
@@ -175,7 +175,7 @@ img {
     }
 
 }
-
+/* Mobile Part */
 @media screen and (max-width: 1028px){
     body {
         font-family: sans-serif;
@@ -187,6 +187,14 @@ img {
         position: fixed;
         top: 0;
         width: 100%;
+    }
+    .img {
+        margin-right: 30px;
+        padding: 0;
+    }
+    .logo {
+        margin-right: 60px;
+        padding: 0;
     }
     .subMenu {
         display: flex;
