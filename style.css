@@ -6,11 +6,21 @@
 
 body {
     font-family: sans-serif;
+    width: 70%;
+    margin: 0 auto;
+    height: 100%;
 }
 
 nav {
     background: #222;
     padding: 5px;
+    position: fixed;
+    top: 0;
+    width: 70%;
+}
+main {
+    margin-top: 62px;
+    padding: 0;
 }
 
 ul {
@@ -21,25 +31,12 @@ a {
     color: white;
     text-decoration: none;
 }
-
-a:hover {
-    }
-
-.menu li {
-    font-size: 16px;
-    padding: 10px;
-}
-
-.menu li a {
-    display: block;
-}
-
 .logo a {
+    justify-content: center;
     font-size: 22px;
 }
 
 /* Menu mobile */
-
 .menu {
     display: flex;
     flex-wrap: wrap;
@@ -67,7 +64,7 @@ a:hover {
     background: white;
     display: inline-block;
     height: 2px;
-    position: relative;
+    position: absolute;
     width: 18px;
 }
 
@@ -95,21 +92,7 @@ img {
 }
 /* Menu Burger*/
 
-@media screen and (min-width: 630px) {
-    .menu {
-        justify-content: center;
-    }
-    .logo {
-        flex: 1;
-    }
-    .bars {
-        text-align: center;
-    }
-    /*a:hover{
-        background: violet;
-        border-color: #005959;
-        
-    }*/
+@media screen and (min-width: 1029px) {
     .item {
         display: block;
         width: auto;
@@ -117,13 +100,111 @@ img {
     .bars {
         display: none;
     }
-    .logo {
-        order: 1;
-    }
     .item {
         order: 1;
     }
+    /* Menu animé ...Etc */
+    .menu, .menu ul{
+        padding:0;
+        margin:0;
+        list-style:none;
+        text-align:center;
+    }
+    .menu li{
+        display:inline-block;
+        position:relative;
+        border-radius:8px 8px 0 0;
+    }
+    .menu ul li{
+        display:inherit;
+        border-radius:0;
+    }
+    .menu ul li:hover{
+        border-radius:0;
+    }
+    .menu ul li:last-child{
+        border-radius:0 0 8px 8px;
+    }
+    .menu ul{
+        position:absolute;
+        z-index: 1000;
+        max-height:0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        -moz-transition: .6s all .1s;
+        -webkit-transition: .6s all .1s;
+        transition: .6s all .1s;
+    }
+    .menu li:hover ul{
+        max-height:15em;
+    }
+        
+/* background des liens sous menus */
+    .menu li:nth-child(3) li{
+        background: #222;
+    }
+    .menu li:nth-child(4) li{
+        background: #222;
+    }
+/* background des liens menus et sous menus au survol */
+    .menu li:nth-child(3):hover, .menu li:nth-child(3) li:hover{
+        background:#E2B731;
+    }
+    .menu li:nth-child(4):hover, .menu li:nth-child(4) li:hover{
+        background: #E2B731;
+    }
+
+/* les a href */
+    .menu a{
+        text-decoration:none;
+        display:block;
+        padding:8px 32px;
+        color:#fff;
+        font-family:arial;
+    }
+    .menu ul a{
+        padding:8px 0;
+    }
+    .menu li:hover li a{
+        color:#fff;
+        text-transform:inherit;
+    }
+    #boxItem:hover a{
+        color: white;
+    }
+
+}
+
+@media screen and (max-width: 1028px){
+    body {
+        font-family: sans-serif;
+        width: 100%;
+    }
+    nav {
+        background: #222;
+        padding: 0px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .subMenu {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        font-size: .7em;
+    }
+    .item {
+        font-size: 1.14em;
+    }
+    .menu {
+        width: 100%;
+        justify-content: space-around;
+    }
+
     .menu li {
-        padding: 15px 10px;
+        padding: 5px;
     }
 }
+
+
