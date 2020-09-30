@@ -23,18 +23,18 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
-}
+    }
 
 .menu li {
     font-size: 16px;
+    padding: 10px;
 }
 
 .menu li a {
     display: block;
 }
 
-.logo a{
+.logo a {
     font-size: 22px;
 }
 
@@ -43,14 +43,88 @@ a:hover {
 .menu {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
+.toggle {
+    order: 1;
+}
 
+.item {
+    width: 100%;
+    text-align: center;
+    order: 2;
+    display: none;
+}
+
+.item.active {
+    display: block;
+}
+
+.toggle {
+    cursor: pointer;
+}
+.bars {
+    background: white;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.bars::after,
+.bars::before {
+    background: white;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+
+.bars::before {
+    top: 5px;
+}
+.bars::after {
+    top: -5px;
+}
 img {
     flex-direction: row-reverse;
     border-radius: 10px;
-    width: 6em;
+    width: 3em;
+
 }
+/* Menu Burger*/
 
-
+@media screen and (min-width: 630px) {
+    .menu {
+        justify-content: center;
+    }
+    .logo {
+        flex: 1;
+    }
+    .bars {
+        text-align: center;
+    }
+    /*a:hover{
+        background: violet;
+        border-color: #005959;
+        
+    }*/
+    .item {
+        display: block;
+        width: auto;
+    }
+    .bars {
+        display: none;
+    }
+    .logo {
+        order: 1;
+    }
+    .item {
+        order: 1;
+    }
+    .menu li {
+        padding: 15px 10px;
+    }
+}

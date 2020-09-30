@@ -7,6 +7,18 @@
             name="description"
             content="Site regroupant différente source et document utile au Développeur">
         <link href="style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(function (){
+                $(".toggle").on("click", function(){
+                    if($(".item").hasClass("active")){
+                        $(".item").removeClass("active");
+                    } else {
+                        $(".item").addClass("active");
+                    }
+                })
+            });
+        </script>
         <title>L'annuaire du DEV</title>
     </head>
     <body>
@@ -17,7 +29,8 @@
                     <li class="logo"><a href="index.html">L'Annuaire du DEV</a></li>
                     <li class="item"><a href="front.html">Front-End</a></li>
                     <li class="item"><a href="back.html">Back-End</a></li>
-                    <li class="toggle"><a href="#"><span class="bars"></span></a></li>
+                    <li class="item"><a href="boxOutil.html">Boite à Outil</a></li>
+                    <li class="toggle"><span class="bars"></span></li>
                 </ul>
             </nav>
         </header>
