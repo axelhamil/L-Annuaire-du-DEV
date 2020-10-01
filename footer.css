@@ -4,19 +4,14 @@
 html, body {
     height: 100%;
 }
-.main {
-    min-height: 100%;
-}
-.main:after {
-    content: "";
-    display: block;
-}
-
 footer {
     background: #222;
     color: whitesmoke;
     position: relative;
     bottom: 0;
+}
+.main {
+    margin: 30px 0;
 }
 .contenuFooter {
     width: 100%;
@@ -106,7 +101,7 @@ footer {
     }
     .bloc:nth-child(1),
     .bloc:nth-child(2) {
-        margin-bottom: 30px;
+        margin-bottom: 0px;
     }
     .bloc:nth-child(1) {
         margin-top: 0;
