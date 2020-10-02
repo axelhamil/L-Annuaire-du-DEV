@@ -1,0 +1,18 @@
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+body {
+  background-color: lightgoldenrodyellow;
+  font-family: "Gill Sans", sans-serif;
+  color: rgb(255, 0, 200);
+
+#Description {
+  height: 400px;
+  background-size: cover;
+  background-color: #283b63;
+
+
+    }
+    
