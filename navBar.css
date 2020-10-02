@@ -86,7 +86,7 @@ nav a {
 .bars::after {
     top: -5px;
 }
-img {
+.imgNavbar {
     flex-direction: row-reverse;
     border-radius: 10px;
     width: 3em;
@@ -196,7 +196,7 @@ img {
         margin-top: 55px;
         padding: 0;
     }
-    .img {
+    .imgNavbar {
         margin-right: 30px;
         padding: 0;
     }
