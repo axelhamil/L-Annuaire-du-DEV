@@ -1,0 +1,31 @@
+/***START - CAROUSEL STYLE***/
+.carousel {
+    text-align: center;
+    text-decoration: none;
+}
+.carousel-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.carousel-item {
+    height: 600px; 
+}
+.card-img {
+    box-shadow: -5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+}
+.card-img:hover {
+    box-shadow: -5px 5px 15px 5px rgba(100, 200, 100, 0.7);
+}
+.buttons {
+    text-align: center;
+    height: 100px;
+    width: 100px;
+}
+.buttons:hover {
+    transform: scale(1.5);
+}
+
+/***END - CAROUSEL STYLE***/
