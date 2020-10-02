@@ -1,0 +1,126 @@
+
+
+/*All Version*/
+html, body {
+    height: 100%;
+}
+footer {
+    background: #222;
+    color: whitesmoke;
+    position: relative;
+    bottom: 0;
+}
+.main {
+    margin: 30px 0;
+}
+.contenuFooter {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 20px 0 20px;
+}
+.bloc {
+    width: 25%;
+    margin: 0 10px;
+}
+/*Bloc Sommaire*/
+.footerSommaire h3,
+.footerContact h3,
+.footerSociaux h3 {
+    font-size: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    justify-content: baseline;
+}
+.footerContact p,
+.footerSommaire,
+.footerSociaux{
+    font-size: 15px;
+    text-align: center;
+}
+.footerSommaire p {
+    padding: 5px 0;
+}
+/*Hover des liens footer*/
+.listPages a {
+    transition: color 1s;
+    color: white;
+}
+.listPages a:hover {
+    color:#E2B731;
+}
+/*Restons en contact part*/
+.footerContact p{
+    padding: 15px;
+}
+.listPages,
+.listSociaux{
+    list-style-type: none;
+
+}
+.listPages li {
+    padding: 5px 0;
+}
+.listPages a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+/*Media*/
+.listSociaux{
+    position: relative;
+}
+.listSociaux img {
+    width: 40px;
+    margin: 0px 10px;
+}
+.listSociaux a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    padding-top: 15px;
+}
+.listSociaux li {
+    display: inline-block;
+    align-items: center;
+}
+
+
+/*Desktop Version */
+@media screen and (min-width: 1205px){
+    .contenu-footer {
+        width: 320px;
+    }
+    .bloc {
+        width: 300px;
+        margin: 0px 30px;
+    }
+    .bloc:nth-child(1),
+    .bloc:nth-child(2) {
+        margin-bottom: 0px;
+    }
+    .bloc:nth-child(1) {
+        margin-top: 0;
+    }
+}/*Mobile Version*/
+@media screen and (max-width: 1204px){
+    .contenuFooter {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .bloc {
+        width: 40%;
+        margin: 0 0;
+    }
+    .bloc:nth-child(1),
+    .bloc:nth-child(2) {
+        margin-bottom: 50px;
+    }
+    footer {
+        width: 100%;
+    }
+}

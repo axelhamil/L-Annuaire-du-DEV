@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+    width: 70%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background: #222;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    width: 70%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+.logo a {
+    justify-content: center;
+    font-size: 22px;
+    transition: color 1s;
+    color: whitesmoke;
+}
+.logo a:hover{
+    color: #E2B731;
+}
+
+/* Menu mobile */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.toggle {
+    order: 1;
+}
+
+.item {
+    width: 100%;
+    text-align: center;
+    order: 2;
+    display: none;
+}
+.item.active {
+    display: block;
+}
+
+.toggle {
+    cursor: pointer;
+}
+.bars {
+    background: white;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.bars::after,
+.bars::before {
+    background: white;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+
+.bars::before {
+    top: 5px;
+}
+.bars::after {
+    top: -5px;
+}
+img {
+    flex-direction: row-reverse;
+    border-radius: 10px;
+    width: 3em;
+
+}
+/* Desktop Part*/
+
+@media screen and (min-width: 1205px) {
+    main {
+        margin-top: 70px;
+        padding: 0;
+    }
+    .item {
+        display: block;
+        width: auto;
+    }
+    .bars {
+        display: none;
+    }
+    .item {
+        order: 1;
+    }
+    /* Menu animé ...Etc */
+    .menu, .menu ul{
+        padding:0;
+        margin:0;
+        list-style:none;
+        text-align:center;
+    }
+    .menu li{
+        display:inline-block;
+        position:relative;
+        border-radius:8px 8px 0 0;
+    }
+    .menu ul li{
+        display:inherit;
+        border-radius:0;
+    }
+    .menu ul li:hover{
+        border-radius:0;
+    }
+    .menu ul li:last-child{
+        border-radius:0 0 8px 8px;
+    }
+    .menu ul{
+        position:absolute;
+        z-index: 1000;
+        max-height:0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        transition: .3s all .1s;
+    }
+    .menu li:hover ul{
+        max-height:15em;
+    }
+        
+/* background des liens sous menus */
+    .menu li:nth-child(3) li{
+        background: #222;
+    }
+    .menu li:nth-child(4) li{
+        background: #222;
+    }
+/* background des liens menus et sous menus au survol */
+    .menu li:nth-child(3):hover, .menu li:nth-child(3) li:hover{
+        background:#E2B731;
+    }
+    .menu li:nth-child(4):hover, .menu li:nth-child(4) li:hover{
+        background: #E2B731;
+    }
+
+/* les a href */
+    .menu a{
+        text-decoration:none;
+        display:block;
+        padding:8px 32px;
+        color:#fff;
+        font-family:arial;
+    }
+    .menu ul a{
+        padding:8px 0;
+    }
+    .menu li:hover li a{
+        color:#fff;
+        text-transform:inherit;
+    }
+    #boxItem:hover a{
+        color: white;
+    }
+
+}
+/* Mobile Part */
+@media screen and (max-width: 1204px){
+    body {
+        font-family: sans-serif;
+        width: 100%;
+    }
+    nav {
+        background: #222;
+        padding: 0px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    main {
+        margin-top: 55px;
+        padding: 0;
+    }
+    .img {
+        margin-right: 30px;
+        padding: 0;
+    }
+    .logo {
+        margin-right: 60px;
+        padding: 0;
+    }
+    .subMenu {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        font-size: .6em;
+    }
+    .item {
+        font-size: 1.5em;
+    }
+    .menu {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .menu li {
+        padding: 5px;
+    }
+    .bars{
+        display: flex;
+
+    }
+}
+
+
