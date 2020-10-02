@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="stylefrontback.css" rel="stylesheet">
+        <link href="navBar.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <link href="footer.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(function () {
+                $(".toggle").on("click", function () {
+                    if ($(".item").hasClass("active")) {
+                        $(".item").removeClass("active");
+                    } else {
+                        $(".item").addClass("active");
+                    }
+                })
+            });
+        </script>
+        <title>Page Front-End</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="index.html"><img class="imgNavbar" src="media/logo.jpg"></a>
+                    </li>
+                    <li class="logo">
+                        <a href="index.html">L'Annuaire du DEV</a>
+                    </li>
+                    <li class="item">
+                        <a href="front.html">Front-End</a>
+                        <ul class="subMenu">
+                            <li>
+                                <a class="subItem" href="HTML.html">HTML</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="CSS.html">CSS</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="JS.html">JavaScript</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="back.html">Back-End</a>
+                        <ul class="subMenu">
+                            <li>
+                                <a class="subItem" href="php.html">PHP</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="java.html">Java</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="python.html">Python</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="ruby.html">Ruby</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="boxItem" class="item">
+                        <a href="outilsDuDevWeb.html">Boite à Outils</a>
+                    </li>
+                    <li class="toggle">
+                        <span class="bars"></span></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <ul>
+                <li>
+                    <a href="#html">HTML</a>
+                </li>
+                <li>
+                    <a href="#css">CSS</a>
+                </li>
+                <li>
+                    <a href="#javascript">JavaScript</a>
+                </li>
+            </ul>
+            <h1>Front-End</h1>
+            <img
+                class="img"
+                src="media/frontend.png"
+                alt="image frontend">
+            <section id="descriptionFrontend">
+                <p>
+                    Le développement web frontal (aussi appelé front-end en anglais) correspond aux
+                    productions HTML, CSS et JavaScript d’une page internet ou d’une application
+                    qu’un utilisateur peut voir et avec lesquelles il peut interagir directement. Le
+                    principal défi du développement web frontal est de toujours s'adapter aux
+                    dernières évolutions ; les outils et les techniques de développement étant en
+                    évolution constante. La conception des sites internet doit également être
+                    capable d’offrir une bonne ergonomie de lecture en facilitant la navigation et
+                    l’obtention d’information. Cet objectif est d’autant plus compliqué que les
+                    lecteurs utilisent maintenant différentes plateformes de format et de taille
+                    variés. Le développeur doit donc s’assurer que le site internet apparait
+                    correctement sur l’ensemble des navigateurs Web et des plateformes/appareils
+                    disponibles.
+                </p>
+            </section>
+
+            <section class="langage" id="html">
+                <h2>HTML</h2>
+                <img
+                    class="img"
+                    src="media/html.png"
+                    alt="image html">
+                <p>
+                    Le HyperText Markup Language, généralement abrégé HTML ou dans sa dernière
+                    version HTML5, est le langage de balisage conçu pour représenter les pages web.
+                    C’est un langage permettant d’écrire de l’hypertexte, d’où son nom. HTML permet
+                    également de structurer sémantiquement la page, de mettre en forme le contenu,
+                    de créer des formulaires de saisie, d’inclure des ressources multimédias dont
+                    des images, des vidéos, et des programmes informatiques. Il permet de créer des
+                    documents interopérables avec des équipements très variés de manière conforme
+                    aux exigences de l’accessibilité du web. Il est souvent utilisé conjointement
+                    avec le langage de programmation JavaScript et des feuilles de style en cascade
+                    (CSS). HTML est inspiré du Standard Generalized Markup Language (SGML). Il
+                    s'agit d'un format ouvert.
+                </p>
+            </section>
+
+            <section class="langage" id="css">
+                <h2>CSS</h2>
+                <img
+                    class="img"
+                    src="media/css.png"
+                    alt="image css">
+                <p>
+                    Les feuilles de style en cascade, généralement appelées CSS de l'anglais
+                    Cascading Style Sheets, forment un langage informatique qui décrit la
+                    présentation des documents HTML et XML. Les standards définissant CSS sont
+                    publiés par le World Wide Web Consortium (W3C). Introduit au milieu des années
+                    1990, CSS devient couramment utilisé dans la conception de sites web et bien
+                    pris en charge par les navigateurs web dans les années 2000.
+                </p>
+            </section>
+
+            <section class="langage" id="javascript">
+                <h2>JavaScript</h2>
+                <img
+                    class="img"
+                    src="media/js.png"
+                    alt="image javascript">
+                <p>
+                    JavaScript est un langage de programmation de scripts principalement employé
+                    dans les pages web interactives et à ce titre est une partie essentielle des
+                    applications web. Avec les technologies HTML et CSS, JavaScript est parfois
+                    considéré comme l'une des technologies cœur du World Wide Web. Une grande
+                    majorité des sites web l'utilisent, et la majorité des navigateurs web disposent
+                    d'un moteur JavaScript dédié pour l'interpréter, indépendamment des
+                    considérations de sécurité qui peuvent se poser le cas échéant. C'est un langage
+                    orienté objet à prototype, c'est-à-dire que les bases du langage et ses
+                    principales interfaces sont fournies par des objets qui ne sont pas des
+                    instances de classes, mais qui sont chacun équipés de constructeurs permettant
+                    de créer leurs propriétés, et notamment une propriété de prototypage qui permet
+                    de créer des objets héritiers personnalisés. En outre, les fonctions sont des
+                    objets de première classe. Le langage supporte le paradigme objet, impératif et
+                    fonctionnel. JavaScript est le langage possédant le plus large écosystème grâce
+                    à son gestionnaire de dépendances npm, avec environ 500 000 paquets en août
+                    2017. JavaScript a été créé en 1995 par Brendan Eich. Il a été standardisé sous
+                    le nom d'ECMAScript en juin 1997 par Ecma International dans le standard
+                    ECMA-262. Le standard ECMA-262 en est actuellement à sa 8e édition. JavaScript
+                    n'est depuis qu'une implémentation d'ECMAScript, celle mise en œuvre par la
+                    fondation Mozilla. L'implémentation d'ECMAScript par Microsoft (dans Internet
+                    Explorer jusqu'à sa version 9) se nomme JScript, tandis que celle d'Adobe
+                    Systems se nomme ActionScript. JavaScript est aussi employé pour les serveurs
+                    avec l'utilisation (par exemple) de Node.js ou de Deno.
+                </p>
+            </section>
+           <footer class="contenuFooter">
+    <div class="bloc footerSommaire">
+        <h3>Sommaire</h3>
+        <ul class="listPages">
+            <li>
+                <a href="index.html">Page d'Accueil</a>
+            </li>
+            <li>
+                <a href="front.html">Front-end</a>
+            </li>
+            <li>
+                <a href="back.html">Back-End</a>
+            </li>
+            <li>
+                <a href="boxOutil">Boite à Outils</a>
+            </li>
+        </ul>
+    </div>
+    <div class="bloc footerContact">
+        <h3>Restons en Contact</h3>
+        <p>support@contact.com</p>
+        <p>4 rue des Wilders, Tours, 37000</p>
+    </div>
+    <div class="bloc footerSociaux">
+        <h3>Nos Réseaux</h3>
+        <ul class="listSociaux">
+            <li>
+                <a href="#">
+                    <img src="media/Facebook.svg" alt="icone réseaux sociaux"></a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="media/Twitter.svg" alt="icone réseaux sociaux"></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="media/Instagram.svg" alt="icone réseaux sociaux"></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="media/GitHub.png" alt="icone réseaux sociaux"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
+
+        </main>
+
+    </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <link href="outilsDuDevWeb.css" rel="stylesheet">
+        <link href="navBar.css" rel="stylesheet">
+        <link href="footer.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(function () {
+                $(".toggle").on("click", function () {
+                    if ($(".item").hasClass("active")) {
+                        $(".item").removeClass("active");
+                    } else {
+                        $(".item").addClass("active");
+                    }
+                })
+            });
+        </script>
+        <title>Projet 1</title>
+    </head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="index.html"><img class="imgNavbar" src="media/logo.jpg"></a>
+                </li>
+                <li class="logo">
+                    <a href="index.html">L'Annuaire du DEV</a>
+                </li>
+                <li class="item">
+                    <a href="front.html">Front-End</a>
+                    <ul class="subMenu">
+                        <li>
+                            <a class="subItem" href="HTML.html">HTML</a>
+                        </li>
+                        <li>
+                            <a class="subItem" href="CSS.html">CSS</a>
+                        </li>
+                        <li>
+                            <a class="subItem" href="JS.html">JavaScript</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <a href="back.html">Back-End</a>
+                    <ul class="subMenu">
+                        <li>
+                            <a class="subItem" href="php.html">PHP</a>
+                        </li>
+                        <li>
+                            <a class="subItem" href="java.html">Java</a>
+                        </li>
+                        <li>
+                            <a class="subItem" href="python.html">Python</a>
+                        </li>
+                        <li>
+                            <a class="subItem" href="ruby.html">Ruby</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="boxItem" class="item">
+                    <a href="outilsDuDevWeb.html">Boite à Outils</a>
+                </li>
+                <li class="toggle">
+                    <span class="bars"></span></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>La boite à outils</h1>
+        <!--START FIRST CAROUSEL-->
+        <section class="carousel">
+            <h2>Forums</h2>
+            <ul class="carousel-items">
+                <img class="buttons" id="button-prev" src="media/buttonLeft-removebg-preview.png">
+                <!--<button class="buttons" id="button-prev"></button>-->
+                <!--First image-->
+                <li class="carousel-item">
+                    <figure class="card">
+                        <h3 class="card-title">Stackoverflow</h3>
+                        <figcaption class="card-content"></figcaption>
+                            <a href=""><img class="card-img" src="media/stackoverflow.png" alt=""></a>
+                            <p>BBB</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <!--Second image-->
+                <li class="carousel-item">
+                    <figure class="card">
+                        <h3 class="card-title">Développez.com</h3>
+                        <figcaption class="card-content"></figcaption>
+                            <a href=""><img class="card-img" src="media/developpez.com.png" alt=""></a>
+                            <p>BBB</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <!--Third image-->
+                <li class="carousel-item">
+                    <figure class="card">
+                        <h3 class="card-title">Comment ça marche</h3>
+                        <figcaption class="card-content"></figcaption>
+                            <a href=""><img class="card-img" src="media/commentçamarche.png" alt=""></a>
+                            <p>BBB</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <img class="buttons" id="button-next" src="media/buttonRight-removebg-preview.png">
+                <!--<button class="buttons" id="button-next"></button>-->
+            </ul>
+        </section>
+        <!--END FIRST CAROUSEL-->
+        <footer class="contenuFooter">
+            <div class="bloc footerSommaire">
+                <h3>Sommaire</h3>
+                <ul class="listPages">
+                    <li>
+                        <a href="index.html">Page d'Accueil</a>
+                    </li>
+                    <li>
+                        <a href="front.html">Front-end</a>
+                    </li>
+                    <li>
+                        <a href="back.html">Back-End</a>
+                    </li>
+                    <li>
+                        <a href="boxOutil">Boite à Outils</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bloc footerContact">
+                <h3>Restons en Contact</h3>
+                <p>support@contact.com</p>
+                <p>4 rue des Wilders, Tours, 37000</p>
+            </div>
+            <div class="bloc footerSociaux">
+                <h3>Nos Réseaux</h3>
+                <ul class="listSociaux">
+                    <li>
+                        <a href="#"><img src="media/Facebook.svg" alt="icone réseaux sociaux"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="media/Twitter.svg" alt="icone réseaux sociaux"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="media/Instagram.svg" alt="icone réseaux sociaux"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="media/GitHub.png" alt="icone réseaux sociaux"></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+    <!--SCRIPTS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="outilsDuDevWeb.js"></script>
+    <!--SCRIPTS-->
+</body>
+</html>
