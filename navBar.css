@@ -4,7 +4,7 @@
     margin: 0;
 }
 body {
-    font-family: sans-serif;
+    font-family: 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width: 70%;
     margin: 0 auto;
     height: 100%;
@@ -28,13 +28,13 @@ nav a {
     color: white;
     text-decoration: none;
 }
-.logo a {
+.logo a, .boxOutil:hover {
     justify-content: center;
     font-size: 22px;
     transition: color 1s;
     color: whitesmoke;
 }
-.logo a:hover{
+.logo a:hover, .boxOutil:hover{
     color: #E2B731;
 }
 
@@ -94,7 +94,7 @@ nav a {
 }
 /* Desktop Part*/
 
-@media screen and (min-width: 1205px) {
+@media screen and (min-width: 800px) {
     main {
         margin-top: 70px;
         padding: 0;
@@ -180,7 +180,7 @@ nav a {
 
 }
 /* Mobile Part */
-@media screen and (max-width: 1204px){
+@media screen and (max-width: 799px){
     body {
         font-family: sans-serif;
         width: 100%;
