@@ -1,17 +1,14 @@
 
 
 /*All Version*/
-html, body {
-    height: 100%;
-}
 footer {
     background: #222;
     color: whitesmoke;
     position: relative;
     bottom: 0;
 }
-.main {
-    margin: 30px 0;
+main {
+    margin: 100px 0 40px 0;
 }
 .contenuFooter {
     width: 100%;
