@@ -1,17 +1,11 @@
 
 
 /*All Version*/
-html, body {
-    height: 100%;
-}
 footer {
     background: #222;
     color: whitesmoke;
     position: relative;
     bottom: 0;
-}
-.main {
-    margin: 30px 0;
 }
 .contenuFooter {
     width: 100%;
@@ -54,7 +48,7 @@ footer {
 }
 /*Restons en contact part*/
 .footerContact p{
-    padding: 15px;
+    padding: 15px 0px;
 }
 .listPages,
 .listSociaux{
@@ -91,7 +85,7 @@ footer {
 
 
 /*Desktop Version */
-@media screen and (min-width: 1205px){
+@media screen and (min-width: 800px){
     .contenu-footer {
         width: 320px;
     }
@@ -107,7 +101,7 @@ footer {
         margin-top: 0;
     }
 }/*Mobile Version*/
-@media screen and (max-width: 1204px){
+@media screen and (max-width: 799px){
     .contenuFooter {
         width: 100%;
         flex-wrap: wrap;
