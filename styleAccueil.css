@@ -1,6 +1,9 @@
-@media screen and (min-width: 800px) {
+
+
+/*Desktop Part*/
+@media screen and (min-width: 1150px) {
     main {
-        font-size: 1.8em;
+        font-size: 1.5vw;
         text-align: justify;
         text-indent: 5%;
         margin: 100px 0 40px 0;
@@ -60,27 +63,28 @@
                     background-color 0.3s ease-in;
     }
 }
-@media screen and (max-width: 799px) {
+/*Mobile Part*/
+@media screen and (max-width: 1150px) {
     main article {
         margin: 0 10px;
         
     }
     main {
-        font-size: 1em;
+        font-size: 3vw;
         text-align: justify;
         text-indent: 5%;
         margin: 70px 0 40px 0;
     }
     .grid {
         display: grid;
-        grid-template-rows: 500px 500px;
+        grid-template-rows: 300px 300px;
         margin: 0 10px;
         text-align: center;
     }
     #item1 {
         background: url(media/frontAccueil.jpg) no-repeat center center ;
         font-weight: bold;
-        background-size: cover;
+        background-size: contain;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -89,7 +93,7 @@
     #item2 {
         background: url(media/backAccueil.jpg) no-repeat center center ;
         font-weight: bold;
-        background-size: cover;
+        background-size: contain;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -98,7 +102,7 @@
     /*Button part*/
     .ghost-button{
         display: inline-block;
-        margin: 7em 0; 
+        margin: 2em 0; 
         width: 200px;
         padding: 8px;
         color: black;

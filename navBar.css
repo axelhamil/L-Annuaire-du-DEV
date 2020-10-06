@@ -94,7 +94,7 @@ nav a {
 }
 /* Desktop Part*/
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
     main {
         padding: 0;
     }
@@ -179,7 +179,7 @@ nav a {
 
 }
 /* Mobile Part */
-@media screen and (max-width: 799px){
+@media screen and (max-width: 1150px){
     body {
         font-family: sans-serif;
         width: 100%;
