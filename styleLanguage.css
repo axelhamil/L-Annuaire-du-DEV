@@ -60,3 +60,14 @@ h1{
   font 5rem;
   margin-bottom: 5rem;
 }
+
+.sommaire li {
+margin : 10px 0;
+}
+
+.liens ul li {
+  margin: 10px 0;
+}
+li{
+  list-style: none;
+}
