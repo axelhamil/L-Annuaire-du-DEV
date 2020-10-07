@@ -22,7 +22,6 @@ h1{
   font-size: 8rem;
   text-align : center;
 }
-   
 #language {
   display:flex;
   justify-content:space-between;
@@ -42,6 +41,5 @@ h1{
 
 .logo {
   width : 20%;
- 
 }
 

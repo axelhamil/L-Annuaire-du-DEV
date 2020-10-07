@@ -5,12 +5,59 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="styleLanguage.css" rel="stylesheet">
         <link href="navBar.css" rel="stylesheet">
+
         <link href="footer.css" rel="stylesheet">
 
         <title>Document</title>
     </head>
     <body>
         <header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="index.html"><img class="imgNavbar" src="media/logo.jpg"></a>
+                    </li>
+                    <li class="navLogo">
+                        <a href="index.html">L'Annuaire du DEV</a>
+                    </li>
+                    <li class="item">
+                        <a href="front.html">Front-End</a>
+                        <ul class="subMenu">
+                            <li>
+                                <a class="subItem" href="PageLanguage.html">HTML</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="css.html">CSS</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="javaScript.html">JavaScript</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="back.html">Back-End</a>
+                        <ul class="subMenu">
+                            <li>
+                                <a class="subItem" href="php.html">PHP</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="java.html">Java</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="python.html">Python</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="ruby.html">Ruby</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="boxItem" class="item">
+                        <a href="outilsDuDevWeb.html">Boite à Outils</a>
+                    </li>
+                    <li class="toggle">
+                        <span class="bars"></span></li>
+                </ul>
+            </nav>
         
         </header>
         <main>
@@ -130,8 +177,46 @@
             
             
         </main>
-        <footer>
-            
+        <footer class="contenuFooter">
+            <div class="bloc footerSommaire">
+                <h3>Sommaire</h3>
+                <ul class="listPages">
+                    <li>
+                        <a href="index.html">Page d'Accueil</a>
+                    </li>
+                    <li>
+                        <a href="front.html">Front-end</a>
+                    </li>
+                    <li>
+                        <a href="back.html">Back-End</a>
+                    </li>
+                    <li>
+                        <a href="boxOutil">Boite à Outils</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bloc footerContact">
+                <h3>Restons en Contact</h3>
+                <p>support@contact.com</p>
+                <p>4 rue des Wilders, Tours, 37000</p>
+            </div>
+            <div class="bloc footerSociaux">
+                <h3>Nos Réseaux</h3>
+                <ul class="listSociaux">
+                    <li>
+                        <a href="#"><img src="media/Facebook.svg" alt="icone réseaux sociaux"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="media/Twitter.svg" alt="icone réseaux sociaux"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="media/Instagram.svg" alt="icone réseaux sociaux"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="media/GitHub.png" alt="icone réseaux sociaux"></a>
+                    </li>
+                </ul>
+            </div>
         </footer>
     </body>
 </html>
