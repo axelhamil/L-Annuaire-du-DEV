@@ -1,3 +1,44 @@
+.nav-carousel {
+    padding: 20px;
+    text-align: center;
+}
+.nav-carousel-items div {
+    background-color: #222;
+    border-radius: 15px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+}
+.nav-carousel-items div:hover {
+    background-color: #E2B731;
+    color: #222;
+    transform: scale(1.1);
+}
+@media screen and (min-width: 800px) {
+    .nav-carousel-items {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .nav-carousel-items {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .nav-carousel-items {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
 /***START - CAROUSEL STYLE***/
 .carousel {
     text-align: center;
@@ -9,44 +50,135 @@
     align-items: center;
 }
 .carousel-title {
-    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 6fr ;
+    background-color: lightgray;
+    align-items: center;
+}
+.carousel-title img {
+    background-color: #E2B731;
+    height: 40px;
+    padding: 5px;
+}
+@media screen and (max-width: 800px) {
+    .carousel-title h3 {
+        font-size: 15px;
+    }
+    .carousel-title img {
+        height: 30px;
+    }
+}
+@media screen and (min-width: 800px) {
+    .triangle {
+        width: 100px;
+        height: 0;
+        border-bottom: 40px solid #E2B731;
+        border-right: 40px solid transparent;
+    }
+}
+@media screen and (max-width: 800px) {
+    .triangle {
+        width: 80px;
+        height: 0;
+        border-bottom: 30px solid #E2B731;
+        border-right: 30px solid transparent;
+    }
 }
 .card-title {
     margin: 10px;
 }
 .card-content {
-    position: relative;
     box-shadow: -5px 5px 15px 5px rgba(000, 000, 000, 0.5);
+    border-radius: 20px;
+    background-color: #222;
 }
-.card-content img {
+@media screen and (min-width: 800px) {
+    .card-content {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+}
+@media screen and (max-width: 800px) {
+    .card-content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.card-img {
     height: auto;
     max-width: 100%;
 }
-.card-content p {
-    bottom: 0;
-    margin-bottom: 0;
-    height: 50px;
-    width: 100%;
-    background-color: lightgray;
-    position: absolute;
+@media screen and (min-width: 800px) {
+    .card-img {
+        border-radius: 20px 0 0 20px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .card-img {
+        border-radius: 20px 20px 0 0;
+    }
+}
+.card-info {
+    background-color: #222;
+    color: #E2B731;
+    text-align: center;
+    padding: 30px;
+}
+@media screen and (min-width: 800px) {
+    .card-info {
+        height: auto;
+        width: 200px;
+        border-radius: 0 20px 20px 0;
+    }
+}
+@media screen and (max-width: 800px) {
+    .card-info {
+        height: 100px;
+        width: auto;
+        border-radius: 0 0 20px 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .card-info {
+        height: 120px;
+        width: auto;
+        border-radius: 0 0 20px 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .card-info {
+        height: 140px;
+        width: auto;
+        border-radius: 0 0 20px 20px;
+    }
 }
 .buttons {
     width: 0;
     height: 0;
     margin: 20px;
 }
-#button-prev {
+.button-prev {
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-right: 40px solid #222;
+}
+.button-next {
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid #222;
+}
+.buttons:hover {
+    transform: scale(1.2);
+}
+.button-prev:hover {
     border-top: 40px solid transparent;
     border-bottom: 40px solid transparent;
     border-right: 40px solid #E2B731;
 }
-#button-next {
+.button-next:hover {
     border-top: 40px solid transparent;
     border-bottom: 40px solid transparent;
     border-left: 40px solid #E2B731;
-}
-.buttons:hover {
-    transform: scale(1.1);
 }
 .carousel-positions {
     display: flex;
@@ -55,9 +187,57 @@
 }
 .carousel-position {
     margin: 0 50px;
-    width: 50px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     border-radius: 15px;
-    background-color: lightgrey;
+    background-color: #222;
+}
+@media screen and (max-width: 1150px){
+    .buttons {
+        transform: scale(0.9);
+    }
+    .buttons:hover {
+        transform: scale(1.0);
+    }
+    .carousel-position {
+        transform: scale(0.9);
+        margin: 0 40px;
+    }
+}
+@media screen and (max-width: 800px){
+    .buttons {
+        transform: scale(0.8);
+    }
+    .buttons:hover {
+        transform: scale(0.9);
+    }
+    .carousel-position {
+        transform: scale(0.8);
+        margin: 0 30px;
+    }
+}
+@media screen and (max-width: 600px){
+    .buttons {
+        transform: scale(0.7);
+    }
+    .buttons:hover {
+        transform: scale(0.8);
+    }
+    .carousel-position {
+        transform: scale(0.7);
+        margin: 0 20px;
+    }
+}
+@media screen and (max-width: 400px){
+    .buttons {
+        transform: scale(0.6);
+    }
+    .buttons:hover {
+        transform: scale(0.7);
+    }
+    .carousel-position {
+        transform: scale(0.6);
+        margin: 0 10px;
+    }
 }
 /***END - CAROUSEL STYLE***/
