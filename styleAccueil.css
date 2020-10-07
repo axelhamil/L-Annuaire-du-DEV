@@ -75,15 +75,15 @@ main{
         
     }
     main {
-        font-size: 2.5vw;
+        font-size: 3vw;
         text-align: justify;
         text-indent: 5%;
-        margin: 13% 0 40px 0;
+        margin: 13% 0 3% 0;
     }
     .grid {
         display: grid;
         grid-template-rows: 300px 300px;
-        margin: 0 10px;
+        margin: 0 10px 3% 0;
         text-align: center;
     }
     #item1 {
