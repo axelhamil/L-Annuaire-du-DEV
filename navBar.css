@@ -29,13 +29,13 @@ nav a {
     color: white;
     text-decoration: none;
 }
-.logo a, .boxOutil:hover {
+.navLogo a, .boxOutil:hover {
     justify-content: center;
     font-size: 22px;
     color: white;
     transition: color 1s;
 }
-.logo a:hover, .boxOutil:hover{
+.navLogo a:hover, .boxOutil:hover{
     color: #E2B731;
 }
 
@@ -195,7 +195,7 @@ nav a {
         margin-right: 30px;
         padding: 0;
     }
-    .logo {
+    .navLogo {
         margin-right: 60px;
         padding: 0;
     }
