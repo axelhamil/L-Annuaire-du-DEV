@@ -85,7 +85,7 @@ footer {
 
 
 /*Desktop Version */
-@media screen and (min-width: 800px){
+@media screen and (min-width: 1150px){
     .contenu-footer {
         width: 320px;
     }
@@ -101,7 +101,7 @@ footer {
         margin-top: 0;
     }
 }/*Mobile Version*/
-@media screen and (max-width: 799px){
+@media screen and (max-width: 1150px){
     .contenuFooter {
         width: 100%;
         flex-wrap: wrap;
