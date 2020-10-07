@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="style.css" rel="stylesheet">
-        <link href="outilsDuDevWeb.css" rel="stylesheet">
         <link href="navBar.css" rel="stylesheet">
         <link href="footer.css" rel="stylesheet">
+        <link href="outilsDuDevWeb.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
             $(function () {
@@ -19,7 +19,7 @@
                 })
             });
         </script>
-        <title>Projet 1</title>
+        <title>Boite à outils</title>
     </head>
 <body>
     <header>
@@ -71,48 +71,53 @@
         </nav>
     </header>
     <main>
-        <h1>La boite à outils</h1>
-        <!--START FIRST CAROUSEL-->
-        <section class="carousel">
-            <h2>Forums</h2>
-            <ul class="carousel-items">
-                <img class="buttons" id="button-prev" src="media/buttonLeft-removebg-preview.png">
-                <!--<button class="buttons" id="button-prev"></button>-->
-                <!--First image-->
-                <li class="carousel-item">
-                    <figure class="card">
-                        <h3 class="card-title">Stackoverflow</h3>
-                        <figcaption class="card-content"></figcaption>
-                            <a href=""><img class="card-img" src="media/stackoverflow.png" alt=""></a>
-                            <p>BBB</p>
-                        </figcaption>
-                    </figure>
-                </li>
-                <!--Second image-->
-                <li class="carousel-item">
-                    <figure class="card">
-                        <h3 class="card-title">Développez.com</h3>
-                        <figcaption class="card-content"></figcaption>
-                            <a href=""><img class="card-img" src="media/developpez.com.png" alt=""></a>
-                            <p>BBB</p>
-                        </figcaption>
-                    </figure>
-                </li>
-                <!--Third image-->
-                <li class="carousel-item">
-                    <figure class="card">
-                        <h3 class="card-title">Comment ça marche</h3>
-                        <figcaption class="card-content"></figcaption>
-                            <a href=""><img class="card-img" src="media/commentçamarche.png" alt=""></a>
-                            <p>BBB</p>
-                        </figcaption>
-                    </figure>
-                </li>
-                <img class="buttons" id="button-next" src="media/buttonRight-removebg-preview.png">
-                <!--<button class="buttons" id="button-next"></button>-->
-            </ul>
-        </section>
-        <!--END FIRST CAROUSEL-->
+        <div class="main">
+            <h1>La boite à outils</h1>
+            <!--START FIRST CAROUSEL-->
+            <section class="carousel">
+                <h2 class="carousel-title">Forums</h2>
+                <ul class="carousel-items">
+                    <div class=buttons id="button-prev"></div>
+                    <!--First image-->
+                    <li class="carousel-item">
+                        <figure class="card">
+                            <h3 class="card-title">Stackoverflow</h3>
+                            <figcaption class="card-content">
+                                <a href=""><img class="card-img" src="media/stackoverflow.png" alt=""></a>
+                                <p class="card-info">BBB</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <!--Second image-->
+                    <li class="carousel-item">
+                        <figure class="card">
+                            <h3 class="card-title">Développez.com</h3>
+                            <figcaption class="card-content">
+                                <a href=""><img class="card-img" src="media/developpez.com.png" alt=""></a>
+                                <p class="card-info">Plus d'infos</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <!--Third image-->
+                    <li class="carousel-item">
+                        <figure class="card">
+                            <h3 class="card-title">Comment ça marche</h3>
+                            <figcaption class="card-content">
+                                <a href=""><img class="card-img" src="media/CCM.png" alt=""></a>
+                                <p class="card-info">BBB</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <div class="buttons" id="button-next"></div>
+                </ul>
+                <div class="carousel-positions">
+                    <div class="carousel-position"></div>
+                    <div class="carousel-position"></div>
+                    <div class="carousel-position"></div>
+                </div>
+            </section>
+            <!--END FIRST CAROUSEL-->
+        </div>
         <footer class="contenuFooter">
             <div class="bloc footerSommaire">
                 <h3>Sommaire</h3>
