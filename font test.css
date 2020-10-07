@@ -1,0 +1,25 @@
+.forme {
+    width  : 0;
+    height : 0;
+    border-bottom : 50px solid green;
+    border-right  : 50px solid transparent;
+}
+
+p{margin: 10px; font-size: 25px;}
+.p1{font-family: 'Audiowide', cursive;}
+.p2{font-family: 'Bangers', cursive;}
+.p3{font-family: 'Black Ops One', cursive;}
+.p4{font-family: 'Bungee', cursive;}
+.p5{font-family: 'Bungee Shade', cursive;}
+.p6{font-family: 'Carter One', cursive;}
+.p7{font-family: 'Faster One', cursive;}
+.p8{font-family: 'Krona One', sans-serif;}
+.p9{font-family: 'Londrina Shadow', cursive;}
+.p10{font-family: 'Luckiest Guy', cursive;}
+.p11{font-family: 'Megrim', cursive;}
+.p12{font-family: 'Paytone One', sans-serif;}
+.p13{font-family: 'Plaster', cursive;}
+.p14{font-family: 'Press Start 2P', cursive;}
+.p15{font-family: 'Saira Stencil One', cursive;}
+.p16{font-family: 'Staatliches', cursive;}
+.p17{font-family: 'Stalinist One', cursive;}
