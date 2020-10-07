@@ -1,0 +1,116 @@
+
+
+/*Desktop Part*/
+@media screen and (min-width: 1150px) {
+    main {
+        font-size: 1.5vw;
+        text-align: justify;
+        text-indent: 5%;
+        margin: 100px 0 40px 0;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 400px;
+        margin: 20px 0 30px 0;
+        text-align: center;
+    }
+    #item1 {
+        background: url(media/frontAccueil.jpg) no-repeat center center ;
+        font-weight: bold;
+        background-size: contain;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    #item2 {
+        background: url(media/backAccueil.jpg) no-repeat center center;
+        font-weight: bold;
+        background-size: contain;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    /*Zoom effect*/
+    #item1, #item2 {
+        transition: transform .2s;
+    }
+    #item1:hover, #item2:hover{
+        transform: scale(1.1);
+    }
+    /*Button part*/
+    .ghost-button{
+        display: inline-block;
+        margin: 1em 0; 
+        width: 200px;
+        padding: 8px;
+        color: black;
+        background-color: white;
+        border-radius: 30px;
+        border: 2px solid #222;
+        text-align: center;
+        outline: none;
+        text-decoration: none;
+        transition: color 0.3s ease-out,
+                    background-color 0.3s ease-out;
+    }
+    .ghost-button:hover,
+    .ghost-button:active{
+        background-color:#E2B731;
+        transition: color 0.3s ease-in,
+                    background-color 0.3s ease-in;
+    }
+}
+/*Mobile Part*/
+@media screen and (max-width: 1150px) {
+    main article {
+        margin: 0 10px;
+        
+    }
+    main {
+        font-size: 3vw;
+        text-align: justify;
+        text-indent: 5%;
+        margin: 70px 0 40px 0;
+    }
+    .grid {
+        display: grid;
+        grid-template-rows: 300px 300px;
+        margin: 0 10px;
+        text-align: center;
+    }
+    #item1 {
+        background: url(media/frontAccueil.jpg) no-repeat center center ;
+        font-weight: bold;
+        background-size: contain;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    #item2 {
+        background: url(media/backAccueil.jpg) no-repeat center center ;
+        font-weight: bold;
+        background-size: contain;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    /*Button part*/
+    .ghost-button{
+        display: inline-block;
+        margin: 2em 0; 
+        width: 200px;
+        padding: 8px;
+        color: black;
+        background-color: white;
+        border: 2px solid #222;
+        text-align: center;
+        outline: none;
+        text-decoration: none;
+        border-radius: 30px;
+    }
+}

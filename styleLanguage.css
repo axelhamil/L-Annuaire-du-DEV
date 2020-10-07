@@ -1,0 +1,45 @@
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+body {
+  background-color: lightgoldenrodyellow;
+  font-family: "Gill Sans", sans-serif;
+  color: rgb(0, 183, 255);
+}
+
+#Description {
+  height: 400px;
+  background-size: cover;
+  background-color: #283b63;
+  text-align: center;
+
+}
+
+h1{
+  min-width: 80%;
+  font-size: 8rem;
+  text-align : center;
+}
+#language {
+  display:flex;
+  justify-content:space-between;
+}
+
+#sommaire {
+  display : flex;
+  justify-content :space-around;
+  text-align: center;
+}
+
+#lien {
+  display: flex;
+  justify-content : space-around
+  
+}
+
+.logo {
+  width : 20%;
+}
+

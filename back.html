@@ -1,90 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="stylefrontback.css" rel="stylesheet">
-    <title>Page Back-End</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="stylefrontback.css" rel="stylesheet">
+        <link href="navBar.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <link href="footer.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(function () {
+                $(".toggle").on("click", function () {
+                    if ($(".item").hasClass("active")) {
+                        $(".item").removeClass("active");
+                    } else {
+                        $(".item").addClass("active");
+                    }
+                })
+            });
+        </script>
+        <title>Page Back-End</title>
+    </head>
 
-<body>
+    <body>
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="index.html"><img class="imgNavbar" src="media/logo.jpg"></a>
+                    </li>
+                    <li class="navLogo">
+                        <a href="index.html">L'Annuaire du DEV</a>
+                    </li>
+                    <li class="item">
+                        <a href="front.html">Front-End</a>
+                        <ul class="subMenu">
+                            <li>
+                                <a class="subItem" href="PageLanguage.html">HTML</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="css.html">CSS</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="javaScript.html">JavaScript</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="back.html">Back-End</a>
+                        <ul class="subMenu">
+                            <li>
+                                <a class="subItem" href="php.html">PHP</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="java.html">Java</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="python.html">Python</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="ruby.html">Ruby</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="boxItem" class="item">
+                        <a href="outilsDuDevWeb.html">Boite à Outils</a>
+                    </li>
+                    <li class="toggle">
+                        <span class="bars"></span></li>
+                </ul>
+            </nav>
+        </header>
 
-  <main>
+        <main>
 
-    <ul>
-        <li><a href="#php">PHP</a></li>
-        <li><a href="#java">Java</a></li>
-        <li><a href="#python">Python</a></li>
-        <li><a href="#ruby">Ruby</a></li>
-    </ul>
-    <h1>Back-End</h1>
-    <img class="img"
-             src="/home/quentin/wcs/projet/projet1/media/backend.png"
-             alt="image backend">
-    <section id="DescriptionBackend">
-            <p>
-                En informatique, un back-end (parfois aussi appelé un arrière-plan) est un terme désignant un étage de sortie d'un logiciel devant produire un résultat. On l'oppose au front-end (aussi appelé un frontal) qui lui est la partie visible de l'iceberg. 
-            </p>
-    
-    <section class="langage" id="php">
-        <h2>PHP</h2>
-        <img class="img"
-             src="/home/quentin/wcs/projet/projet1/media/php.png"
-             alt="image php">
-            <p>
-                PHP: Hypertext Preprocessor, plus connu sous son sigle PHP (sigle auto-référentiel), est un "langage de programmation" libre, principalement utilisé pour produire des pages Web dynamiques via un serveur HTTP, mais pouvant également fonctionner comme n'importe quel langage interprété de façon locale. PHP est un langage impératif orienté objet.
-                PHP a permis de créer un grand nombre de sites web célèbres, comme Facebook et Wikipédia Il est considéré comme une des bases de la création de sites web dits dynamiques mais également des applications web. 
-            </p>
-    </section>
+            <ul>
+                <li>
+                    <a href="#php">PHP</a>
+                </li>
+                <li>
+                    <a href="#java">Java</a>
+                </li>
+                <li>
+                    <a href="#python">Python</a>
+                </li>
+                <li>
+                    <a href="#ruby">Ruby</a>
+                </li>
+            </ul>
+            <h1>Back-End</h1>
+            <img
+                class="img"
+                src="media/backend.png"
+                alt="image backend">
+            <section id="DescriptionBackend">
+                <p>
+                    En informatique, un back-end (parfois aussi appelé un arrière-plan) est un terme
+                    désignant un étage de sortie d'un logiciel devant produire un résultat. On
+                    l'oppose au front-end (aussi appelé un frontal) qui lui est la partie visible de
+                    l'iceberg.
+                </p>
 
-    <section class="langage" id="java">
-        <h2>Java</h2>
-        <img class="img"
-             src="/home/quentin/wcs/projet/projet1/media/java.png"
-             alt="image java">
-            <p>
-                Java est une technique informatique développée initialement par Sun Microsystems puis acquise par Oracle suite au rachat de l'entreprise. Défini à l'origine comme un langage de programmation, Java a évolué pour devenir un ensemble cohérent d'éléments techniques et non techniques. Ainsi, la technologie Java regroupe :
-                    *Des standards (la plate-forme Java) définis sous forme de spécification par le Java Community Process (JCP), en trois éditions :
-                        *Java SE (standard edition),
-                        *Java EE (enterprise edition), s'appuyant sur Java SE,
-                        *Java ME (micro edition), indépendante des deux précédentes ;
-                    *Des logiciels (langages informatiques, bibliothèques, frameworks, serveurs d'application, outils d'aide au développement), dont :
-                        *Des implémentations (concurrentes) de ces spécifications,
-                        *Un écosystème d'autres logiciels s'appuyant sur tout ou partie de ces standards, voire leur faisant concurrence ;
-                    *Des communautés d'entreprises, organisations à but non lucratif (fondations, Java User Groups, universités) et indépendants, membres ou non du JCP, possédant tout ou partie des marques, brevets, parts de marché liés à la technologie Java.
+                <section class="langage" id="php">
+                    <h2>PHP</h2>
+                    <img
+                        class="img"
+                        src="media/php.png"
+                        alt="image php">
+                    <p>
+                        PHP: Hypertext Preprocessor, plus connu sous son sigle PHP (sigle
+                        auto-référentiel), est un "langage de programmation" libre, principalement
+                        utilisé pour produire des pages Web dynamiques via un serveur HTTP, mais pouvant
+                        également fonctionner comme n'importe quel langage interprété de façon locale.
+                        PHP est un langage impératif orienté objet. PHP a permis de créer un grand
+                        nombre de sites web célèbres, comme Facebook et Wikipédia Il est considéré comme
+                        une des bases de la création de sites web dits dynamiques mais également des
+                        applications web.
+                    </p>
+                </section>
 
-                Java est un des termes les plus connus du monde de l'informatique et de l'Internet. Sa notoriété est telle que Sun, avant d'être acheté par Oracle Corporation, a décidé de l'utiliser pour son symbole boursier au Nasdaq, symbole qui était SUNW à l'origine, et est devenu JAVA1.
+                <section class="langage" id="java">
+                    <h2>Java</h2>
+                    <img
+                        class="img"
+                        src="media/java.png"
+                        alt="image java">
+                    <p>
+                        Java est une technique informatique développée initialement par Sun Microsystems
+                        puis acquise par Oracle suite au rachat de l'entreprise. Défini à l'origine
+                        comme un langage de programmation, Java a évolué pour devenir un ensemble
+                        cohérent d'éléments techniques et non techniques. Ainsi, la technologie Java
+                        regroupe : *Des standards (la plate-forme Java) définis sous forme de
+                        spécification par le Java Community Process (JCP), en trois éditions : *Java SE
+                        (standard edition), *Java EE (enterprise edition), s'appuyant sur Java SE, *Java
+                        ME (micro edition), indépendante des deux précédentes ; *Des logiciels (langages
+                        informatiques, bibliothèques, frameworks, serveurs d'application, outils d'aide
+                        au développement), dont : *Des implémentations (concurrentes) de ces
+                        spécifications, *Un écosystème d'autres logiciels s'appuyant sur tout ou partie
+                        de ces standards, voire leur faisant concurrence ; *Des communautés
+                        d'entreprises, organisations à but non lucratif (fondations, Java User Groups,
+                        universités) et indépendants, membres ou non du JCP, possédant tout ou partie
+                        des marques, brevets, parts de marché liés à la technologie Java. Java est un
+                        des termes les plus connus du monde de l'informatique et de l'Internet. Sa
+                        notoriété est telle que Sun, avant d'être acheté par Oracle Corporation, a
+                        décidé de l'utiliser pour son symbole boursier au Nasdaq, symbole qui était SUNW
+                        à l'origine, et est devenu JAVA1. Java est utilisé dans une grande variété de
+                        plates-formes depuis les systèmes embarqués et les téléphones mobiles, les
+                        ordinateurs individuels, les serveurs, les applications d’entreprise, les
+                        superordinateurs, etc.
+                    </p>
+                </section>
 
-                Java est utilisé dans une grande variété de plates-formes depuis les systèmes embarqués et les téléphones mobiles, les ordinateurs individuels, les serveurs, les applications d’entreprise, les superordinateurs, etc.  
-            </p>
-    </section>
+                <section class="langage" id="python">
+                    <h2>Python</h2>
+                    <img
+                        class="img"
+                        src="media/python.png"
+                        alt="image python">
+                    <p>
+                        Python (prononcé en anglais /ˈpaɪ.θɑn/) est un langage de programmation
+                        interprété, multi-paradigme et multiplateformes. Il favorise la programmation
+                        impérative structurée, fonctionnelle et orientée objet. Il est doté d'un typage
+                        dynamique fort, d'une gestion automatique de la mémoire par ramasse-miettes et
+                        d'un système de gestion d'exceptions ; il est ainsi similaire à Perl, Ruby,
+                        Scheme, Smalltalk et Tcl. Le langage Python est placé sous une licence libre
+                        proche de la licence BSD et fonctionne sur la plupart des plates-formes
+                        informatiques, des smartphones aux ordinateurs centraux, de Windows à Unix avec
+                        notamment GNU/Linux en passant par macOS, ou encore Android, iOS, et peut aussi
+                        être traduit en Java ou .NET. Il est conçu pour optimiser la productivité des
+                        programmeurs en offrant des outils de haut niveau et une syntaxe simple à
+                        utiliser. Il est également apprécié par certains pédagogues qui y trouvent un
+                        langage où la syntaxe, clairement séparée des mécanismes de bas niveau, permet
+                        une initiation aisée aux concepts de base de la programmation.
+                    </p>
+                </section>
 
-    <section class="langage" id="python">
-        <h2>Python</h2>
-        <img class="img"
-             src="/home/quentin/wcs/projet/projet1/media/python.png"
-             alt="image python">
-            <p>
-                Python (prononcé en anglais /ˈpaɪ.θɑn/) est un langage de programmation interprété, multi-paradigme et multiplateformes. Il favorise la programmation impérative structurée, fonctionnelle et orientée objet. Il est doté d'un typage dynamique fort, d'une gestion automatique de la mémoire par ramasse-miettes et d'un système de gestion d'exceptions ; il est ainsi similaire à Perl, Ruby, Scheme, Smalltalk et Tcl.
+                <section class="langage" id="ruby">
+                    <h2>Ruby</h2>
+                    <img
+                        class="img"
+                        src="media/ruby.png"
+                        alt="image ruby">
+                    <p>
+                        Ruby est un langage de programmation libre. Il est interprété, orienté objet et
+                        multi-paradigme. Le langage a été standardisé au Japon en 2011 (JIS X
+                        3017:2011), et en 2012 par l'Organisation internationale de normalisation (ISO
+                        30170:2012).
+                    </p>
+                </section>
+                <footer class="contenuFooter">
+                    <div class="bloc footerSommaire">
+                        <h3>Sommaire</h3>
+                        <ul class="listPages">
+                            <li>
+                                <a href="index.html">Page d'Accueil</a>
+                            </li>
+                            <li>
+                                <a href="front.html">Front-end</a>
+                            </li>
+                            <li>
+                                <a href="back.html">Back-End</a>
+                            </li>
+                            <li>
+                                <a href="boxOutil">Boite à Outils</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bloc footerContact">
+                        <h3>Restons en Contact</h3>
+                        <p>support@contact.com</p>
+                        <p>4 rue des Wilders, Tours, 37000</p>
+                    </div>
+                    <div class="bloc footerSociaux">
+                        <h3>Nos Réseaux</h3>
+                        <ul class="listSociaux">
+                            <li>
+                                <a href="#"><img src="media/Facebook.svg" alt="icone réseaux sociaux"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="media/Twitter.svg" alt="icone réseaux sociaux"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="media/Instagram.svg" alt="icone réseaux sociaux"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="media/GitHub.png" alt="icone réseaux sociaux"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
 
-                Le langage Python est placé sous une licence libre proche de la licence BSD et fonctionne sur la plupart des plates-formes informatiques, des smartphones aux ordinateurs centraux, de Windows à Unix avec notamment GNU/Linux en passant par macOS, ou encore Android, iOS, et peut aussi être traduit en Java ou .NET. Il est conçu pour optimiser la productivité des programmeurs en offrant des outils de haut niveau et une syntaxe simple à utiliser.
+            </main>
 
-                Il est également apprécié par certains pédagogues qui y trouvent un langage où la syntaxe, clairement séparée des mécanismes de bas niveau, permet une initiation aisée aux concepts de base de la programmation.  
-            </p>
-    </section>
-
-    <section class="langage" id="ruby">
-        <h2>Ruby</h2>
-        <img class="img"
-             src="/home/quentin/wcs/projet/projet1/media/ruby.png"
-             alt="image ruby">
-            <p>
-                Ruby est un langage de programmation libre. Il est interprété, orienté objet et multi-paradigme. Le langage a été standardisé au Japon en 2011 (JIS X 3017:2011), et en 2012 par l'Organisation internationale de normalisation (ISO 30170:2012).  
-            </p>
-    </section>
-
-  </main>
-
-</body>
-</html>
-
+        </body>
+    </html>
