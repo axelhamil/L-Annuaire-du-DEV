@@ -8,7 +8,7 @@
 
         <link href="footer.css" rel="stylesheet">
 
-        <title>Document</title>
+        <title>PageLanguage</title>
     </head>
     <body>
         <header>
@@ -94,44 +94,48 @@
 
                 <section id="contenus">
                     <h2>Sommaire</h2>
-                    <ul id="sommaire">
+                    <ol id="sommaire">
                                                 
                          <li>
-                            <a href="#documentation"></a>
-                            <img src="media/logo_documentation100.jpg"/>
-                            <h3>Documentation</h3>
+                            <a href="#documentation"><h3>Documentation</h3></a>
                         </li>               
                     
                         <li>
-                            <a href="#seFormer"></a>
-                            <img src="media/iconSeFormer100.jpeg"/>
-                            <h3>Se former</h3>
+                            <a href="#seFormer"><h3>Se former</h3></a>                     
                         </li>
                     
                         <li>
-                            <a href="#exercices"></a>
-                            <img src="media/logo_exercices100.jpg"/>
-                            <h3>Exercices<h3></a>
-                            </li>
+                            <a href="#exercices"><h3>Exercices<h3></a>       
+                        </li>
                             
                         <li>
-                            <a href="#tutos"></a>
-                            <img src="media/icon_tutoVideo100.png"/>
-                            <h3>Tutos Video</h3>
+                            <a href="#tutos"><h3>Tutos Video</h3></a>            
                         </li>
-                    </ul>
+                    </ol>
 
                     </section>
 
-                    <section id="documentation">
+                    <section id="documentation" class= "PageLanguageContenu">
                         <h2>documentation sur HTML5</h2>
                         <img src="media/logo_documentation100.jpg"/>
 
-                        <div>source1</div>
+                        <div name=lien>
+                            <ul> 
+                                <li>
+                                    <p>Developpeur Mozilla.org</p>
+                                    <a href="https://developer.mozilla.org/fr/docs/Web/HTML"                            
+                                       title=" Introduction à HTML, le multimedia et l'intégration, les tableaux , les formulaires, HTML pour résoudre des problèmes courants">Technologies web pour développeur : le HTML
+                                    </a>
+                                </li>
+                               
+
+
+                            </ul>
+
 
                     </section>
 
-                    <section id="seFormer">
+                    <section id="seFormer" class= "PageLanguageContenu">
                         <h2>Se former au HTML5</h2>
                         <img src="media/iconSeFormer100.jpeg"/>
 
@@ -139,26 +143,39 @@
                             <ul>
                                 <li>
                                     <P>Developpeur Mozilla.org</P>
-                                    <img src="media/MDN.png"/>
-                                    <p>Introdution au HTML</p>
-                                    <a href="https://developer.mozilla.org/fr/docs/Apprendre/HTML/Introduction_%C3%A0_HTML/Getting_started"                            
-                                       title=" Les fondamentaux du HTML. Les éléments, les attributs, structure HTML. Se familiariser avec le langage HTML et acquérir de la pratique en écrivant quelques éléments HTML">Les fondamentaux du HTML
+                                    <a href="https://developer.mozilla.org/fr/docs/Apprendre/HTML"                            
+                                       title=" Pour créer des sites Web, vous devez connaître le HTML — technique fondamentale utilisée pour définir la structure d'une page Web. ">Apprendre le HTML : guides et didacticiels
                                     </a>
                                 </li>
+                                <li>
+                                    <P>w3schools.org</P>
+                                    <a href="https://www.w3schools.com/html/default.asp"                            
+                                    title=" Site en Anglais 
+                                    HTML is the standard markup language for Web pages
+                                    With HTML you can create your own Website                                 
+                                    HTML is easy to learn - You will enjoy it! ">Tutoriels pour créer des sites web
+                                    </a>
+                                </li>
+                                    <P>codecademy.com</P>
+                                    <a href="https://www.codecademy.com/learn/learn-html"                            
+                                    title=" Site en Anglais 
+                                    You will learn all the common HTML tags used to structure HTML pages, 
+                                    the skeleton of all websites. You will also be able to create HTML 
+                                    tables to present tabular data efficiently. ">Tutoriels pour apprendre le HTML
+                                </a>
                                 <li>
                                     
                                 </li>
                             </ul>
+
+                        
                         </div>
 
-
-
-                        </p>
                         
 
                     </section>
 
-                    <section id="exercices">
+                    <section id="exercices" class= "PageLanguageContenu">
                         <h2>Entrainez-vous au HTML5</h2>
                         <img src="media/logo_exercices100.jpg"/>
                         
@@ -167,7 +184,7 @@
 
                     </section>
 
-                    <section id="tutos">
+                    <section id="tutos" class= "PageLanguageContenu">
                         <h2>Vidéos / Tutos sur HTML5</h2>
                         <img src="media/icon_tutoVideo100.png"/>
 
@@ -177,7 +194,7 @@
             
             
         </main>
-        <footer class="contenuFooter">
+        <footer class="contenuFooter" >
             <div class="bloc footerSommaire">
                 <h3>Sommaire</h3>
                 <ul class="listPages">
