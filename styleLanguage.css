@@ -4,35 +4,37 @@
   }
   
 body {
-  background-color: lightgoldenrodyellow;
+
   font-family: "Gill Sans", sans-serif;
   color: rgb(0, 183, 255);
 }
 
+main {
+  margin : 100px 0 40px 0;
+}
+
+
 #Description {
-  height: 400px;
+  margin : 15px;
+  padding :15px;
   background-size: cover;
   background-color: #283b63;
   text-align: center;
 
-}
 
+}
 h1{
   min-width: 80%;
   font-size: 8rem;
   text-align : center;
 }
-   
 #language {
   display:flex;
   justify-content:space-between;
+  margin : 0px 0 20px 0;
 }
 
-#sommaire {
-  display : flex;
-  justify-content :space-around;
-  text-align: center;
-}
+
 
 #lien {
   display: flex;
@@ -42,6 +44,19 @@ h1{
 
 .logo {
   width : 20%;
- 
 }
 
+#sommaire li {
+ font : 1rem ;
+ margin bottom .5rem;
+}
+
+#documentation {
+  font 5rem;
+  margin-bottom: 5rem;
+}
+
+.PageLanguageContenu {
+  font 5rem;
+  margin-bottom: 5rem;
+}
