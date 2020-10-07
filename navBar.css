@@ -11,7 +11,9 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+main{
+    margin: 100px 0 40px 0;
+}
 nav {
     background: #222;
     padding: 5px;
@@ -22,21 +24,28 @@ nav {
     font-size: 1vw;
 }
 
-ul {
+nav ul {
     list-style-type: none;
 }
 
-nav a {
+nav a{
     color: white;
     text-decoration: none;
 }
-.navLogo a, .boxOutil:hover {
+#boxItem a{
+    justify-content: center;
+    color: white;
+    transition: color 1s;
+
+}
+.navLogo a{
     justify-content: center;
     font-size: 22px;
     color: white;
     transition: color 1s;
+
 }
-.navLogo a:hover, .boxOutil:hover{
+.navLogo a:hover, #boxItem a:hover{
     color: #E2B731;
 }
 
@@ -89,7 +98,6 @@ nav a {
     top: -5px;
 }
 .imgNavbar {
-    flex-direction: row-reverse;
     border-radius: 10px;
     width: 3em;
 }
@@ -174,9 +182,6 @@ nav a {
         color:#fff;
         text-transform:inherit;
     }
-    #boxItem:hover a{
-        color: white;
-    }
 
 }
 /* Mobile Part */
@@ -193,9 +198,11 @@ nav a {
         width: 100%;
     }
     .imgNavbar {
-        margin-right: 30px;
-        padding: 0;
-    }
+    margin-right: 30px;
+    padding: 0;
+    border-radius: 10px;
+    width: 10em;
+}
     .navLogo {
         margin-right: 60px;
         padding: 0;
@@ -207,7 +214,10 @@ nav a {
         font-size: .6em;
     }
     .item {
-        font-size: 1.5em;
+        font-size: 3em;
+    }
+    #boxItem a{
+        font-size: 1em;
     }
     .menu {
         width: 100%;
