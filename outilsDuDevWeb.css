@@ -11,7 +11,7 @@
     line-height: 30px;
 }
 .nav-carousel-items div:hover {
-    background-color: #E2B731;
+    background-color: #F82360;
     color: #222;
     transform: scale(1.1);
 }
@@ -57,7 +57,7 @@
     text-align: left;
 }
 .carousel-title img {
-    background-color: #E2B731;
+    background-color: #F82360;
     height: 40px;
     padding: 5px;
 }
@@ -73,7 +73,7 @@
     .triangle {
         width: 100px;
         height: 0;
-        border-bottom: 40px solid #E2B731;
+        border-bottom: 40px solid #F82360;
         border-right: 40px solid transparent;
     }
 }
@@ -81,7 +81,7 @@
     .triangle {
         width: 80px;
         height: 0;
-        border-bottom: 30px solid #E2B731;
+        border-bottom: 30px solid #F82360;
         border-right: 30px solid transparent;
     }
 }
@@ -91,11 +91,12 @@
 .card-content {
     box-shadow: -5px 5px 15px 5px rgba(000, 000, 000, 0.5);
     border-radius: 20px;
-    background-color: #222;
+    background-color: lightgray;
 }
 @media screen and (min-width: 800px) {
     .card-content {
         display: grid;
+        grid-template-rows: 1fr;
         grid-template-columns: 3fr 1fr;
     }
 }
@@ -103,6 +104,7 @@
     .card-content {
         display: flex;
         flex-direction: column;
+        border-radius: 10px;
     }
 }
 .card-img {
@@ -116,14 +118,15 @@
 }
 @media screen and (max-width: 800px) {
     .card-img {
-        border-radius: 20px 20px 0 0;
+        border-radius: 10px 10px 0 0;
     }
 }
 .card-info {
-    background-color: #222;
-    color: #E2B731;
+    background-color: lightgray;
+    color: #222;
     text-align: center;
-    padding: 30px;
+    line-height: 25px;
+    padding: 30px 10px 10px 10px;
 }
 @media screen and (min-width: 800px) {
     .card-info {
@@ -136,21 +139,18 @@
     .card-info {
         height: 100px;
         width: auto;
-        border-radius: 0 0 20px 20px;
+        border-radius: 0 0 10px 10px;
+        padding: 10px;
     }
 }
 @media screen and (max-width: 600px) {
     .card-info {
         height: 120px;
-        width: auto;
-        border-radius: 0 0 20px 20px;
     }
 }
 @media screen and (max-width: 400px) {
     .card-info {
         height: 140px;
-        width: auto;
-        border-radius: 0 0 20px 20px;
     }
 }
 .buttons {
@@ -174,24 +174,23 @@
 .button-prev:hover {
     border-top: 40px solid transparent;
     border-bottom: 40px solid transparent;
-    border-right: 40px solid #E2B731;
+    border-right: 40px solid #F82360;
 }
 .button-next:hover {
     border-top: 40px solid transparent;
     border-bottom: 40px solid transparent;
-    border-left: 40px solid #E2B731;
+    border-left: 40px solid #F82360;
 }
 .carousel-positions {
     display: flex;
-    justify-content: center;
-    margin: 20px;
+    justify-content: space-around;
+    margin: 25px auto;
 }
 .carousel-position {
-    margin: 0 50px;
+    background-color: #222;
     width: 30px;
     height: 30px;
     border-radius: 15px;
-    background-color: #222;
 }
 @media screen and (max-width: 1150px){
     .buttons {
@@ -200,9 +199,13 @@
     .buttons:hover {
         transform: scale(1.0);
     }
+    .carousel-positions {
+        margin: 20px;
+    }
     .carousel-position {
-        transform: scale(0.9);
-        margin: 0 40px;
+        width: 26px;
+        height: 26px;
+        border-radius: 13px;
     }
 }
 @media screen and (max-width: 800px){
@@ -212,9 +215,13 @@
     .buttons:hover {
         transform: scale(0.9);
     }
+    .carousel-positions {
+        margin: 15px;
+    }
     .carousel-position {
-        transform: scale(0.8);
-        margin: 0 30px;
+        width: 22px;
+        height: 22px;
+        border-radius: 11px;
     }
 }
 @media screen and (max-width: 600px){
@@ -224,9 +231,13 @@
     .buttons:hover {
         transform: scale(0.8);
     }
+    .carousel-positions {
+        margin: 10px;
+    }
     .carousel-position {
-        transform: scale(0.7);
-        margin: 0 20px;
+        width: 18px;
+        height: 18px;
+        border-radius: 9px;
     }
 }
 @media screen and (max-width: 400px){
@@ -236,9 +247,13 @@
     .buttons:hover {
         transform: scale(0.7);
     }
+    .carousel-positions {
+        margin: 5px;
+    }
     .carousel-position {
-        transform: scale(0.6);
-        margin: 0 10px;
+        width: 14px;
+        height: 14px;
+        border-radius: 7px;
     }
 }
 /***END - CAROUSEL STYLE***/

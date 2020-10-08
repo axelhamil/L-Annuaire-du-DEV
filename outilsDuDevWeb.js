@@ -1,4 +1,4 @@
-/**FIRST CAROUSEL */
+/***CAROUSEL-01***/
 
 //Récupération des éléments du DOM
 const carouselItem1 = $(".carousel-item-1");
@@ -16,7 +16,7 @@ $(document).ready(function($)
     {
         carouselItem1.css("display", "none");
         currentImg1.css("display", "block");
-        currentPosition1.css("background-color", "#E2B731");
+        currentPosition1.css("background-color", "#F82360");
     }
 );
 $(buttonPrev1).click(function()
@@ -29,7 +29,7 @@ $(buttonPrev1).click(function()
 
             currentPosition1.css("background-color", "#222");
             currentPosition1 = position1.eq(i1);
-            currentPosition1.css("background-color", "#E2B731");
+            currentPosition1.css("background-color", "#F82360");
         } else {
             i1 = 0;
         }
@@ -45,7 +45,7 @@ $(buttonNext1).click(function()
 
             currentPosition1.css("background-color", "#222");
             currentPosition1 = position1.eq(i1);
-            currentPosition1.css("background-color", "#E2B731");
+            currentPosition1.css("background-color", "#F82360");
         } else {
             i1 = indexImg1;
         }
@@ -64,7 +64,7 @@ $(info).mouseleave(function()
     }
 );*/
 
-/**SECOND CAROUSEL */
+/***CAROUSEL-02***/
 
 //Récupération des éléments du DOM
 const carouselItem2 = $(".carousel-item-2");
@@ -82,7 +82,7 @@ $(document).ready(function($)
     {
         carouselItem2.css("display", "none");
         currentImg2.css("display", "block");
-        currentPosition2.css("background-color", "#E2B731");
+        currentPosition2.css("background-color", "#F82360");
     }
 );
 $(buttonPrev2).click(function()
@@ -95,7 +95,7 @@ $(buttonPrev2).click(function()
 
             currentPosition2.css("background-color", "#222");
             currentPosition2 = position2.eq(i2);
-            currentPosition2.css("background-color", "#E2B731");
+            currentPosition2.css("background-color", "#F82360");
         } else {
             i2 = 0;
         }
@@ -111,9 +111,62 @@ $(buttonNext2).click(function()
 
             currentPosition2.css("background-color", "#222");
             currentPosition2 = position2.eq(i2);
-            currentPosition2.css("background-color", "#E2B731");
+            currentPosition2.css("background-color", "#F82360");
         } else {
             i2 = indexImg2;
+        }
+    }
+);
+/***CAROUSEL-03***/
+
+//Récupération des éléments du DOM
+const carouselItem3 = $(".carousel-item-3");
+const buttonPrev3 = $("#button-prev-3");
+const buttonNext3 = $("#button-next-3");
+const position3 = $(".carousel-position-3");
+
+//Initialisation des variables
+let indexImg3 = carouselItem3.length - 1;
+let i3 = 0;
+let currentImg3 = carouselItem3.eq(i3);
+let currentPosition3 = position3.eq(i3);
+
+$(document).ready(function($)
+    {
+        carouselItem3.css("display", "none");
+        currentImg3.css("display", "block");
+        currentPosition3.css("background-color", "#F82360");
+    }
+);
+$(buttonPrev3).click(function()
+    {
+        i3--;
+        if (i3 >= 0) {
+            carouselItem3.css("display", "none");
+            currentImg3 = carouselItem3.eq(i3);
+            currentImg3.css("display", "block");
+
+            currentPosition3.css("background-color", "#222");
+            currentPosition3 = position3.eq(i3);
+            currentPosition3.css("background-color", "#F82360");
+        } else {
+            i3 = 0;
+        }
+    }   
+);
+$(buttonNext3).click(function()
+    {
+        i3++;
+        if (i3 <= indexImg3) {
+            carouselItem3.css("display", "none");
+            currentImg3 = carouselItem3.eq(i3);
+            currentImg3.css("display", "block");
+
+            currentPosition3.css("background-color", "#222");
+            currentPosition3 = position3.eq(i3);
+            currentPosition3.css("background-color", "#F82360");
+        } else {
+            i3 = indexImg3;
         }
     }
 );
