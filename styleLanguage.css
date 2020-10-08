@@ -1,3 +1,6 @@
+main p{
+  line-height: 1.3em;
+}
 /*Nav Sommaire*/
 .navSommaire {
   padding: 20px;
@@ -21,7 +24,6 @@
 }
 .navSommaireItems div:hover {
   background-color: #E2B731;
-  color: #222;
   transform: scale(1.1);
 }
 
@@ -108,20 +110,79 @@
     display: flex;
     justify-content: flex-end;
 }
-/*First Contenu*/
-
+main{
+  margin: 0 5px 10px 0;
+}
 main h2{
   margin: 10px 0;
   display: flex;
   align-items: center;
-  justify-content: center;
   font-size: 3vw;
 }
-main h2 img {
-  margin: 0 20px 0 0;
+.navSommaire > h2{
+  justify-content: center;
 }
-main ul li a{
+.docSection h2,
+.formationSection h2,
+.exoSection,
+.tutoSection
+{
+  margin: 40px 0 0 0;
+}
+main h2 img {
+  margin: 20px 20px 20px 0;
+  border-radius: 10px;
+
+}
+.docSection h3,
+.docSection a,
+.formationSection h3,
+.formationSection a,
+.exoSection h3,
+.exoSection a,
+.tutoSection h3,
+.tutoSection a{
+  color: black;
   text-decoration: none;
+  transition: color .5s;
+  padding: 0px 10px;
+  text-shadow: 0px 5px 10px #3E2014;
+}
+.docSection h3:hover,
+.docSection a:hover,
+.formationSection h3:hover,
+.formationSection a:hover,
+.exoSection h3:hover,
+.exoSection a:hover,
+.tutoSection h3:hover,
+.tutoSection a:hover{
   color: #E2B731;
 }
+.borderSection{
+  margin: 0;
+  box-shadow: 0px 5px 10px #3E2014;
+  background: #EEEEFC;
+}
+.borderSection p {
+  padding: 10px;
+  text-align: justify;
+  text-indent: 3%;
+}
+@media screen and (max-width: 1205px){
+  main{
+    margin: 10px 30px;
+  }
+  .docSection h2,
+  .formationSection h2,
+  .exoSection,
+  .tutoSection
+  {
+  justify-content: center;
+  margin: 0;
+  }
+  .artIntro p{
+    font-size: 2.5vw;
+  }
+}
+
 
