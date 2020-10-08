@@ -20,9 +20,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-main{
-    margin: 100px 0 40px 0;
-}
 nav {
     background: #222;
     padding: 5px;
@@ -97,6 +94,7 @@ nav a{
     top: -5px;
 }
 .imgNavbar {
+    height: auto;
     width: 3em;
 }
 /* Desktop Part*/
@@ -193,15 +191,10 @@ nav a{
         top: 0;
         width: 100%;
     }
-    main {
-        margin-top: 55px;
-        padding: 0;
-    }
     .imgNavbar {
         margin-right: 30px;
         padding: 0;
-        border-radius: 10px;
-        width: 10em;
+        width: 50px;
     }
     .navLogo {
         margin-right: 60px;

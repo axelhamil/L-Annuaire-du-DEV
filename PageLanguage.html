@@ -5,9 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="styleLanguage.css" rel="stylesheet">
         <link href="navBar.css" rel="stylesheet">
-
         <link href="footer.css" rel="stylesheet">
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(function () {
+                $(".toggle").on("click", function () {
+                    if ($(".item").hasClass("active")) {
+                        $(".item").removeClass("active");
+                    } else {
+                        $(".item").addClass("active");
+                    }
+                })
+            });
+        </script>
         <title>PageLanguage</title>
     </head>
     <body>
@@ -58,222 +68,141 @@
                         <span class="bars"></span></li>
                 </ul>
             </nav>
-        
         </header>
         <main>
-            
-                <section id="language" >
-                    <img src="media/logo-html.png" alt="logo" class="logo"/>
-                    <h1>HTML5</h1>
-                </section>
-
-                <section id="Description">
+            <section id="description">
+                <div class="grid">
+                    <div id="logoHtml"></div>
+                    <div id="title"><h1>HTML5</h1></div>
+                </div>
+                <article class="artIntro">
                     <h2>
-                        Qu'est-ce que le language HTML5
+                        Qu'est-ce que ce language?
                     </h2>
                     <p>
                         HTML signifie « HyperText Markup Language » qu'on peut traduire par « langage de balises pour l'hypertexte ». 
                         Il est utilisé afin de créer et de représenter le contenu d'une page web et sa structure. 
                         D'autres technologies sont utilisées avec HTML pour décrire la présentation d'une page (CSS) et/ou ses fonctionnalités 
-                        interactives (JavaScript)."<br><br>
-
+                        interactives (JavaScript).</p>
+                    <p>
                         HTML fonctionne grâce à des « balises » qui sont insérées au sein d'un texte normal.
-                         Chacune de ces balises indique la signification de telle ou telle portion de texte dans le site. 
-                         On parle d'« hypertexte » en référence aux liens qui connectent les pages web entre elles.
-                          C'est la mécanique originelle du « World Wide Web » que nous connaissons aujourd'hui. 
-                          En écrivant et publiant des pages web, vous devenez un acteur du Web dès que votre site est accessible en ligne.<br><br>
-
+                        Chacune de ces balises indique la signification de telle ou telle portion de texte dans le site. 
+                        On parle d'« hypertexte » en référence aux liens qui connectent les pages web entre elles.
+                        C'est la mécanique originelle du « World Wide Web » que nous connaissons aujourd'hui.
+                    </p>
+                    <p>
+                        En écrivant et publiant des pages web, vous devenez un acteur du Web dès que votre site est accessible en ligne.
                         HTML permet d'inclure des images et d'autres contenus dans les pages web.
                         Grâce à HTML, chacun peut créer des sites web aussi bien statiques que dynamiques. 
-                        HTML est le langage qui permet de décrire la structure et le contenu d'un document web.<br><br> 
-                        
+                        HTML est le langage qui permet de décrire la structure et le contenu d'un document web.
+                    </p>
+                    <p>
                         source : "developer.mozilla.org"
                     </p>
-                  
-                </section>
-
-                <section id="contenus">
-                    <h2>Sommaire</h2>
-                    <ul class="sommaire">
-                                                
-                         <li>
-                            <a href="#documentation"><h3>1 -Documentation</h3></a>
-                        </li>               
-                    
-                        <li>
-                            <a href="#seFormer"><h3>2 -Se former</h3></a>                     
-                        </li>
-                    
-                        <li>
-                            <a href="#exercices"><h3>3 -Exercices<h3></a>       
-                        </li>
-                            
-                        <li>
-                            <a href="#tutos"><h3>4 -Tutos Video</h3></a>            
-                        </li>
-                    </ul>
-
-                    </section>
-
-                    <div id="documentation"></div>
-
-                    <section class= "PageLanguageContenu">
-                        <h2>documentation sur HTML5</h2>
-                        <img src="media/logo_documentation100.jpg"/>
-
-                        <div class=lien>
-                            <ul> 
-                                <li>
-                                    Developpeur Mozilla.org<br>
-                                    <a href="https://developer.mozilla.org/fr/docs/Web/HTML"                            
-                                       title=" Introduction à HTML, le multimedia et l'intégration, les tableaux , les formulaires, HTML pour résoudre des problèmes courants">Technologies web pour développeur : le HTML
-                                    </a>
-                                </li>
-                               
-
-
-                            </ul>
-
-
-                    </section>
-
-                    <div id="seFormer"></div>
-
-                    <section class= "PageLanguageContenu">
-                        <h2>Se former au HTML5</h2>
-                        <img src="media/iconSeFormer100.jpeg"/>
-
-                        <div class="liens">
-                            <ul>
-                                <li>
-                                    Developpeur Mozilla.org<br>
-                                    <a href="https://developer.mozilla.org/fr/docs/Apprendre/HTML"                            
-                                       title=" Pour créer des sites Web, vous devez connaître le HTML — technique fondamentale utilisée pour définir la structure d'une page Web. ">Apprendre le HTML : guides et didacticiels
-                                    </a>
-                                </li>
-                                <li>
-                                    w3schools.org<br>
-                                    <a href="https://www.w3schools.com/html/default.asp"                            
-                                    title=" Site en Anglais 
-                                    HTML is the standard markup language for Web pages
-                                    With HTML you can create your own Website                                 
-                                    HTML is easy to learn - You will enjoy it! ">Apprendre à créer des sites web
-                                    </a>
-                                </li>
-                                <li>
-                                    codecademy.com<br>
-                                    <a href="https://www.codecademy.com/learn/learn-html"                            
-                                    title=" Site en Anglais 
-                                    You will learn all the common HTML tags used to structure HTML pages, 
-                                    the skeleton of all websites. You will also be able to create HTML 
-                                    tables to present tabular data efficiently. ">Se former au HTML
-                                    </a>
-                                </li>
-                                <li>
-                                    theodinproject.com<br>
-                                    <a href="https://www.theodinproject.com/courses/html-and-css#basic-html-page-structure"                            
-                                    title=" Site en Anglais 
-                                    Le projet Odin est l'une de ces ressources que j'aurais aimé avoir quand j'apprenais">Se former au HTML
-                                    </a>
-                                </li>
-                                <li>
-                                    freecodecamp.org<br>
-                                    <a href="https://www.freecodecamp.org/learn"                            
-                                       title=" freeCodeCamp est une organisation à but non lucratif qui se compose 
-                                       d'une plate-forme Web d'apprentissage interactive ayant pour objectif de rendre le développement Web 
-                                       d'apprentissage accessible à tous. ">formation au HTML : 
-                                    </a>  
-                                </li>
-                                <li>
-                                    openclassrooms<br>
-                                    <a href="https://openclassrooms.com/fr/"                          
-                                       title=" OpenClassrooms est un site web de formation en ligne qui propose à ses membres des cours certifiants  ">formation au HTML : 
-                                    </a>  
-                                </li>
-                                <li>
-                                    internetingishard.com<br>
-                                    <a href="https://www.internetingishard.com/html-and-css/"                          
-                                       title=" Apprendre à coder ne devrait pas être difficile. 
-                                              Nous vous facilitons la tâche en rassemblant un ensemble complet de didacticiels de développement Web 
-                                              pour aider à transformer les débutants en professionnels talentueux de l’Internet. 
-                                              Nous avons le programme, tout ce dont vous avez besoin est la motivation pour commencer à le lire.  ">Tutoriels de développement Web conviviaux pour les débutants
-                                    </a>  
-                                </li>
-                                <li>
-                                    css-tricks.com<br>
-                                    <a href="https://css-tricks.com/snippets/css/"                            
-                                       title=" CSS-Tricks consiste vraiment à créer des sites Web et tout ce que cela implique, 
-                                       principalement d'un point de vue frontal. ">Apprentissage du CSS : 
-                                    </a>  
-                                </li>
-                               
-                            </ul>
-
-
-                        
+                </article>
+            </section>
+            <section class="navSommaire">
+                <h2>Sommaire</h2>
+                <div class="navSommaireItems">
+                    <div><a href="#documentation">Documentation</a></div>
+                    <div><a href="#Former">Se Former</a></div>
+                    <div><a href="#exercices">Exercices</a></div>
+                    <div><a href="#tutos">Tuto Vidéo</a></div>
+                </div>
+                <div id="documentation"></div>
+            </section>
+                    <section class= "docSection">
+                        <h2><img src="media/logo_documentation100.jpg"/>Documentation</h2>
+                        <div class="borderSection">
+                            <a href="https://developer.mozilla.org/fr/docs/Web/HTML"><h3>Developpeur Mozilla</h3></a>
+                            <p>                   
+                                MDN Web Docs, précédemment Mozilla Developer Center ou MDC, 
+                                puis Mozilla Developer Network ou MDN, est un site internet hébergé par la fondation Mozilla qui rassemble de la documentation sur les technologies du web.
+                                Le Web ouvert offre une opportunité incroyable aux personnes qui veulent créer des sites ou des applications en ligne. 
+                                Pour tirer le meilleur parti de ces technologies, il faut savoir comment les utiliser.
+                                Parmi ces technologies figurent: le langage HTML, le langage CSS, le langage JavaScript, les plateformes utilisant XUL et la documentation de ce langage,
+                                Firefox OS, les outils de développement web inclus dans Firefox.
+                            </p>
                         </div>
-
-                        
-
                     </section>
-
-                    <div id="exercices"></div>
-
-                    <section class= "PageLanguageContenu">
-                        <h2>Entrainez-vous au HTML5</h2>
-                        <img src="media/logo_exercices100.jpg"/>
-
-                        <div class="liens">
-                            <ul>
-                                <li>
-                                    freecodecamp.org<br>
-                                    <a href="https://www.freecodecamp.org/learn"                            
-                                       title=" freeCodeCamp est une organisation à but non lucratif qui se compose 
-                                       d'une plate-forme Web d'apprentissage interactive ayant pour objectif de rendre le développement Web 
-                                       d'apprentissage accessible à tous. ">s'entrainer au HTML : 
-                                    </a>  
-                                </li>
-                                <li>
-                                    khanacademy.org<br>
-                                    <a href="https://fr.khanacademy.org/computing/computer-programming/html-css"                            
-                                       title=" Cours interactif, avec beaucoup d'aide. Possibilité de mettre en français. Il y a également une appli. ">s'exercer au HTML : 
-                                    </a>  
-                                </li>
-
+                    <div id="Former"></div>
+                    <section class= "formationSection">
+                        <h2><img src="media/iconSeFormer100.jpeg"/>Se former</h2>
+                        <div class="borderSection">
+                            <a href="https://developer.mozilla.org/fr/docs/Apprendre/HTML">
+                            <h3>Developpeur Mozilla</h3>
+                            </a>
+                            <p>
+                                Créer des sites Web, vous devez connaître le HTML — technique fondamentale utilisée pour définir la structure d'une page Web.
+                                Apprendre le HTML : guides et didacticiels.
+                                w3schools.org
+                            </p>
+                            <a href="https://www.w3schools.com/html/default.asp"><h3>W3Cschools</h3></a>               
+                            <p>
+                                HTML est le langage de balisage standard pour les pages Web.
+                                Avec HTML, vous pouvez créer votre propre site Web.
+                                Le HTML est facile à apprendre.
+                            </p>
                             
-                                
-                        
-
-                        
-
+                            <a href="https://www.codecademy.com/learn/learn-html"><h3>Codecademy</h3></a>                         
+                            <p>Site en Anglais 
+                                You will learn all the common HTML tags used to structure HTML pages, 
+                                the skeleton of all websites. You will also be able to create HTML 
+                                tables to present tabular data efficiently.
+                            </p>
+                            <a href="https://www.theodinproject.com/courses/html-and-css#basic-html-page-structure"><h3>theodinproject.com</h3></a>                          
+                            <p>
+                                Site en Anglais 
+                                Le projet Odin est l'une de ces ressources que j'aurais aimé avoir quand j'apprenais.
+                            </p>
+                            <a href="https://www.freecodecamp.org/learn"><h3>Freecodecamp</h3></a>                           
+                            <p>
+                                freeCodeCamp est une organisation à but non lucratif qui se compose 
+                                d'une plate-forme Web d'apprentissage interactive ayant pour objectif de rendre le développement Web 
+                                d'apprentissage accessible à tous.
+                            </p>
+                            <a href="https://openclassrooms.com/fr/"><h3>OpenClassrooms</h3></a>                          
+                            <p>
+                                OpenClassrooms est un site web de formation en ligne qui propose à ses membres des cours certifiants.
+                            </p>
+                            <a href="https://www.internetingishard.com/html-and-css/"><h3>Internetingishard</h3></a>                        
+                            <p> Apprendre à coder ne devrait pas être difficile. 
+                                Nous vous facilitons la tâche en rassemblant un ensemble complet de didacticiels de développement Web 
+                                pour aider à transformer les débutants en professionnels talentueux de l’Internet. 
+                                Nous avons le programme, tout ce dont vous avez besoin est la motivation pour commencer à le lire.
+                            </p> 
+                        </div>
                     </section>
-
+                    <div id="exercices"></div>
+                    <section class= "exoSection">
+                        <h2><img src="media/logo_exercices100.jpg"/>Entrainez-vous</h2>
+                        <div class="borderSection">
+                            <a href="https://www.freecodecamp.org/learn"><h3>Freecodecamp</h3></a>                            
+                            <p>
+                                freeCodeCamp est une organisation à but non lucratif qui se compose 
+                                d'une plate-forme Web d'apprentissage interactive ayant pour objectif de rendre le développement Web 
+                                d'apprentissage accessible à tous.
+                            </p>
+                            <a href="https://fr.khanacademy.org/computing/computer-programming/html-css"><h3>Khanacademy</h3></a>                           
+                            <p>
+                                Pours interactif, avec beaucoup d'aide. Possibilité de mettre en français. Il y a également une appli.
+                            </p>
+                        </div>
+                    </section>
                     <div id="tutos"></div>
-
-                    <section class= "PageLanguageContenu">
-                        <h2>Vidéos / Tutos sur HTML5</h2>
-                        <img src="media/icon_tutoVideo100.png"/>
-                        <div class="liens">
-                            <ul>
-                                <li>
-                                    grafikart.fr<br>
-                                    <a href="https://www.grafikart.fr/tutoriels/html"                            
-                                       title=" Utiliser les SVG ;  créer un email HTML;  le format d'image;  métadonnées ">Tutos pour Apprendre le HTML : 
-                                    </a>  
-                                </li>
-                                <li>
-                                    khanacademy.org<br>
-                                    <a href="https://fr.khanacademy.org/computing/computer-programming/html-css"                            
-                                       title=" Cours intéractif, avec beaucoup d'aide. Possibilité de mettre en français. Il y a également une appli. ">Tutos pour Apprendre le HTML : 
-                                    </a>  
-                                </li>
-
-                                
-                           
-
-                    </section>
-            
-            
+                    <section class= "tutoSection">
+                        <h2><img src="media/icon_tutoVideo100.png"/>Vidéos / Tutos</h2>
+                        <div class="borderSection">
+                            <a href="https://www.grafikart.fr/tutoriels/html"><h3>Grafikart</h3></a>                            
+                            <p>
+                                Utiliser les SVG ;  créer un email HTML;  le format d'image;  métadonnées.
+                            </p>
+                            <a href="https://fr.khanacademy.org/computing/computer-programming/html-css"><h3>khanacademy</h3></a>   
+                            <p>                      
+                                Cours intéractif, avec beaucoup d'aide. Possibilité de mettre en français. Il y a également une appli.
+                            </p>
+                        </div>
+                    </section>  
         </main>
         <footer class="contenuFooter" >
             <div class="bloc footerSommaire">
