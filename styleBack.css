@@ -1,15 +1,24 @@
+main p {
+    line-height: 1.3em;
+}
+
 .imgFrontBack {
+    width: 10rem;
+}
+
+#imgBack {
     margin-top: 1rem;
-    width: 20rem;
-    height: 20rem;
+    width: 25rem;
 }
 
 section {
     text-align: center;
+    margin-top: 1rem; 
 }
 
 h1 {
     font-size: 5rem;
+    margin: 1rem;
 }
 
 /*sommaire*/
@@ -35,6 +44,12 @@ h1 {
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .langage {
+        display: grid;
+        grid-template-rows : 1fr;
+        grid-template-columns: 1fr 4fr;
         gap: 20px;
     }
 }
@@ -67,5 +82,11 @@ a {
 a:hover {
     color : black;
 }
+
+p {
+    text-align: justify;
+    margin: 5px;
+}
+
 
 
