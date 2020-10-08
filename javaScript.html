@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styleLanguage.css" rel="stylesheet">
+        <link href="navBar.css" rel="stylesheet">
+        <link href="footer.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(function () {
+                $(".toggle").on("click", function () {
+                    if ($(".item").hasClass("active")) {
+                        $(".item").removeClass("active");
+                    } else {
+                        $(".item").addClass("active");
+                    }
+                })
+            });
+        </script>
+        <title>PageJavaScript</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="index.html"><img class="imgNavbar" src="media/logo_annuaire_du_dev.png"></a>
+                    </li>
+                    <li class="navLogo">
+                        <a href="index.html">L'Annuaire du DEV</a>
+                    </li>
+                    <li class="item">
+                        <a href="front.html">Front-End</a>
+                        <ul class="subMenu">
+                            <li>
+                                <a class="subItem" href="PageLanguage.html">HTML</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="PageCSS.html">CSS</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="javaScript.html">JavaScript</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="back.html">Back-End</a>
+                        <ul class="subMenu">
+                            <li>
+                                <a class="subItem" href="php.html">PHP</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="java.html">Java</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="python.html">Python</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="ruby.html">Ruby</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="boxItem" class="item">
+                        <a href="outilsDuDevWeb.html">Boite à Outils</a>
+                    </li>
+                    <li class="toggle">
+                        <span class="bars"></span></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="description">
+                <div class="grid">
+                    <div id="logoJavaScript"></div>
+                    <div id="title"><h1>JavaScript</h1></div>
+                </div>
+                <article class="artIntro">
+                    <h2>
+                        Qu'est-ce que ce language?
+                    </h2>
+                    <p>
+                        JavaScript (qui est souvent abrégé en « JS ») est un langage de script léger, orienté objet, 
+                        principalement connu comme le langage de script des pages web. 
+                        Mais il est aussi utilisé dans de nombreux environnements extérieurs aux navigateurs web tels que Node.js,
+                        Apache CouchDB voire Adobe Acrobat. Le code JavaScript est interprété ou compilé à la volée (JIT). 
+                        </p>
+                    <p>
+                        C'est un langage à objets utilisant le concept de prototype, disposant d'un typage faible et dynamique 
+                        qui permet de programmer suivant plusieurs paradigmes de programmation : fonctionnelle, 
+                        impérative et orientée objet.
+                    </p>
+                   
+                    <p>
+                        source : "developer.mozilla.org"
+                    </p>
+                </article>
+            </section>
+            <section class="navSommaire">
+                <h2>Sommaire</h2>
+                <div class="navSommaireItems">
+                    <div><a href="#documentation">Documentation</a></div>
+                    <div><a href="#Former">Se Former</a></div>
+                    <div><a href="#exercices">Exercices</a></div>
+                    <div><a href="#tutos">Tuto Vidéo</a></div>
+                </div>
+                <div id="documentation"></div>
+            </section>
+                    <section class= "docSection">
+                        <h2><img src="media/logo_documentation100.jpg"/>Documentation</h2>
+                        <div class="borderSection">
+                            <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference"><h3>Developpeur Mozilla</h3></a>   
+                            <p>
+                                La référence JavaScript regroupe les différentes notions autour du langage JavaScript. L'ensemble du langage y est détaillé. 
+                                Si vous développez une application JavaScript, vous pourrez utiliser ces différentes pages. 
+                                Le langage JavaScript a été conçu pour être utilisé dans un environnement dans lequel il s'intègre :
+                                un navigateur, des scripts côté serveur, etc. 
+                                De façon générale, cette référence ne cible pas un environnement en particulier et tente 
+                                de rester le plus « agnostique » possible.
+                            </p> 
+                        </div>
+                    </section>
+                    <div id="Former"></div>
+                    <section class= "formationSection">
+                        <h2><img src="media/iconSeFormer100.jpeg"/>Se former</h2>
+                        <div class="borderSection">
+                            <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript"><h3>Developpeur Mozilla</h3></a>   
+                            <P>
+                                Si vous souhaitez apprendre JavaScript et que vous débutez en programmation ou en JavaScript, 
+                                la section JavaScript de la zone d'apprentissage de MDN (learning area) est le meilleur 
+                                endroit où commencer. Trois niveaux de formation sont proposés : débutant, intermédiaire et avancé.
+                            </P>  
+                            <a href="https://www.w3schools.com/js/default.asp"><h3>w3schools</h3></a>  
+                            <p>                      
+                                Site en Anglais. 
+                                JavaScript est le langage de programmation le plus populaire au monde.
+                                Facile à apprendre, c'est le langage de programmation du Web.                                                            
+                                Ce tutoriel vous apprendra le JavaScript de base à avancé.
+                            </p>                                                
+                            <a href="https://www.codecademy.com/learn/introduction-to-javascript"><h3> codecademy</h3></a>                           
+                            <p> 
+                                Site en Anglais. 
+                                JavaScript est l'un des langages de programmation les plus puissants et les plus flexibles du Web.
+                                Il alimente le comportement dynamique de la plupart des sites Web.
+                                Vous apprendrez les principes de base de la programmation et les concepts de base orientés objet 
+                                à l'aide de la dernière syntaxe JavaScript. Les concepts abordés dans ces leçons jettent les bases 
+                                de l'utilisation de JavaScript dans n'importe quel environnement.
+                            </p>                       
+                            <a href="https://www.theodinproject.com/courses/javascript"><h3>theodinproject</h3></a>                           
+                            <p> 
+                                Site en Anglais. 
+                                Rendez vos sites Web dynamiques et interactifs avec JavaScript! Vous allez créer des fonctionnalités
+                                et des applications autonomes. Ce cours regroupera tout ce que vous avez appris au Projet Odin en un seul projet 
+                                final.
+                            </p>
+                            <a href="https://www.freecodecamp.org/learn/"><h3>freecodecamp</h3></a>  
+                            <p>                         
+                                freeCodeCamp est une organisation à but non lucratif qui se compose 
+                                d'une plate-forme Web d'apprentissage interactive ayant pour objectif de rendre l'apprentissage du développement Web 
+                                accessible à tous. freeCodeCamp est un chemin éprouvé vers votre premier emploi de développeur de logiciels.
+                                Vous y trouverez 300 heures de cours sur JAvascript.
+                            </p>                              
+                            <a href="https://openclassrooms.com/fr/"><h3>openclassrooms</h3></a>  
+                            <p>                       
+                                OpenClassrooms est un site web de formation en ligne qui propose à ses membres des cours certifiants. 
+                                Devenez qui vous voulez être avec OpenClassrooms. Choisissez votre carrière.
+                                suivez une formation constituée de projets professionnalisants et de séances individuelles avec un mentor dédié chaque semaine. 
+                                Obtenez un diplôme reconnu par l'état. Enrichissez votre CV avec les programmes en alternance proposés par OpenClassrooms
+                                et gagnez un salaire tout en suivant votre formation.
+                            </p>
+                            <a href="https://www.sololearn.com/Course/JavaScript/"><h3>sololearn</h3></a>  
+                                <p>                       
+                                    Site en Anglais. 
+                                    Apprenez tous les principes de base de JavaScript et amusez-vous en le faisant - avec SoloLearn!
+                                    Ce didacticiel couvre toutes les fonctionnalités de base de la programmation JavaScript, 
+                                    y compris les moyens de rendre votre site Web plus interactif, de créer un contenu de site Web 
+                                    modifié, de valider des formulaires, de créer des cookies et bien plus encore.
+                                </p>
+                                                          
+                                
+                        </div>
+                    </section>
+                    <div id="exercices"></div>
+                    <section class= "exoSection">
+                        <h2><img src="media/logo_exercices100.jpg"/>Entrainez-vous</h2>
+                        <div class="borderSection">
+                            <a href="https://codecombat.com/home"><h3>codecombat</h3></a>                            
+                            <p>
+                                Notre mission: faire en sorte que la programmation soit accessible à chaque élève sur la Terre.
+                                Jeux de rôles sur navigateur. Ce dernier enseigne différents langages de programmation 
+                                (JavaScript, CSS, HTML, Python, ...) ainsi que les fondamentaux de l'informatique.
+                            </p>
+                            <a href="https://www.freecodecamp.org/learn"><h3>Freecodecamp</h3></a>                            
+                            <p>
+                                freeCodeCamp est une organisation à but non lucratif qui se compose 
+                                d'une plate-forme Web d'apprentissage interactive ayant pour objectif de rendre le développement Web 
+                                d'apprentissage accessible à tous.
+                            </p>
+                            <a href="https://fr.khanacademy.org/computing/computer-programming/programming"><h3>Khanacademy</h3></a>                           
+                            <p>
+                                Khan Academy est une association à but non lucratif fondée en 2008 par Salman Khan. 
+                                Sur le principe de « fournir un enseignement de grande qualité à tous, partout », le site web publie en ligne un ensemble gratuit 
+                                de plus de 2 200 mini-leçons, via des tutoriels vidéo hébergés sur YouTube.
+                                Cours interactif, avec beaucoup d'aide. Possibilité de mettre en français. Il y a également une appli.
+                            </p>
+                            <a href="https://exercism.io/tracks/javascript"><h3>cexercism.io</h3></a>                            
+                            <p>
+                                Site en Anglais.
+                                Pratique du code et mentorat pour tous
+                                Améliorez vos compétences en programmation avec 3425 exercices dans 52 langues 
+                                et des discussions approfondies avec notre équipe dédiée de mentors accueillants. 
+                                Les exercices sont 100% gratuit.     
+                            </p>
+                            <a href="https://www.codewars.com/?language=javascript"><h3>codewars</h3></a>                            
+                            <p>
+                                Site en Anglais.
+                                Codewars est une communauté d'apprentissage pour les développeurs informatiques. 
+                                Sur la plateforme, les développeurs se perfectionnent en résolvant des exercices de programmation
+                                appelés kata. Ces exercices ciblent des compétences informatiques variées disponibles
+                                dans de nombreux langages et les développeurs les complètent au moyen d'un EDI en ligne. 
+                                Les développeurs peuvent comparer leurs solutions et créer leurs propres kata. 
+                                Les katas sont classés par ordre de difficulté.    
+                            </p>
+                        </div>
+                    </section>
+                    <div id="tutos"></div>
+                    <section class= "tutoSection">
+                        <h2><img src="media/icon_tutoVideo100.png"/>Vidéos / Tutos</h2>
+                        <div class="borderSection">
+                            <a href="https://www.grafikart.fr/formations/debuter-javascript"><h3>Grafikart</h3></a>                            
+                            <p>
+                                Découverte de Javascript; 29 chapitres, près de 15 heures de vidéos.
+                                Après avoir appris sur Internet quoi de plus normal que de partager à son tour ?
+                                Passionné par le web depuis un peu plus de 15 ans maintenant j'aime partager mes compétences et mes découvertes 
+                                avec les personnes qui ont cette même passion pour le web. 
+                            </p>
+                            <a href="https://fr.khanacademy.org/computing/computer-programming/programming"><h3>khanacademy</h3></a>   
+                            <p>                      
+                                Khan Academy est une association à but non lucratif fondée en 2008 par Salman Khan. 
+                                Sur le principe de « fournir un enseignement de grande qualité à tous, partout », le site web publie en ligne un ensemble gratuit 
+                                de plus de 2 200 mini-leçons, via des tutoriels vidéo hébergés sur YouTube.
+                                Cours interactif, avec beaucoup d'aide. Possibilité de mettre en français. Il y a également une appli.
+                            </p>
+                        </div>
+                    </section>  
+        </main>
+        <footer class="contenuFooter" >
+            <div class="bloc footerSommaire">
+                <h3>Sommaire</h3>
+                <ul class="listPages">
+                    <li>
+                        <a href="index.html">Page d'Accueil</a>
+                    </li>
+                    <li>
+                        <a href="front.html">Front-end</a>
+                    </li>
+                    <li>
+                        <a href="back.html">Back-End</a>
+                    </li>
+                    <li>
+                        <a href="boxOutil">Boite à Outils</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bloc footerContact">
+                <h3>Restons en Contact</h3>
+                <p>support@contact.com</p>
+                <p>4 rue des Wilders, Tours, 37000</p>
+            </div>
+            <div class="bloc footerSociaux">
+                <h3>Nos Réseaux</h3>
+                <ul class="listSociaux">
+                    <li>
+                        <a href="#"><img src="media/Facebook.svg" alt="icone réseaux sociaux"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="media/Twitter.svg" alt="icone réseaux sociaux"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="media/Instagram.svg" alt="icone réseaux sociaux"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="media/GitHub.png" alt="icone réseaux sociaux"></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
