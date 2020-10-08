@@ -1,0 +1,71 @@
+.imgFrontBack {
+    margin-top: 1rem;
+    width: 20rem;
+    height: 20rem;
+}
+
+section {
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+/*sommaire*/
+.nav-carousel {
+    padding: 20px;
+    text-align: center;
+}
+.nav-carousel-items div {
+    background-color: #222;
+    border-radius: 15px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+}
+.nav-carousel-items div:hover {
+    background-color: #E2B731;
+    color: #222;
+    transform: scale(1.1);
+}
+@media screen and (min-width: 800px) {
+    .nav-carousel-items {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .nav-carousel-items {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .nav-carousel-items {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    h1 {
+        font-size: 4rem
+    }
+}
+
+/*enlever couleur quand lien est cliqué*/
+a {
+    text-decoration: none;
+    color : white;
+}
+
+a:hover {
+    color : black;
+}
+
+
