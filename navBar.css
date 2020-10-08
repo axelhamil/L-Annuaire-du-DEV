@@ -1,3 +1,12 @@
+/***COLORS CODES***/
+/*
+    BLACK       : #222;
+    YELLOW      : #E2B731;
+    BLUE        : #28A1ED;
+    PINK        : #F82360;
+    GRIS        : lightgray;
+*/
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -86,7 +95,6 @@ nav a{
 }
 .imgNavbar {
     height: auto;
-    border-radius: 5px;
     width: 3em;
 }
 /* Desktop Part*/
