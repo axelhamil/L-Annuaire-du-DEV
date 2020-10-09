@@ -63,7 +63,7 @@ h1 {
         gap: 20px;
     }
     h1 {
-        margin: 0rem;
+        margin-top: 0px;
     }
 }
 @media screen and (max-width: 800px) {
@@ -83,12 +83,6 @@ h1 {
     }
     h1 {
         font-size: 4rem;
-    }
-}
-
-@media screen and (min-width : 800px) {
-    h1 {
-        margin-top: 0px;
     }
 }
 
