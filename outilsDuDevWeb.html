@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="navBar.css" rel="stylesheet">
-        <link href="footer.css" rel="stylesheet">
-        <link href="outilsDuDevWeb.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script>
-            $(function () {
-                $(".toggle").on("click", function () {
-                    if ($(".item").hasClass("active")) {
-                        $(".item").removeClass("active");
-                    } else {
-                        $(".item").addClass("active");
-                    }
-                })
-            });
-        </script>
-        <title>Boite à outils</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Site regroupant différente source et document utile au Développeur">
+    <link href="navBar.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
+    <link href="outilsDuDevWeb.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $(".toggle").on("click", function () {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            })
+        });
+    </script>
+    <title>Boite à outils</title>
+</head>
 <body>
     <header>
         <nav>
@@ -72,20 +75,24 @@
     </header>
     <main>
         <section class="nav-carousel">
-            <h2>La boite à outils</h2>
+            <h2 class="nav-carousel-title">La boite à outils</h2>
             <div class="nav-carousel-items">
-                <div>Editeurs de code</div>
+                <div>Editeurs de code (IDE)</div>
+                <div>Editeur de code en ligne</div>
+                <div>Vérificateurs de code</div>
                 <div>Revus de code</div>
+                <div>Controleurs de version</div>
+                <div>Retouches photos</div>
+                <div></div>
+                <div>Chaines Youtube</div>
                 <div>Forums & Blogs</div>
-                <div>Images & Logos</div>
-                <div>xxx</div>
             </div>
         </section>
-        <!--START CAROUSEL-01-->
+        <!--START CAROUSEL-01--><!--Editeurs de code (IDE)-->
         <section class="carousel">
             <div class="carousel-title">
                 <div class="triangle"></div>
-                <h3>Editeurs de code</h3>
+                <h3>Editeurs de code (IDE)</h3>
             </div>
             <ul class="carousel-items">
                 <div class="buttons button-prev" id="button-prev-1"></div>
@@ -109,7 +116,7 @@
                             <a href="https://www.sublimetext.com/" target="blank">
                                 <img class="card-img" src="media/carousel_editeurs_de_texte/carousel_sublimetext.png" alt="">
                             </a>
-                            <p class="card-info">Celui-là est le plus approprié pour les codeurs lourds. Est léger et peu gourmand en ressources.</p>
+                            <p class="card-info">Celui-là est le plus approprié pour les codeurs lourds. Il est léger et peu gourmand en ressources.</p>
                         </figcaption>
                     </figure>
                 </li>
@@ -214,16 +221,139 @@
             </div>
         </section>
         <!--END CAROUSEL-01-->
-        <!--START CAROUSEL-02-->
+        <!--START CAROUSEL-02--><!--Editeurs de code en ligne-->
+        <section class="carousel">
+            <div class="carousel-title">
+                <div class="triangle"></div>
+                <h3>Editeur de code en ligne</h3>
+            </div>
+            <ul class="carousel-items">
+                <div class="buttons button-prev" id="button-prev-2"></div>
+                <!--Image-01-->
+                <li class="carousel-item carousel-item-2">
+                    <figure class="card">
+                        <h3 class="card-title">Code Pen</h3>
+                        <figcaption class="card-content">
+                            <a href="https://codepen.io/" target="blank">
+                                <img class="card-img" src="media/carousel_ide_en_ligne/carousel_codepen.png" alt="">
+                            </a>
+                            <p class="card-info">Voici un éditeur de texte avec une fonction d’auto-complétion unique. Essayez-le si cela vous semble intéressant.</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <!--Image-02-->
+                <li class="carousel-item carousel-item-2">
+                    <figure class="card">
+                        <h3 class="card-title">JS Fiddle</h3>
+                        <figcaption class="card-content">
+                            <a href="https://jsfiddle.net/" target="blank">
+                                <img class="card-img" src="media/carousel_ide_en_ligne/carousel_jsfidle.png" alt="">
+                            </a>
+                            <p class="card-info">Celui-là est le plus approprié pour les codeurs lourds. Il est léger et peu gourmand en ressources.</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <!--Image-03-->
+                <li class="carousel-item carousel-item-2">
+                    <figure class="card">
+                        <h3 class="card-title">Code Sandbox</h3>
+                        <figcaption class="card-content">
+                            <a href="https://codesandbox.io/" target="blank">
+                                <img class="card-img" src="media/carousel_ide_en_ligne/carousel_codesandbox.png" alt="">
+                            </a>
+                            <p class="card-info">Nous aimons Atom pour les personnes qui veulent aussi un outil de collaboration avec l’éditeur de texte.</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <div class="buttons button-next" id="button-next-2"></div>
+            </ul>
+            <div class="carousel-positions">
+                <div></div>
+                <div class="carousel-position carousel-position-2"></div><!--Image-01-->
+                <div class="carousel-position carousel-position-2"></div><!--Image-02-->
+                <div class="carousel-position carousel-position-2"></div><!--Image-03-->
+                <div></div>
+            </div>
+        </section>
+        <!--END CAROUSEL-02-->
+        <!--START CAROUSEL-03--><!--Vérificateurs de code-->
+        <section class="carousel">
+            <div class="carousel-title">
+                <div class="triangle"></div>
+                <h3>Vérificateurs de code</h3>
+            </div>
+            <ul class="carousel-items">
+                <div class="buttons button-prev" id="button-prev-3"></div>
+                <!--Image-01-->
+                <li class="carousel-item carousel-item-3">
+                    <figure class="card">
+                        <h3 class="card-title">Validator W3C</h3>
+                        <figcaption class="card-content">
+                            <a href="https://validator.w3.org/" target="blank">
+                                <img class="card-img" src="media/carousel_verificateur_de_code/carousel_validatorw3c.png" alt="">
+                            </a>
+                            <p class="card-info">Voici un éditeur de texte avec une fonction d’auto-complétion unique. Essayez-le si cela vous semble intéressant.</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <!--Image-02-->
+                <li class="carousel-item carousel-item-3">
+                    <figure class="card">
+                        <h3 class="card-title">Free Formatter</h3>
+                        <figcaption class="card-content">
+                            <a href="https://www.freeformatter.com/html-validator.html" target="blank">
+                                <img class="card-img" src="media/carousel_verificateur_de_code/carousel_freeformatter.png" alt="">
+                            </a>
+                            <p class="card-info">Celui-là est le plus approprié pour les codeurs lourds. Il est léger et peu gourmand en ressources.</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <!--Image-03-->
+                <li class="carousel-item carousel-item-3">
+                    <figure class="card">
+                        <h3 class="card-title">Json Formatter</h3>
+                        <figcaption class="card-content">
+                            <a href="https://jsonformatter.org/html-validator" target="blank">
+                                <img class="card-img" src="media/carousel_verificateur_de_code/carousel_jsonformatter.png" alt="">
+                            </a>
+                            <p class="card-info">Nous aimons Atom pour les personnes qui veulent aussi un outil de collaboration avec l’éditeur de texte.</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <!--Image-04-->
+                <li class="carousel-item carousel-item-3">
+                    <figure class="card">
+                        <h3 class="card-title">HTML5 Validator</h3>
+                        <figcaption class="card-content">
+                            <a href="https://html5.validator.nu/" target="blank">
+                                <img class="card-img" src="media/carousel_verificateur_de_code/carousel_html5validator.png" alt="">
+                            </a>
+                            <p class="card-info">Nous aimons Atom pour les personnes qui veulent aussi un outil de collaboration avec l’éditeur de texte.</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <div class="buttons button-next" id="button-next-3"></div>
+            </ul>
+            <div class="carousel-positions">
+                <div></div>
+                <div class="carousel-position carousel-position-3"></div><!--Image-01-->
+                <div class="carousel-position carousel-position-3"></div><!--Image-02-->
+                <div class="carousel-position carousel-position-3"></div><!--Image-03-->
+                <div class="carousel-position carousel-position-3"></div><!--Image-04-->
+                <div></div>
+            </div>
+        </section>
+        <!--END CAROUSEL-03-->
+        <!--START CAROUSEL-04--><!--Revus de code-->
         <section class="carousel">
             <div class="carousel-title">
                 <div class="triangle"></div>
                 <h3>Revus de code</h3>
             </div>
             <ul class="carousel-items">
-                <div class="buttons button-prev" id="button-prev-2"></div>
+                <div class="buttons button-prev" id="button-prev-4"></div>
                 <!--Image-01-->
-                <li class="carousel-item carousel-item-2">
+                <li class="carousel-item carousel-item-4">
                     <figure class="card">
                         <h3 class="card-title">Git Hub</h3>
                         <figcaption class="card-content">
@@ -235,7 +365,7 @@
                     </figure>
                 </li>
                 <!--Image-02-->
-                <li class="carousel-item carousel-item-2">
+                <li class="carousel-item carousel-item-4">
                     <figure class="card">
                         <h3 class="card-title">Git Lab</h3>
                         <figcaption class="card-content">
@@ -247,7 +377,7 @@
                     </figure>
                 </li>
                 <!--Image-03-->
-                <li class="carousel-item carousel-item-2">
+                <li class="carousel-item carousel-item-4">
                     <figure class="card">
                         <h3 class="card-title">Review Board</h3>
                         <figcaption class="card-content">
@@ -259,7 +389,7 @@
                     </figure>
                 </li>
                 <!--Image-04-->
-                <li class="carousel-item carousel-item-2">
+                <li class="carousel-item carousel-item-4">
                     <figure class="card">
                         <h3 class="card-title">Crucible</h3>
                         <figcaption class="card-content">
@@ -271,7 +401,7 @@
                     </figure>
                 </li>
                 <!--Image-05-->
-                <li class="carousel-item carousel-item-2">
+                <li class="carousel-item carousel-item-4">
                     <figure class="card">
                         <h3 class="card-title">Phabricator</h3>
                         <figcaption class="card-content">
@@ -283,7 +413,7 @@
                     </figure>
                 </li>
                 <!--Image-06-->
-                <li class="carousel-item carousel-item-2">
+                <li class="carousel-item carousel-item-4">
                     <figure class="card">
                         <h3 class="card-title">Code Scene</h3>
                         <figcaption class="card-content">
@@ -295,7 +425,7 @@
                     </figure>
                 </li>
                 <!--Image-07-->
-                <li class="carousel-item carousel-item-2">
+                <li class="carousel-item carousel-item-4">
                     <figure class="card">
                         <h3 class="card-title">Rhode Code</h3>
                         <figcaption class="card-content">
@@ -306,120 +436,6 @@
                         </figcaption>
                     </figure>
                 </li>
-                <div class="buttons button-next" id="button-next-2"></div>
-            </ul>
-            <div class="carousel-positions">
-                <div></div>
-                <div class="carousel-position carousel-position-2"></div><!--Image-01-->
-                <div class="carousel-position carousel-position-2"></div><!--Image-02-->
-                <div class="carousel-position carousel-position-2"></div><!--Image-03-->
-                <div class="carousel-position carousel-position-2"></div><!--Image-04-->
-                <div class="carousel-position carousel-position-2"></div><!--Image-05-->
-                <div class="carousel-position carousel-position-2"></div><!--Image-06-->
-                <div class="carousel-position carousel-position-2"></div><!--Image-07-->
-                <div></div>
-            </div>
-        </section>
-        <!--END CAROUSEL-02-->
-        <!--START CAROUSEL-03-->
-        <section class="carousel">
-            <div class="carousel-title">
-                <div class="triangle"></div>
-                <h3>Controleurs de version</h3>
-            </div>
-            <ul class="carousel-items">
-                <div class="buttons button-prev" id="button-prev-3"></div>
-                <!--Image-01-->
-                <li class="carousel-item carousel-item-3">
-                    <figure class="card">
-                        <h3 class="card-title">Git</h3>
-                        <figcaption class="card-content">
-                            <a href="https://git-scm.com/" target="blank">
-                                <img class="card-img" src="media/carousel_controleur_de_version/carousel_git.png" alt="">
-                            </a>
-                            <p class="card-info">Plus d'infos</p>
-                        </figcaption>
-                    </figure>
-                </li>
-                <!--Image-02-->
-                <li class="carousel-item carousel-item-3">
-                    <figure class="card">
-                        <h3 class="card-title">Mercurial SCM</h3>
-                        <figcaption class="card-content">
-                            <a href="https://www.mercurial-scm.org/" target="blank">
-                                <img class="card-img" src="media/carousel_controleur_de_version/carousel_mercurial.png" alt="">
-                            </a>
-                            <p class="card-info">Plus d'infos</p>
-                        </figcaption>
-                    </figure>
-                </li>
-                <!--Image-03-->
-                <li class="carousel-item carousel-item-3">
-                    <figure class="card">
-                        <h3 class="card-title">Subversion</h3>
-                        <figcaption class="card-content">
-                            <a href="https://subversion.apache.org/" target="blank">
-                                <img class="card-img" src="media/carousel_controleur_de_version/carousel_subversion.png" alt="">
-                            </a>
-                            <p class="card-info"></p>
-                        </figcaption>
-                    </figure>
-                </li>
-                <div class="buttons button-next" id="button-next-3"></div>
-            </ul>
-            <div class="carousel-positions">
-                <div></div>
-                <div class="carousel-position carousel-position-3"></div><!--Image-01-->
-                <div class="carousel-position carousel-position-3"></div><!--Image-02-->
-                <div class="carousel-position carousel-position-3"></div><!--Image-03-->
-                <div></div>
-            </div>
-        </section>
-        <!--END CAROUSEL-03-->
-        <!--START CAROUSEL-04-->
-        <section class="carousel">
-            <div class="carousel-title">
-                <div class="triangle"></div>
-                <h3>Controleurs de version</h3>
-            </div>
-            <ul class="carousel-items">
-                <div class="buttons button-prev" id="button-prev-4"></div>
-                <!--Image-01-->
-                <li class="carousel-item carousel-item-4">
-                    <figure class="card">
-                        <h3 class="card-title">Git</h3>
-                        <figcaption class="card-content">
-                            <a href="https://git-scm.com/" target="blank">
-                                <img class="card-img" src="media/carousel_controleur_de_version/carousel_git.png" alt="">
-                            </a>
-                            <p class="card-info">Plus d'infos</p>
-                        </figcaption>
-                    </figure>
-                </li>
-                <!--Image-02-->
-                <li class="carousel-item carousel-item-4">
-                    <figure class="card">
-                        <h3 class="card-title">Mercurial SCM</h3>
-                        <figcaption class="card-content">
-                            <a href="https://www.mercurial-scm.org/" target="blank">
-                                <img class="card-img" src="media/carousel_controleur_de_version/carousel_mercurial.png" alt="">
-                            </a>
-                            <p class="card-info">Plus d'infos</p>
-                        </figcaption>
-                    </figure>
-                </li>
-                <!--Image-03-->
-                <li class="carousel-item carousel-item-4">
-                    <figure class="card">
-                        <h3 class="card-title">Subversion</h3>
-                        <figcaption class="card-content">
-                            <a href="https://subversion.apache.org/" target="blank">
-                                <img class="card-img" src="media/carousel_controleur_de_version/carousel_subversion.png" alt="">
-                            </a>
-                            <p class="card-info"></p>
-                        </figcaption>
-                    </figure>
-                </li>
                 <div class="buttons button-next" id="button-next-4"></div>
             </ul>
             <div class="carousel-positions">
@@ -427,10 +443,244 @@
                 <div class="carousel-position carousel-position-4"></div><!--Image-01-->
                 <div class="carousel-position carousel-position-4"></div><!--Image-02-->
                 <div class="carousel-position carousel-position-4"></div><!--Image-03-->
+                <div class="carousel-position carousel-position-4"></div><!--Image-04-->
+                <div class="carousel-position carousel-position-4"></div><!--Image-05-->
+                <div class="carousel-position carousel-position-4"></div><!--Image-06-->
+                <div class="carousel-position carousel-position-4"></div><!--Image-07-->
                 <div></div>
             </div>
         </section>
         <!--END CAROUSEL-04-->
+        <!--START CAROUSEL-05--><!--Controleurs de version-->
+        <section class="carousel">
+            <div class="carousel-title">
+                <div class="triangle"></div>
+                <h3>Controleurs de version</h3>
+            </div>
+            <ul class="carousel-items">
+                <div class="buttons button-prev" id="button-prev-5"></div>
+                <!--Image-01-->
+                <li class="carousel-item carousel-item-5">
+                    <figure class="card">
+                        <h3 class="card-title">Git</h3>
+                        <figcaption class="card-content">
+                            <a href="https://git-scm.com/" target="blank">
+                                <img class="card-img" src="media/carousel_controleur_de_version/carousel_git.png" alt="">
+                            </a>
+                            <p class="card-info">Plus d'infos</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <!--Image-02-->
+                <li class="carousel-item carousel-item-5">
+                    <figure class="card">
+                        <h3 class="card-title">Mercurial SCM</h3>
+                        <figcaption class="card-content">
+                            <a href="https://www.mercurial-scm.org/" target="blank">
+                                <img class="card-img" src="media/carousel_controleur_de_version/carousel_mercurial.png" alt="">
+                            </a>
+                            <p class="card-info">Plus d'infos</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <!--Image-03-->
+                <li class="carousel-item carousel-item-5">
+                    <figure class="card">
+                        <h3 class="card-title">Subversion</h3>
+                        <figcaption class="card-content">
+                            <a href="https://subversion.apache.org/" target="blank">
+                                <img class="card-img" src="media/carousel_controleur_de_version/carousel_subversion.png" alt="">
+                            </a>
+                            <p class="card-info"></p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <div class="buttons button-next" id="button-next-5"></div>
+            </ul>
+            <div class="carousel-positions">
+                <div></div>
+                <div class="carousel-position carousel-position-5"></div><!--Image-01-->
+                <div class="carousel-position carousel-position-5"></div><!--Image-02-->
+                <div class="carousel-position carousel-position-5"></div><!--Image-03-->
+                <div></div>
+            </div>
+        </section>
+        <!--END CAROUSEL-05-->
+        <!--START CAROUSEL-06--><!--Interfaces graphiques GIT-->
+        <section class="carousel">
+            <div class="carousel-title">
+                <div class="triangle"></div>
+                <h3>Interfaces graphiques GIT</h3>
+            </div>
+            <ul class="carousel-items">
+                <div class="buttons button-prev" id="button-prev-6"></div>
+                <!--Image-01-->
+                <li class="carousel-item carousel-item-6">
+                    <figure class="card">
+                        <h3 class="card-title">Git Kraken</h3>
+                        <figcaption class="card-content">
+                            <a href="https://www.gitkraken.com/download" target="blank">
+                                <img class="card-img" src="media/carousel_interfaces_graphiques_git/carousel_gitkraken.png" alt="">
+                            </a>
+                            <p class="card-info">A une version gratuite, fiable, rend Git compréhensible et visuellement attrayante.</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <!--Image-02-->
+                <li class="carousel-item carousel-item-6">
+                    <figure class="card">
+                        <h3 class="card-title">Smart Git</h3>
+                        <figcaption class="card-content">
+                            <a href="https://www.syntevo.com/smartgit/download/" target="blank">
+                                <img class="card-img" src="media/carousel_interfaces_graphiques_git/carousel_smartgit.png" alt="">
+                            </a>
+                            <p class="card-info">L’interface est élégante et facile à utiliser, et peut être téléchargée gratuitement pour un usage non commercial.</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <!--Image-03-->
+                <li class="carousel-item carousel-item-6">
+                    <figure class="card">
+                        <h3 class="card-title">Git Cola</h3>
+                        <figcaption class="card-content">
+                            <a href="https://git-cola.github.io/downloads" target="blank">
+                                <img class="card-img" src="media/carousel_interfaces_graphiques_git/carousel_gitcola.png" alt="">
+                            </a>
+                            <p class="card-info">Un client Git gratuit, simple mais puissant, qui rend les flux de travail rapides et efficaces.</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <!--Image-04-->
+                <li class="carousel-item carousel-item-6">
+                    <figure class="card">
+                        <h3 class="card-title">Aurees</h3>
+                        <figcaption class="card-content">
+                            <a href="https://www.photoshop.com/fr/tools/get_flash?red=a" target="blank">
+                                <img class="card-img" src="media/carousel_interfaces_graphiques_git/carousel_aurees.png" alt="">
+                            </a>
+                            <p class="card-info">Un client Git GUI gratuit et facile à utiliser qui permet aux utilisateurs de travailler sur les opérations Git sans effort.</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <!--Image-05-->
+                <li class="carousel-item carousel-item-6">
+                    <figure class="card">
+                        <h3 class="card-title">Toutes les GUI</h3>
+                        <figcaption class="card-content">
+                            <a href="https://git-scm.com/downloads/guis/" target="blank">
+                                <img class="card-img" src="media/carousel_interfaces_graphiques_git/carousel_allgui.png" alt="">
+                            </a>
+                            <p class="card-info">Vous trouverez sur cette page toutes les interfaces graphiques selon votre système d'exploitation.</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <div class="buttons button-next" id="button-next-6"></div>
+            </ul>
+            <div class="carousel-positions">
+                <div></div>
+                <div class="carousel-position carousel-position-6"></div><!--Image-01-->
+                <div class="carousel-position carousel-position-6"></div><!--Image-02-->
+                <div class="carousel-position carousel-position-6"></div><!--Image-03-->
+                <div class="carousel-position carousel-position-6"></div><!--Image-04-->
+                <div class="carousel-position carousel-position-6"></div><!--Image-05-->
+                <div></div>
+            </div>
+        </section>
+        <!--END CAROUSEL-06-->
+        <!--START CAROUSEL-07--><!--Retouches photos-->
+        <section class="carousel">
+            <div class="carousel-title">
+                <div class="triangle"></div>
+                <h3>Retouche photos</h3>
+            </div>
+            <ul class="carousel-items">
+                <div class="buttons button-prev" id="button-prev-7"></div>
+                <!--Image-01-->
+                <li class="carousel-item carousel-item-7">
+                    <figure class="card">
+                        <h3 class="card-title">Gimp</h3>
+                        <figcaption class="card-content">
+                            <a href="https://www.gimp.org/" target="blank">
+                                <img class="card-img" src="media/carousel_retouche_photos/carousel_gimp.png" alt="">
+                            </a>
+                            <p class="card-info">Plus d'infos</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <!--Image-02-->
+                <li class="carousel-item carousel-item-7">
+                    <figure class="card">
+                        <h3 class="card-title">Darktable</h3>
+                        <figcaption class="card-content">
+                            <a href="https://darktable.fr/" target="blank">
+                                <img class="card-img" src="media/carousel_retouche_photos/carousel_darktable.png" alt="">
+                            </a>
+                            <p class="card-info">Plus d'infos</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <!--Image-03-->
+                <li class="carousel-item carousel-item-7">
+                    <figure class="card">
+                        <h3 class="card-title">Pixlr</h3>
+                        <figcaption class="card-content">
+                            <a href="https://subversion.apache.org/" target="blank">
+                                <img class="card-img" src="media/carousel_retouche_photos/carousel_pixlr.png" alt="">
+                            </a>
+                            <p class="card-info"></p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <!--Image-04-->
+                <li class="carousel-item carousel-item-7">
+                    <figure class="card">
+                        <h3 class="card-title">Photoshop Express Editor</h3>
+                        <figcaption class="card-content">
+                            <a href="https://www.photoshop.com/fr/tools/get_flash?red=a" target="blank">
+                                <img class="card-img" src="media/carousel_retouche_photos/carousel_photoshop.png" alt="">
+                            </a>
+                            <p class="card-info"></p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <!--Image-05-->
+                <li class="carousel-item carousel-item-7">
+                    <figure class="card">
+                        <h3 class="card-title">Sumo Paint</h3>
+                        <figcaption class="card-content">
+                            <a href="https://www.sumopaint.com/" target="blank">
+                                <img class="card-img" src="media/carousel_retouche_photos/carousel_sumopaint.png" alt="">
+                            </a>
+                            <p class="card-info"></p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <!--Image-06-->
+                <li class="carousel-item carousel-item-7">
+                    <figure class="card">
+                        <h3 class="card-title">i Piccy</h3>
+                        <figcaption class="card-content">
+                            <a href="https://ipiccy.com/" target="blank">
+                                <img class="card-img" src="media/carousel_retouche_photos/carousel_ipiccy.png" alt="">
+                            </a>
+                            <p class="card-info"></p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <div class="buttons button-next" id="button-next-7"></div>
+            </ul>
+            <div class="carousel-positions">
+                <div></div>
+                <div class="carousel-position carousel-position-7"></div><!--Image-01-->
+                <div class="carousel-position carousel-position-7"></div><!--Image-02-->
+                <div class="carousel-position carousel-position-7"></div><!--Image-03-->
+                <div class="carousel-position carousel-position-7"></div><!--Image-04-->
+                <div class="carousel-position carousel-position-7"></div><!--Image-05-->
+                <div class="carousel-position carousel-position-7"></div><!--Image-06-->
+                <div></div>
+            </div>
+        </section>
+        <!--END CAROUSEL-06-->
         <footer class="contenuFooter">
             <div class="bloc footerSommaire">
                 <h3>Sommaire</h3>
