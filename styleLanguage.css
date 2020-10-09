@@ -66,6 +66,11 @@ main p{
     background-size: contain;
     background-position: right;
   }
+  #logoPhp {
+    background: url(media/php.png) no-repeat;
+    background-size: contain;
+    background-position: right;
+  }
   #title {
     display: flex;
   }
