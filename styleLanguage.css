@@ -55,17 +55,71 @@ main p{
   margin: 30px 0 0 0;
 }
 /*Grid Part*/
-  .grid{
-    display: grid;
-    grid-template-columns: 40% 60%;
-    font-size: 3.5vw;
-    margin: 0px 0 25px 0;
+#description img {
+  width: 50px;
+  height: 50px;
+}
+  #description h1, #description img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
   }
   #logoHtml {
     background: url(media/logo-html.png) no-repeat;
     background-size: contain;
     background-position: right;
   }
+
+  #logoPhp {
+    display: flex;
+    background: url(media/php.png) no-repeat;
+    background-size: contain;
+    background-position: right;
+    align-content: center;
+  }
+
+  #logoPython {
+    display: flex;
+    background: url(media/pythonLogo.svg.png) no-repeat;
+    background-size: contain;
+    background-position: right;
+    align-content: center;
+  }
+  #logoRuby {
+    display: flex;
+    background: url(media/ruby.png) no-repeat;
+    background-size: contain;
+    background-position: right;
+    align-content: center;
+  }
+
+  #logoJava {
+    display: flex;
+    background: url(media/java.png) no-repeat;
+    background-size: contain;
+    background-position: right;
+    align-content: center;
+    margin-right: 20px;
+  }
+  #logoCss {
+    display: flex;
+    background: url(media/css.png) no-repeat;
+    background-size: contain;
+    background-position: right;
+    align-content: center;
+    margin-right: 20px;
+  }
+  #logoJavaScript{
+    display: flex;
+    background: url(media/logo.javascript.png) no-repeat;
+    background-size: contain;
+    background-position: right;
+    align-content: center;
+    margin-right: 20px;
+  }
+
+
   #title {
     display: flex;
   }
@@ -170,7 +224,10 @@ main h2 img {
 }
 @media screen and (max-width: 1205px){
   main{
-    margin: 10px 30px;
+    margin: 40px 30px 20px 30px;
+  }
+  #description h1{
+    font-size: 6vw;
   }
   .docSection h2,
   .formationSection h2,
