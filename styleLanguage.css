@@ -66,6 +66,13 @@ main p{
     background-size: contain;
     background-position: right;
   }
+
+  #logoPhp {
+    background: url(media/php.png) no-repeat;
+    background-size: contain;
+    background-position: right;
+  }
+
   #logoPython {
     display: flex;
     background: url(media/pythonLogo.svg.png) no-repeat;
@@ -73,6 +80,7 @@ main p{
     background-position: right;
     align-content: center;
   }
+
 
   #title {
     display: flex;
