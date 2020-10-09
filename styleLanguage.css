@@ -73,6 +73,13 @@ main p{
     background-position: right;
     align-content: center;
   }
+  #logoRuby {
+    display: flex;
+    background: url(media/ruby.png) no-repeat;
+    background-size: contain;
+    background-position: right;
+    align-content: center;
+  }
 
   #title {
     display: flex;
