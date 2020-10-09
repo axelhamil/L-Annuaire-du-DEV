@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styleLanguage.css" rel="stylesheet">
+        <link href="navBar.css" rel="stylesheet">
+        <link href="footer.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(function () {
+                $(".toggle").on("click", function () {
+                    if ($(".item").hasClass("active")) {
+                        $(".item").removeClass("active");
+                    } else {
+                        $(".item").addClass("active");
+                    }
+                })
+            });
+        </script>
+        <title>PageJavaScript</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="index.html"><img class="imgNavbar" alt="logo du site" src="media/logo_annuaire_du_dev.png"></a>
+                    </li>
+                    <li class="navLogo">
+                        <a href="index.html">L'Annuaire du DEV</a>
+                    </li>
+                    <li class="item">
+                        <a href="front.html">Front-End</a>
+                        <ul class="subMenu">
+                            <li>
+                                <a class="subItem" href="PageLanguage.html">HTML</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="PageCSS.html">CSS</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="javaScript.html">JavaScript</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="back.html">Back-End</a>
+                        <ul class="subMenu">
+                            <li>
+                                <a class="subItem" href="php.html">PHP</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="java.html">Java</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="python.html">Python</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="ruby.html">Ruby</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="boxItem" class="item">
+                        <a href="outilsDuDevWeb.html">Boite à Outils</a>
+                    </li>
+                    <li class="toggle">
+                        <span class="bars"></span></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="description">
+                <h1><img src="media/js.png" alt="illustration"></h1>
+                </div>
+                <article class="artIntro">
+                    <h2>
+                        Qu'est-ce que ce language?
+                    </h2>
+                    <p>
+                        JavaScript (qui est souvent abrégé en « JS ») est un langage de script léger, orienté objet,
+                        principalement connu comme le langage de script des pages web. 
+                        Il est aussi utilisé dans de nombreux environnements extérieurs aux navigateurs web tels que Node.js, 
+                        Apache CouchDB voire Adobe Acrobat. 
+                        </p>
+                    <p>
+                        Le code JavaScript est interprété ou compilé à la volée (JIT). 
+                        C'est un langage à objets utilisant le concept de prototype, disposant d'un typage faible et dynamique qui permet 
+                        de programmer suivant plusieurs paradigmes de programmation : fonctionnelle, impérative et orientée objet.
+                    </p>
+                    <p>
+                        JavaScript ne doit pas être confondu avec le langage de programmation Java.
+                        Java et JavaScript sont deux marques déposées par Oracle dans de nombreux pays mais ces deux langages de 
+                        programmation ont chacun une syntaxe, une sémantique et des usages différents.
+                    </p>
+                    <p>
+                        source : "developer.mozilla.org"
+                    </p>
+                </article>
+            </section>
+            <section class="navSommaire">
+                <h2>Sommaire</h2>
+                <div class="navSommaireItems">
+                    <div><a href="#documentation">Documentation</a></div>
+                    <div><a href="#Former">Se Former</a></div>
+                    <div><a href="#exercices">Exercices</a></div>
+                    <div><a href="#tutos">Tuto Vidéo</a></div>
+                </div>
+                <div id="documentation"></div>
+            </section>
+                    <section class= "docSection">
+                        <h2><img src="media/logo_documentation100.jpg" alt="illustration">Documentation</h2>
+                        <div class="borderSection">
+                            <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference"><h3>Developpeur Mozilla</h3></a>
+                            <p>                   
+                                La référence JavaScript regroupe les différentes notions autour du langage JavaScript. 
+                                L'ensemble du langage y est détaillé. Si vous développez une application JavaScript, vous pourrez utiliser
+                                ces différentes pages (d'où le titre de « référence »). Si vous apprenez JavaScript ou que vous souhaitez 
+                                comprendre comment fonctionnent certains de ses composants, vous pouvez lire le Guide JavaScript.
+                            </p>
+                        </div>
+                    </section>
+                    <div id="Former"></div>
+                    <section class= "formationSection">
+                        <h2><img src="media/iconSeFormer100.jpeg" alt="illustration">Se former</h2>
+                        <div class="borderSection">
+                            <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript">
+                            <h3>Developpeur Mozilla</h3>
+                            </a>
+                            <p>
+                                Si vous souhaitez apprendre JavaScript et que vous débutez en programmation ou en JavaScript, 
+                                la section JavaScript de la zone d'apprentissage de MDN (learning area) est le meilleur endroit 
+                                où commencer.
+                            </p>
+                            <a href="https://www.w3schools.com/js/default.asp"><h3>W3Cschools</h3></a>               
+                            <p>
+                                JavaScript est le langage de programmation le plus populaire au monde.
+                                Facile à apprendre c'est le langage de programmation du Web.
+                                Ce tutoriel vous apprendra JavaScript de base à avancé.
+                            </p>
+                            
+                            <a href="https://www.codecademy.com/learn/learn-html"><h3>Codecademy</h3></a>                         
+                            <p>Site en Anglais 
+                                You will learn all the common HTML tags used to structure HTML pages, 
+                                the skeleton of all websites. You will also be able to create HTML 
+                                tables to present tabular data efficiently.
+                            </p>
+                            <a href="https://www.theodinproject.com/courses/javascript"><h3>theodinproject</h3></a>                          
+                            <p>
+                                Site en Anglais 
+                                Rendez vos sites Web dynamiques et interactifs avec JavaScript! Vous allez créer des 
+                                fonctionnalités et des applications autonomes. Ce cours regroupera tout ce que vous avez appris
+                                au projet Odin en un seul projet final.
+                            </p>
+                            <a href="https://www.freecodecamp.org/learn/"><h3>Freecodecamp</h3></a>                           
+                            <p>
+                                freeCodeCamp est une organisation à but non lucratif qui se compose 
+                                d'une plate-forme Web d'apprentissage interactive ayant pour objectif de rendre le développement Web 
+                                d'apprentissage accessible à tous. 300 heures de cours sur pour apprendre Javascript
+                            </p>
+                            <a href="https://openclassrooms.com/fr/"><h3>OpenClassrooms</h3></a>                          
+                            <p>
+                                OpenClassrooms est un site web de formation en ligne qui propose à ses membres des cours certifiants.
+                            </p>
+                            <a href="https://www.sololearn.com/Course/JavaScript/"><h3>Sololearn</h3></a>                        
+                            <p>
+                                Apprenez tous les principes de base de JavaScript et amusez-vous en le faisant - avec SoloLearn!
+                                Ce didacticiel couvre toutes les fonctionnalités de base de la programmation JavaScript,
+                                y compris les moyens de rendre votre site Web plus interactif, de créer un contenu de site Web
+                                modifié, de valider des formulaires, de créer des cookies, et bien plus encore.
+                                Parcourez nos leçons pédagogiques soigneusement sélectionnées, puis répondez à des quiz interactifs 
+                                tout en explorant les points de contrôle.
+                                Notre collection d'exercices et de sessions pratiques vous guide tout au long du processus 
+                                de création de votre propre code JavaScript.
+                            </p> 
+                        </div>
+                    </section>
+                    <div id="exercices"></div>
+                    <section class= "exoSection">
+                        <h2><img src="media/logo_exercices100.jpg" alt="illustration">Entrainez-vous</h2>
+                        <div class="borderSection">
+                            <a href="https://www.freecodecamp.org/learn"><h3>Freecodecamp</h3></a>                            
+                            <p>
+                                freeCodeCamp est une organisation à but non lucratif qui se compose 
+                                d'une plate-forme Web d'apprentissage interactive ayant pour objectif de rendre le développement Web 
+                                d'apprentissage accessible à tous.
+                            </p>
+                            <a href="https://fr.khanacademy.org/computing/computer-programming/programming"><h3>Khanacademy</h3></a>                           
+                            <p>
+                                Pours interactif, avec beaucoup d'aide. Possibilité de mettre en français. Il y a également une appli.
+                            </p>
+                        </div>
+                    </section>
+                    <div id="tutos"></div>
+                    <section class= "tutoSection">
+                        <h2><img src="media/icon_tutoVideo100.png" alt="illustration">Vidéos / Tutos</h2>
+                        <div class="borderSection">
+                            <a href="https://www.grafikart.fr/formations/debuter-javascript"><h3>Grafikart</h3></a>                            
+                            <p>
+                                
+                                Apprendre le JavaScript. 29 chapitres, près de 15 heures de vidéos.
+                                JavaScript (souvent abrégé en "JS") est un langage de script, orienté objet, principalement 
+                                utilisé comme le langage de script des pages web. Mais il peut aussi être utilisé sur de nombreux environnements extérieurs aux navigateurs tel que node.js.
+                            </p>
+                            <a href="https://fr.khanacademy.org/computing/computer-programming/html-css"><h3>khanacademy</h3></a>   
+                            <p>                      
+                                Cours intéractif, avec beaucoup d'aide. Possibilité de mettre en français. Il y a également une appli.
+                            </p>
+                        </div>
+                    </section>  
+        </main>
+        <footer class="contenuFooter" >
+            <div class="bloc footerSommaire">
+                <h3>Sommaire</h3>
+                <ul class="listPages">
+                    <li>
+                        <a href="index.html">Page d'Accueil</a>
+                    </li>
+                    <li>
+                        <a href="front.html">Front-end</a>
+                    </li>
+                    <li>
+                        <a href="back.html">Back-End</a>
+                    </li>
+                    <li>
+                        <a href="boxOutil">Boite à Outils</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bloc footerContact">
+                <h3>Restons en Contact</h3>
+                <p>support@contact.com</p>
+                <p>4 rue des Wilders, Tours, 37000</p>
+            </div>
+            <div class="bloc footerSociaux">
+                <h3>Nos Réseaux</h3>
+                <ul class="listSociaux">
+                    <li>
+                        <a href="#"><img src="media/Facebook.svg" alt="icone réseaux sociaux"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="media/Twitter.svg" alt="icone réseaux sociaux"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="media/Instagram.svg" alt="icone réseaux sociaux"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="media/GitHub.png" alt="icone réseaux sociaux"></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

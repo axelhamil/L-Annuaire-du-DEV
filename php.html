@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styleLanguage.css" rel="stylesheet">
+        <link href="navBar.css" rel="stylesheet">
+        <link href="footer.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(function () {
+                $(".toggle").on("click", function () {
+                    if ($(".item").hasClass("active")) {
+                        $(".item").removeClass("active");
+                    } else {
+                        $(".item").addClass("active");
+                    }
+                })
+            });
+        </script>
+        <title>PHP</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="index.html"><img class="imgNavbar" alt="logo du site" src="media/logo_annuaire_du_dev.png"></a>
+                    </li>
+                    <li class="navLogo">
+                        <a href="index.html">L'Annuaire du DEV</a>
+                    </li>
+                    <li class="item">
+                        <a href="front.html">Front-End</a>
+                        <ul class="subMenu">
+                            <li>
+                                <a class="subItem" href="PageLanguage.html">HTML</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="PageCSS.html">CSS</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="javaScript.html">JavaScript</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="back.html">Back-End</a>
+                        <ul class="subMenu">
+                            <li>
+                                <a class="subItem" href="php.html">PHP</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="java.html">Java</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="python.html">Python</a>
+                            </li>
+                            <li>
+                                <a class="subItem" href="ruby.html">Ruby</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="boxItem" class="item">
+                        <a href="outilsDuDevWeb.html">Boite à Outils</a>
+                    </li>
+                    <li class="toggle">
+                        <span class="bars"></span></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="description">
+                <h1><img src="media/logo-php.png" alt="illustration">PHP</h1>
+                </div>
+                <article class="artIntro">
+                    <h2>
+                        Qu'est-ce que ce language?
+                    </h2>
+                    <p>
+                        PHP: Hypertext Preprocessor, plus connu sous son sigle PHP (sigle auto-référentiel), est un "langage de programmation" libre, principalement utilisé pour produire des pages Web dynamiques via un serveur HTTP, mais pouvant également fonctionner comme n'importe quel langage interprété de façon locale. PHP est un langage impératif orienté objet. </p>
+                    <p>
+                        PHP a permis de créer un grand nombre de sites web célèbres, comme Facebook et Wikipédia Il est considéré comme une des bases de la création de sites web dits dynamiques mais également des applications web. 
+                    </p>
+                    <p>
+                        source : "https://fr.wikipedia.org/wiki/PHP"
+                    </p>
+                </article>
+            </section>
+            <section class="navSommaire">
+                <h2>Sommaire</h2>
+                <div class="navSommaireItems">
+                    <div><a href="#documentation">Documentation</a></div>
+                    <div><a href="#Former">Se Former</a></div>
+                    <div><a href="#exercices">Exercices</a></div>
+                    <div><a href="#tutos">Tuto Vidéo</a></div>
+                </div>
+                <div id="documentation"></div>
+            </section>
+                    <section class= "docSection">
+                        <h2><img src="media/logo_documentation100.jpg" alt="logo du site">Documentation</h2>
+                        <div class="borderSection">
+                            <a href="https://www.php.net/manual/fr/index.php">
+                                <h3>
+                                    Documentation officielle de PHP
+                                </h3></a>
+                                <p>                   
+                                    
+                                </p>
+                            <a href="https://www.php-fig.org/">
+                                <h3>PSR (PHP Standards Recommendations)</h3>
+                                </a>
+                                <p>
+                                    
+                                </p>
+                            <a href="https://www.w3schools.com/php/php_ref_overview.asp">
+                            <h3>
+                                w3schools.com
+                            </h3></a>
+                            <p>                   
+                                La référence PHP contient différentes catégories de toutes les fonctions PHP, mots-clés et constantes, ainsi que des exemples.
+                            </p>
+                        </div>
+                    </section>
+                    <div id="Former"></div>
+                    <section class= "formationSection">
+                        <h2><img src="media/iconSeFormer100.jpeg" alt="logo du site">Se former</h2>
+                        <div class="borderSection">
+                            <a href="https://www.w3schools.com/php/default.asp">
+                                <h3>w3schools.com</h3>
+                            </a>
+                            <p>
+                                W3Schools est un site Web éducatif pour l'apprentissage des technologies Web en ligne. Le contenu comprend des didacticiels et des références relatifs à HTML, CSS, JavaScript, JSON, PHP, Python, AngularJS, React.js, SQL, Bootstrap, Sass, Node.js, jQuery, XQuery, AJAX, XML, Raspberry Pi, C ++, C # et Java.
+                                En utilisant l'éditeur en ligne, Try it Yourself, n'importe qui peut éditer des exemples et exécuter du code informatique de manière expérimentale, pour voir ce qui fonctionne et ce qui ne fonctionne pas, avant de l'implémenter.
+                            </p>
+                            <a href="https://eilgin.github.io/php-the-right-way/">
+                                <h3>PHP La bonne manière</h3>
+                            </a>
+                            <p>
+                                PHP: La bonne manière est une référence concise et facile à lire à propos des conventions d’écriture les plus connues sur le PHP, des liens sur les tutoriaux faisant autorité sur le web et des pratiques que les contributeurs de ce document considèrent comme meilleures à l’heure actuelle.
+                            </p>
+                            <a href="https://www.sololearn.com/Course/PHP/">
+                                <h3>Sololearn</h3>
+                            </a>
+                            <p>
+                                Cours interactifs, pratique, soutien par les pairs.
+                            </p>
+                            <a href="https://openclassrooms.com/fr/search?page=1&query=php">
+                                <h3>OpenClassrooms</h3>
+                            </a>
+                            <p>
+                                OpenClassrooms est un site web de formation en ligne qui propose à ses membres des cours certifiants et des parcours débouchant sur des métiers en croissance. Ses contenus sont réalisés en interne, par des écoles, des universités, des entreprises partenaires comme Microsoft ou IBM, ou historiquement par des bénévoles.
+                            </p>
+                            <a href="https://www.codecademy.com/">
+                                <h3>Codeacademy</h3>
+                            </a>
+                            <p>
+                                Codecademy est une plateforme interactive en ligne qui propose d'apprendre gratuitement six langages de programmation, tels que Python, PHP, JavaScript, ou des langages de balisage, comme HTML et CSS et des tutoriels pour construire des sites web ou améliorer des programmes.
+                            </p>
+                            <a href="https://exercism.io/my/tracks/php">
+                                <h3>Exercism</h3>
+                            </a>
+                            <p>
+                                Exercism est une plate-forme de codage en ligne, open source et gratuite qui offre la pratique du code et le mentorat sur 50 langages de programmation différents.
+                            </p>
+                            <a href="https://www.khanacademy.org/computing/computer-programming">
+                                <h3>Khanacademy</h3>
+                            </a>
+                            <p>
+                                Cours intéractif, avec beaucoup d'aide. Possibilité de mettre en français. Il y a également une appli.
+                            </p>  
+                        </div>
+                    </section>
+                    <div id="exercices"></div>
+                    <section class= "exoSection">
+                        <h2><img src="media/logo_exercices100.jpg" alt="logo du site">Entrainez-vous</h2>
+                        <div class="borderSection">
+                            <a href="https://www.codewars.com/"><h3>Codewars</h3></a>                            
+                            <p>
+                                Codewars est une communauté d'apprentissage pour les développeurs informatiques. 
+                                Sur la plateforme, les développeurs se perfectionnent en résolvant des exercices de programmation appelés kata. Ces exercices ciblent des compétences informatiques variées disponibles dans de nombreux langages et les développeurs les complètent au moyen d'un EDI en ligne. Les développeurs peuvent comparer leurs solutions et créer leurs propres kata. Les katas sont classés par ordre de difficulté, allant de 8e kyu (le niveau d'entrée) à 1er kyu (le plus haut niveau actuel).
+                            </p>
+                            <a href="https://www.khanacademy.org/computing/computer-programming">
+                                <h3>Khanacademy</h3>
+                            </a>
+                            <p>
+                                Cours intéractif, avec beaucoup d'aide. Possibilité de mettre en français. Il y a également une appli.
+                            </p>
+                        </div>
+                    </section>
+                    <div id="tutos"></div>
+                    <section class= "tutoSection">
+                        <h2><img src="media/icon_tutoVideo100.png" alt="logo du site">Vidéos / Tutos</h2>
+                        <div class="borderSection">
+                            <a href="https://www.grafikart.fr/tutoriels/php">
+                                <h3>Grafikart</h3>
+                            </a>                  
+                            <p>
+                                Améliorez-vous et apprenez de nouvelles choses grâce à 568 heures de tutoriels vidéos gratuits.
+                            </p>
+                            <a href="https://www.khanacademy.org/computing/computer-programming">
+                            <h3>Khanacademy</h3>
+                            </a>
+                            <p>
+                                Cours intéractif, avec beaucoup d'aide. Possibilité de mettre en français. Il y a également une appli.
+                            </p>
+                        </div>
+                    </section>  
+        </main>
+        <footer class="contenuFooter" >
+            <div class="bloc footerSommaire">
+                <h3>Sommaire</h3>
+                <ul class="listPages">
+                    <li>
+                        <a href="index.html">Page d'Accueil</a>
+                    </li>
+                    <li>
+                        <a href="front.html">Front-end</a>
+                    </li>
+                    <li>
+                        <a href="back.html">Back-End</a>
+                    </li>
+                    <li>
+                        <a href="boxOutil">Boite à Outils</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bloc footerContact">
+                <h3>Restons en Contact</h3>
+                <p>support@contact.com</p>
+                <p>4 rue des Wilders, Tours, 37000</p>
+            </div>
+            <div class="bloc footerSociaux">
+                <h3>Nos Réseaux</h3>
+                <ul class="listSociaux">
+                    <li>
+                        <a href="#"><img src="media/Facebook.svg" alt="icone réseaux sociaux"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="media/Twitter.svg" alt="icone réseaux sociaux"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="media/Instagram.svg" alt="icone réseaux sociaux"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="media/GitHub.png" alt="icone réseaux sociaux"></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
