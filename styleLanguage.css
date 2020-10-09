@@ -75,6 +75,10 @@ main p{
     align-content: center;
   }
 
+  #calageLogoTitre {
+    margin-left: 6rem;
+  }
+
   #logoPython {
     display: flex;
     background: url(media/pythonLogo.svg.png) no-repeat;
