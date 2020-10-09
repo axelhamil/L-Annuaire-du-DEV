@@ -1,42 +1,57 @@
 .nav-carousel {
-    padding: 20px;
     text-align: center;
+}
+@media screen and (min-width: 1205px) {
+    .nav-carousel {
+        padding: 30px 20px 20px 20px;
+    }
+}
+@media screen and (max-width: 1205px) {
+    .nav-carousel {
+        padding: 60px 20px 20px 20px;
+    }
+}
+.nav-carousel-title{
+    font-size: 30px;
+    padding: 20px;
+    text-transform: uppercase;
 }
 .nav-carousel-items div {
     background-color: #222;
     border-radius: 15px;
-    height: 30px;
+    height: auto;
     text-align: center;
     color: white;
-    line-height: 30px;
+    padding: 5px;
 }
 .nav-carousel-items div:hover {
     background-color: #F82360;
-    color: #222;
     transform: scale(1.1);
+    font-weight: bold;
 }
 @media screen and (min-width: 800px) {
     .nav-carousel-items {
         display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
+        font-size: 18px;
     }
 }
 @media screen and (max-width: 800px) {
     .nav-carousel-items {
         display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+        font-size: 16px;
     }
 }
 @media screen and (max-width: 600px) {
     .nav-carousel-items {
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        gap: 20px;
+        gap: 16px;
+        font-size: 12px;
     }
 }
 /***START - CAROUSEL STYLE***/
@@ -46,7 +61,7 @@
 }
 .carousel-items {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 .carousel-title {
@@ -55,18 +70,12 @@
     background-color: lightgray;
     align-items: center;
     text-align: left;
-}
-.carousel-title img {
-    background-color: #F82360;
-    height: 40px;
-    padding: 5px;
+    margin-top: 30px;
+    font-size: 20px;
 }
 @media screen and (max-width: 800px) {
-    .carousel-title h3 {
+    .carousel-title {
         font-size: 15px;
-    }
-    .carousel-title img {
-        height: 30px;
     }
 }
 @media screen and (min-width: 800px) {
@@ -86,18 +95,17 @@
     }
 }
 .card-title {
-    margin: 10px;
+    margin: 10px 0;
 }
 .card-content {
-    box-shadow: -5px 5px 15px 5px rgba(000, 000, 000, 0.5);
+    box-shadow: 5px 5px 5px rgba(000, 000, 000, 0.5);
     border-radius: 20px;
     background-color: lightgray;
 }
 @media screen and (min-width: 800px) {
     .card-content {
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 3fr 1fr;
+        display: flex;
+        flex-direction: row;
     }
 }
 @media screen and (max-width: 800px) {
@@ -113,7 +121,7 @@
 }
 @media screen and (min-width: 800px) {
     .card-img {
-        border-radius: 20px 0 0 20px;
+        border-radius: 15px 0 0 15px;
     }
 }
 @media screen and (max-width: 800px) {
@@ -125,14 +133,15 @@
     background-color: lightgray;
     color: #222;
     text-align: center;
-    line-height: 25px;
-    padding: 30px 10px 10px 10px;
 }
 @media screen and (min-width: 800px) {
     .card-info {
         height: auto;
-        width: 200px;
-        border-radius: 0 20px 20px 0;
+        width: 300px;
+        border-radius: 0 15px 15px 0;
+        padding: 30px 10px 10px 10px;
+        font-size: 20px;
+        line-height: 25px;
     }
 }
 @media screen and (max-width: 800px) {
@@ -141,22 +150,28 @@
         width: auto;
         border-radius: 0 0 10px 10px;
         padding: 10px;
+        font-size: 14px;
+        line-height: 20px;
     }
 }
 @media screen and (max-width: 600px) {
     .card-info {
         height: 120px;
+        font-size: 12px;
+        line-height: 18px;
     }
 }
 @media screen and (max-width: 400px) {
     .card-info {
         height: 140px;
+        font-size: 10px;
+        line-height: 16px;
     }
 }
 .buttons {
     width: 0;
     height: 0;
-    margin: 20px;
+    margin: 0;
 }
 .button-prev {
     border-top: 40px solid transparent;
