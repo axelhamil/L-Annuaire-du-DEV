@@ -145,7 +145,6 @@ main h2 img {
   text-decoration: none;
   transition: color .5s;
   padding: 0px 10px;
-  text-shadow: 0px 5px 10px #3E2014;
 }
 .docSection h3:hover,
 .docSection a:hover,
@@ -183,7 +182,10 @@ main h2 img {
   margin: 0;
   }
   .artIntro p{
-    font-size: 2.5vw;
+    font-size: 4vw;
+  }
+  .navSommaire h2 {
+    font-size: 5vw;
   }
 }
 
