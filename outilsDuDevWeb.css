@@ -3,7 +3,7 @@
 }
 @media screen and (min-width: 1205px) {
     .nav-carousel {
-        padding: 0 20px 20px 20px;
+        padding: 30px 20px 20px 20px;
     }
 }
 @media screen and (max-width: 1205px) {
@@ -61,7 +61,7 @@
 }
 .carousel-items {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 .carousel-title {
@@ -73,17 +73,9 @@
     margin-top: 30px;
     font-size: 20px;
 }
-.carousel-title img {
-    background-color: #F82360;
-    height: 40px;
-    padding: 5px;
-}
 @media screen and (max-width: 800px) {
     .carousel-title {
         font-size: 15px;
-    }
-    .carousel-title img {
-        height: 30px;
     }
 }
 @media screen and (min-width: 800px) {
@@ -103,7 +95,7 @@
     }
 }
 .card-title {
-    margin: 10px;
+    margin: 10px 0;
 }
 .card-content {
     box-shadow: 5px 5px 5px rgba(000, 000, 000, 0.5);
@@ -158,28 +150,28 @@
         width: auto;
         border-radius: 0 0 10px 10px;
         padding: 10px;
-        font-size: 18px;
+        font-size: 14px;
         line-height: 20px;
     }
 }
 @media screen and (max-width: 600px) {
     .card-info {
         height: 120px;
-        font-size: 16px;
+        font-size: 12px;
         line-height: 18px;
     }
 }
 @media screen and (max-width: 400px) {
     .card-info {
         height: 140px;
-        font-size: 14px;
+        font-size: 10px;
         line-height: 16px;
     }
 }
 .buttons {
     width: 0;
     height: 0;
-    margin: 20px;
+    margin: 0;
 }
 .button-prev {
     border-top: 40px solid transparent;

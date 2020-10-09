@@ -50,20 +50,7 @@ $(buttonNext1).click(function()
             i1 = indexImg1;
         }
     }
-);/*
-$(info).mouseenter(function()
-    {
-        info.css("background-color", "#E2B731");
-        info.css("height", "200px");
-    }
 );
-$(info).mouseleave(function()
-    {
-        info.css("background-color", "lightgray");
-        info.css("height", "50px");
-    }
-);*/
-
 /***CAROUSEL-02***/
 
 //Récupération des éléments du DOM
@@ -379,6 +366,112 @@ $(buttonNext7).click(function()
             currentPosition7.css("background-color", "#F82360");
         } else {
             i7 = indexImg7;
+        }
+    }
+);
+/***CAROUSEL-08***/
+
+//Récupération des éléments du DOM
+const carouselItem8 = $(".carousel-item-8");
+const buttonPrev8 = $("#button-prev-8");
+const buttonNext8 = $("#button-next-8");
+const position8 = $(".carousel-position-8");
+
+//Initialisation des variables
+let indexImg8 = carouselItem8.length - 1;
+let i8 = 0;
+let currentImg8 = carouselItem8.eq(i8);
+let currentPosition8 = position8.eq(i8);
+
+$(document).ready(function($)
+    {
+        carouselItem8.css("display", "none");
+        currentImg8.css("display", "block");
+        currentPosition8.css("background-color", "#F82360");
+    }
+);
+$(buttonPrev8).click(function()
+    {
+        i8--;
+        if (i8 >= 0) {
+            carouselItem8.css("display", "none");
+            currentImg8 = carouselItem8.eq(i8);
+            currentImg8.css("display", "block");
+
+            currentPosition8.css("background-color", "#222");
+            currentPosition8 = position8.eq(i8);
+            currentPosition8.css("background-color", "#F82360");
+        } else {
+            i8 = 0;
+        }
+    }   
+);
+$(buttonNext8).click(function()
+    {
+        i8++;
+        if (i8 <= indexImg8) {
+            carouselItem8.css("display", "none");
+            currentImg8 = carouselItem8.eq(i8);
+            currentImg8.css("display", "block");
+
+            currentPosition8.css("background-color", "#222");
+            currentPosition8 = position8.eq(i8);
+            currentPosition8.css("background-color", "#F82360");
+        } else {
+            i8 = indexImg8;
+        }
+    }
+);
+/***CAROUSEL-09***/
+
+//Récupération des éléments du DOM
+const carouselItem9 = $(".carousel-item-9");
+const buttonPrev9 = $("#button-prev-9");
+const buttonNext9 = $("#button-next-9");
+const position9 = $(".carousel-position-9");
+
+//Initialisation des variables
+let indexImg9 = carouselItem9.length - 1;
+let i9 = 0;
+let currentImg9 = carouselItem9.eq(i9);
+let currentPosition9 = position9.eq(i9);
+
+$(document).ready(function($)
+    {
+        carouselItem9.css("display", "none");
+        currentImg9.css("display", "block");
+        currentPosition9.css("background-color", "#F82360");
+    }
+);
+$(buttonPrev9).click(function()
+    {
+        i9--;
+        if (i9 >= 0) {
+            carouselItem9.css("display", "none");
+            currentImg9 = carouselItem9.eq(i9);
+            currentImg9.css("display", "block");
+
+            currentPosition9.css("background-color", "#222");
+            currentPosition9 = position9.eq(i9);
+            currentPosition9.css("background-color", "#F82360");
+        } else {
+            i9 = 0;
+        }
+    }   
+);
+$(buttonNext9).click(function()
+    {
+        i9++;
+        if (i9 <= indexImg9) {
+            carouselItem9.css("display", "none");
+            currentImg9 = carouselItem9.eq(i9);
+            currentImg9.css("display", "block");
+
+            currentPosition9.css("background-color", "#222");
+            currentPosition9 = position9.eq(i9);
+            currentPosition9.css("background-color", "#F82360");
+        } else {
+            i9 = indexImg9;
         }
     }
 );
