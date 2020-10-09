@@ -223,5 +223,10 @@ nav a{
         display: flex;
     }
 }
+@media screen and (max-width: 320px){
+    .navLogo a{
+        font-size: 15px;
+    }
+}
 
 
