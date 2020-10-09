@@ -66,48 +66,10 @@ main p{
     background-size: contain;
     background-position: right;
   }
-
-  #logoPhp {
-    display: flex;
-    background: url(media/php.png) no-repeat;
-    background-size: contain;
-    background-position: right;
-    align-content: center;
-  }
-
-  #calageLogoTitre {
-    margin-left: 6rem;
-  }
-
-  #logoPython {
-    display: flex;
-    background: url(media/pythonLogo.svg.png) no-repeat;
-    background-size: contain;
-    background-position: right;
-    align-content: center;
-  }
-  #logoRuby {
-    display: flex;
-    background: url(media/ruby.png) no-repeat;
-    background-size: contain;
-    background-position: right;
-    align-content: center;
-  }
-
-  #logoJava {
-    display: flex;
-    background: url(media/java.png) no-repeat;
-    background-size: contain;
-    background-position: right;
-    align-content: center;
-    margin-right: 20px;
-  }
-
-
   #title {
     display: flex;
   }
-  @media screen and (max-width: 1205px){
+  @media screen and (max-width: 1150px){
     .grid{
       display: grid;
       grid-template-columns: 40% 60%;
@@ -184,7 +146,7 @@ main h2 img {
   text-decoration: none;
   transition: color .5s;
   padding: 0px 10px;
-  text-shadow: 0px 5px 10px #e2b6312d;
+  text-shadow: 0px 5px 10px #3E2014;
 }
 .docSection h3:hover,
 .docSection a:hover,
@@ -198,28 +160,28 @@ main h2 img {
 }
 .borderSection{
   margin: 0;
+  box-shadow: 0px 5px 10px #3E2014;
   background: #EEEEFC;
-  border-radius: 10px;
 }
 .borderSection p {
-  padding: 0 10px 5px 10px;
+  padding: 10px;
   text-align: justify;
   text-indent: 3%;
 }
 @media screen and (max-width: 1205px){
   main{
-    margin: 20px 30px;
+    margin: 10px 30px;
   }
   .docSection h2,
   .formationSection h2,
   .exoSection,
-  .tutoSection{
-    font-size: 4vw;
-    justify-content: center;
-    margin: 0;
+  .tutoSection
+  {
+  justify-content: center;
+  margin: 0;
   }
-  .artIntro p, p{
-    font-size: 3vw;
+  .artIntro p{
+    font-size: 2.5vw;
   }
 }
 
