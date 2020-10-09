@@ -1,9 +1,13 @@
 main p {
     line-height: 1.3em;
+    text-indent: 3%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0 20px 0;
 }
-
 .imgFrontBack {
     width: 10rem;
+    margin:  20px 0 0 0;
 }
 
 #imgBack {
