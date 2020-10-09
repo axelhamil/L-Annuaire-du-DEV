@@ -98,6 +98,22 @@ main p{
     align-content: center;
     margin-right: 20px;
   }
+  #logoCss {
+    display: flex;
+    background: url(media/css.png) no-repeat;
+    background-size: contain;
+    background-position: right;
+    align-content: center;
+    margin-right: 20px;
+  }
+  #logoJavaScript{
+    display: flex;
+    background: url(media/logo.javascript.png) no-repeat;
+    background-size: contain;
+    background-position: right;
+    align-content: center;
+    margin-right: 20px;
+  }
 
 
   #title {
