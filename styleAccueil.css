@@ -83,7 +83,7 @@ main{
     main {
         font-size: 4vw;
         text-align: justify;
-        margin: 13% 0 3% 0;
+        margin: 15% 0 3% 0;
     }
     .grid {
         display: grid;
@@ -122,5 +122,12 @@ main{
         outline: none;
         text-decoration: none;
         border-radius: 30px;
+    }
+}
+@media screen and (max-width: 320px){
+    main {
+        font-size: 4vw;
+        text-align: justify;
+        margin: 18% 0 3% 0;
     }
 }
