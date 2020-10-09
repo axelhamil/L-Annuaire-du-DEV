@@ -200,6 +200,9 @@ nav a{
         margin-right: 60px;
         padding: 0;
     }
+    .navLogo a{
+        font-size: 18px;
+    }
     .subMenu {
         display: flex;
         justify-content: center;
