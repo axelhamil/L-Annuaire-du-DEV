@@ -68,9 +68,11 @@ main p{
   }
 
   #logoPhp {
+    display: flex;
     background: url(media/php.png) no-repeat;
     background-size: contain;
     background-position: right;
+    align-content: center;
   }
 
   #logoPython {
@@ -86,6 +88,15 @@ main p{
     background-size: contain;
     background-position: right;
     align-content: center;
+  }
+
+  #logoJava {
+    display: flex;
+    background: url(media/java.png) no-repeat;
+    background-size: contain;
+    background-position: right;
+    align-content: center;
+    margin-right: 20px;
   }
 
 
