@@ -65,61 +65,6 @@ main p{
     align-items: center;
     font-size: 3vw;
   }
-  #logoHtml {
-    background: url(media/logo-html.png) no-repeat;
-    background-size: contain;
-    background-position: right;
-  }
-
-  #logoPhp {
-    display: flex;
-    background: url(media/php.png) no-repeat;
-    background-size: contain;
-    background-position: right;
-    align-content: center;
-  }
-
-  #logoPython {
-    display: flex;
-    background: url(media/pythonLogo.svg.png) no-repeat;
-    background-size: contain;
-    background-position: right;
-    align-content: center;
-  }
-  #logoRuby {
-    display: flex;
-    background: url(media/ruby.png) no-repeat;
-    background-size: contain;
-    background-position: right;
-    align-content: center;
-  }
-
-  #logoJava {
-    display: flex;
-    background: url(media/java.png) no-repeat;
-    background-size: contain;
-    background-position: right;
-    align-content: center;
-    margin-right: 20px;
-  }
-  #logoCss {
-    display: flex;
-    background: url(media/css.png) no-repeat;
-    background-size: contain;
-    background-position: right;
-    align-content: center;
-    margin-right: 20px;
-  }
-  #logoJavaScript{
-    display: flex;
-    background: url(media/logo.javascript.png) no-repeat;
-    background-size: contain;
-    background-position: right;
-    align-content: center;
-    margin-right: 20px;
-  }
-
-
   #title {
     display: flex;
   }
