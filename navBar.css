@@ -43,7 +43,7 @@ nav a{
 }
 .navLogo a{
     justify-content: center;
-    font-size: 22px;
+    font-size: 18px;
     transition: color 1s;
 }
 .navLogo a:hover, #boxItem a:hover{
@@ -200,6 +200,9 @@ nav a{
         margin-right: 60px;
         padding: 0;
     }
+    .navLogo a{
+        font-size: 18px;
+    }
     .subMenu {
         display: flex;
         justify-content: center;
@@ -225,7 +228,7 @@ nav a{
 }
 @media screen and (max-width: 320px){
     .navLogo a{
-        font-size: 15px;
+        font-size: 10px;
     }
 }
 

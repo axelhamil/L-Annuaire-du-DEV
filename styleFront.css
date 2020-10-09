@@ -3,22 +3,17 @@ main p {
     text-indent: 3%;
     display: flex;
     align-items: center;
-    margin: 10px 0 20px 0;
+    margin: 10px 10px 20px 10px;
 }
 
 .imgFrontBack {
     width: 10rem;
-    margin: 40px 0 50px 0;
-}
-.language > a{
-    display: flex;
-    align-items: center;
+    margin: 40px 0 0px 0;
 }
 
 #imgFront {
     margin-top: 1rem;
     width: 25rem;
-    
 }
 
 section {
@@ -62,6 +57,9 @@ h1 {
         grid-template-columns: 1fr 4fr;
         gap: 20px;
     }
+    h1 {
+        margin-top: 0px;
+    }
 }
 @media screen and (max-width: 800px) {
     .nav-carousel-items {
@@ -78,8 +76,19 @@ h1 {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
     }
+    .nav-carousel {
+        padding-bottom : 0;
+        margin-bottom: 0;
+    }
     h1 {
         font-size: 4rem;
+    }
+    #imgFront {
+        width: 200px;
+        margin-top: 20px;
+    }
+    main {
+        margin-top: 20px;
     }
 }
 

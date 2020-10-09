@@ -55,75 +55,20 @@ main p{
   margin: 30px 0 0 0;
 }
 /*Grid Part*/
-  .grid{
-    display: grid;
-    grid-template-columns: 40% 60%;
-    font-size: 3.5vw;
-    margin: 0px 0 25px 0;
-  }
-  #logoHtml {
-    background: url(media/logo-html.png) no-repeat;
-    background-size: contain;
-    background-position: right;
-  }
-
-  #logoPhp {
+#description img {
+  width: 50px;
+  height: 50px;
+}
+  #description h1, #description img{
     display: flex;
-    background: url(media/php.png) no-repeat;
-    background-size: contain;
-    background-position: right;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
   }
-
-  #calageLogoTitre {
-    margin-left: 6rem;
-  }
-
-  #logoPython {
-    display: flex;
-    background: url(media/pythonLogo.svg.png) no-repeat;
-    background-size: contain;
-    background-position: right;
-    align-content: center;
-  }
-  #logoRuby {
-    display: flex;
-    background: url(media/ruby.png) no-repeat;
-    background-size: contain;
-    background-position: right;
-    align-content: center;
-  }
-
-  #logoJava {
-    display: flex;
-    background: url(media/java.png) no-repeat;
-    background-size: contain;
-    background-position: right;
-    align-content: center;
-    margin-right: 20px;
-  }
-  #logoCss {
-    display: flex;
-    background: url(media/css.png) no-repeat;
-    background-size: contain;
-    background-position: right;
-    align-content: center;
-    margin-right: 20px;
-  }
-  #logoJavaScript{
-    display: flex;
-    background: url(media/logo.javascript.png) no-repeat;
-    background-size: contain;
-    background-position: right;
-    align-content: center;
-    margin-right: 20px;
-  }
-
-
   #title {
     display: flex;
   }
-  @media screen and (max-width: 1205px){
+  @media screen and (max-width: 1150px){
     .grid{
       display: grid;
       grid-template-columns: 40% 60%;
@@ -200,7 +145,6 @@ main h2 img {
   text-decoration: none;
   transition: color .5s;
   padding: 0px 10px;
-  text-shadow: 0px 5px 10px #e2b6312d;
 }
 .docSection h3:hover,
 .docSection a:hover,
@@ -214,28 +158,34 @@ main h2 img {
 }
 .borderSection{
   margin: 0;
+  box-shadow: 0px 5px 10px #3E2014;
   background: #EEEEFC;
-  border-radius: 10px;
 }
 .borderSection p {
-  padding: 0 10px 5px 10px;
+  padding: 10px;
   text-align: justify;
   text-indent: 3%;
 }
 @media screen and (max-width: 1205px){
   main{
-    margin: 20px 30px;
+    margin: 40px 30px 20px 30px;
+  }
+  #description h1{
+    font-size: 6vw;
   }
   .docSection h2,
   .formationSection h2,
   .exoSection,
-  .tutoSection{
-    font-size: 4vw;
-    justify-content: center;
-    margin: 0;
+  .tutoSection
+  {
+  justify-content: center;
+  margin: 0;
   }
-  .artIntro p, p{
-    font-size: 3vw;
+  .artIntro p{
+    font-size: 4vw;
+  }
+  .navSommaire h2 {
+    font-size: 5vw;
   }
 }
 
