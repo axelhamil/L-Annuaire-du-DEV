@@ -66,10 +66,18 @@ main p{
     background-size: contain;
     background-position: right;
   }
+  #logoPython {
+    display: flex;
+    background: url(media/pythonLogo.svg.png) no-repeat;
+    background-size: contain;
+    background-position: right;
+    align-content: center;
+  }
+
   #title {
     display: flex;
   }
-  @media screen and (max-width: 1150px){
+  @media screen and (max-width: 1205px){
     .grid{
       display: grid;
       grid-template-columns: 40% 60%;
@@ -164,7 +172,7 @@ main h2 img {
   border-radius: 10px;
 }
 .borderSection p {
-  padding: 10px;
+  padding: 0 10px 5px 10px;
   text-align: justify;
   text-indent: 3%;
 }
