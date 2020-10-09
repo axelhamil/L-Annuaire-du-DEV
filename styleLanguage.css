@@ -66,6 +66,16 @@ main p{
     background-size: contain;
     background-position: right;
   }
+  #logoCss {
+    background: url(media/logo_css400.png) no-repeat;
+    background-size: contain;
+    background-position: right;
+  }
+  #logoJavaScript {
+    background: url(media/logo.javascript400.png) no-repeat;
+    background-size: contain;
+    background-position: right;
+  }
   #title {
     display: flex;
   }
