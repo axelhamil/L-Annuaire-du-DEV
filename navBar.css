@@ -46,8 +46,11 @@ nav a{
     font-size: 18px;
     transition: color 1s;
 }
-.navLogo a:hover, #boxItem a:hover{
-    color: #E2B731;
+.navLogo a:hover{
+    color: greenyellow;
+}
+#boxItem a:hover{
+    color: #F82360;
 }
 /* Menu mobile */
 .menu {
@@ -159,7 +162,7 @@ nav a{
         background:#E2B731;
     }
     .menu li:nth-child(4):hover, .menu li:nth-child(4) li:hover{
-        background: #E2B731;
+        background: #28A1ED;
     }
 /* les a href */
     .menu a{
