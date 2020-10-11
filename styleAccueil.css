@@ -67,9 +67,16 @@ main{
                     background-color 0.3s ease-out,
                     transform .5s ease;
     }
-    .ghost-button:hover,
-    .ghost-button:active{
-        background-color:#E2B731;
+    #item2 > a:hover,
+    #item2 > a:active{
+        background-color:#28A1ED;
+        transition: color 0.3s ease-in,
+                    background-color 0.2s ease-in;
+        transform : scale(1.1);
+    }
+    #item1 > a:hover,
+    #item1 > a:active{
+        background-color: #E2B731;;
         transition: color 0.3s ease-in,
                     background-color 0.2s ease-in;
         transform : scale(1.1);
