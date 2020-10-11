@@ -1,0 +1,189 @@
+main p {
+    line-height: 1.3em;
+}
+/*Nav Sommaire*/
+.navSommaire {
+    padding: 20px;
+    text-align: center;
+}
+.navSommaire h2 {
+    margin: 0 0 30px;
+    font-size: 3vw;
+}
+.navSommaireItems div a {
+    color: white;
+    text-decoration: none;
+}
+.navSommaireItems div {
+    background-color: #222;
+    border-radius: 15px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+}
+.navSommaireItems div:hover {
+    background-color: #28A1ED;
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 800px) {
+    .navSommaireItems {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .navSommaireItems {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .navSommaireItems {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+#description {
+    margin: 30px 0 0;
+}
+/*Grid Part*/
+#description img {
+    width: 50px;
+    height: 50px;
+}
+#description h1,
+#description img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+}
+#title {
+    display: flex;
+}
+@media screen and (max-width: 1150px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        font-size: 3.5vw;
+        margin: 110px 0 0;
+    }
+}
+@media screen and (max-width: 850px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        font-size: 3.5vw;
+        margin: 100px 0 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        font-size: 3.5vw;
+        margin: 50px 0 0;
+    }
+}
+/*Intro Part*/
+.artIntro h2 {
+    font-size: 3vw;
+    padding: 10px 0;
+}
+.artIntro p {
+    text-indent: 3%;
+    margin: 10px 0;
+    font-size: 1.3vw;
+    text-align: justify;
+}
+.artIntro p:nth-last-of-type(1) {
+    text-indent: 0;
+    font-size: 1vw;
+    display: flex;
+    justify-content: flex-end;
+}
+main {
+    margin: 0 5px 10px 0;
+}
+main h2 {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    font-size: 3vw;
+}
+.navSommaire > h2 {
+    justify-content: center;
+}
+.docSection h2,
+.exoSection,
+.formationSection h2,
+.tutoSection {
+    margin: 40px 0 0;
+}
+main h2 img {
+    margin: 20px 20px 20px 0;
+    border-radius: 10px;
+
+}
+.docSection a,
+.docSection h3,
+.exoSection a,
+.exoSection h3,
+.formationSection a,
+.formationSection h3,
+.tutoSection a,
+.tutoSection h3 {
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s;
+    padding: 0 10px;
+}
+.docSection a:hover,
+.docSection h3:hover,
+.exoSection a:hover,
+.exoSection h3:hover,
+.formationSection a:hover,
+.formationSection h3:hover,
+.tutoSection a:hover,
+.tutoSection h3:hover {
+    color: #E2B731;
+}
+.borderSection {
+    margin: 0;
+    box-shadow: 0 5px 10px #264354;
+    background: #28a1ed12;
+}
+.borderSection p {
+    padding: 10px;
+    text-align: justify;
+    text-indent: 3%;
+}
+@media screen and (max-width: 1205px) {
+    main {
+        margin: 40px 30px 20px;
+    }
+    #description h1 {
+        font-size: 6vw;
+    }
+    .docSection h2,
+    .exoSection,
+    .formationSection h2,
+    .tutoSection {
+        justify-content: center;
+        margin: 0;
+    }
+    .artIntro p {
+        font-size: 4vw;
+    }
+    .navSommaire h2 {
+        font-size: 5vw;
+    }
+}

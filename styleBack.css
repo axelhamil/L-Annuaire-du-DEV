@@ -40,7 +40,7 @@ h1 {
     line-height: 30px;
 }
 .nav-carousel-items div:hover {
-    background-color: #E2B731;
+    background-color: #28A1ED;;
     color: #222;
     transform: scale(1.1);
 }
