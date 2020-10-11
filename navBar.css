@@ -245,4 +245,88 @@ nav a{
     }
 }
 
-
+/***BOUTONS PAGES BACK-FRONT***/
+@media screen and (min-width: 800px) {
+    .buttons-liens {
+        display: flex;
+        justify-content: flex-end;
+        text-align: center;
+        margin: 30px;
+    }
+    .button-par-ici {
+        font-size: 15px;
+        font-weight: bold;
+        width: 300px;
+        padding: 10px;
+        height: 36px;
+        border-radius: 18px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .buttons-liens {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 30px;
+    }
+    .button-par-ici {
+        font-size: 12px;
+        font-weight: bold;
+        width: 300px;
+        padding: 9px;
+        height: 30px;
+        border-radius: 15px;
+    }
+}
+.button-front {
+    background-color: #E2B731;
+}
+.button-back {
+    background-color: #28A1ED;
+}
+.title-fb {
+    display: grid;
+    grid-template-columns: 1fr 6fr ;
+    background-color: lightgray;
+    align-items: center;
+    text-align: left;
+    margin-top: 30px;
+    font-size: 20px;
+}
+@media screen and (max-width: 800px) {
+    .title-fb {
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 800px) {
+    .triangle-front {
+        width: 100px;
+        height: 0;
+        border-bottom: 40px solid #E2B731;
+        border-right: 40px solid transparent;
+    }
+}
+@media screen and (max-width: 800px) {
+    .triangle-front {
+        width: 80px;
+        height: 0;
+        border-bottom: 30px solid #E2B731;
+        border-right: 30px solid transparent;
+    }
+}
+@media screen and (min-width: 800px) {
+    .triangle-back {
+        width: 100px;
+        height: 0;
+        border-bottom: 40px solid #28A1ED;
+        border-right: 40px solid transparent;
+    }
+}
+@media screen and (max-width: 800px) {
+    .triangle-back {
+        width: 80px;
+        height: 0;
+        border-bottom: 30px solid #28A1ED;
+        border-right: 30px solid transparent;
+    }
+}

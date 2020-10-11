@@ -24,6 +24,9 @@
     color: white;
     padding: 5px;
 }
+.nav-carousel-items a {
+    text-decoration: none;
+}
 .nav-carousel-items div:hover {
     background-color: #F82360;
     transform: scale(1.1);
@@ -134,19 +137,29 @@
     color: #222;
     text-align: center;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1200px) {
     .card-info {
         height: auto;
-        width: 300px;
+        width: 400px;
         border-radius: 0 15px 15px 0;
-        padding: 30px 10px 10px 10px;
-        font-size: 20px;
-        line-height: 25px;
+        padding: 20px 10px 10px 10px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .card-info {
+        height: auto;
+        width: 350px;
+        border-radius: 0 15px 15px 0;
+        padding: 20px 10px 10px 10px;
+        font-size: 16px;
+        line-height: 22px;
     }
 }
 @media screen and (max-width: 800px) {
     .card-info {
-        height: 100px;
+        height: 120px;
         width: auto;
         border-radius: 0 0 10px 10px;
         padding: 10px;
@@ -156,8 +169,8 @@
 }
 @media screen and (max-width: 600px) {
     .card-info {
-        height: 120px;
-        font-size: 12px;
+        height: 140px;
+        font-size: 11px;
         line-height: 18px;
     }
 }
@@ -174,11 +187,13 @@
     margin: 0;
 }
 .button-prev {
+    margin-right: 10px;
     border-top: 40px solid transparent;
     border-bottom: 40px solid transparent;
     border-right: 40px solid #222;
 }
 .button-next {
+    margin-left: 10px;
     border-top: 40px solid transparent;
     border-bottom: 40px solid transparent;
     border-left: 40px solid #222;
