@@ -1,230 +1,243 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="styleLanguageBack.css" rel="stylesheet">
-        <link href="navBar.css" rel="stylesheet">
-        <link href="footer.css" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script>
-            $(function () {
-                $(".toggle").on("click", function () {
-                    if ($(".item").hasClass("active")) {
-                        $(".item").removeClass("active");
-                    } else {
-                        $(".item").addClass("active");
-                    }
-                })
-            });
-        </script>
-        <title>Ruby</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul class="menu">
-                    <li>
-                        <a href="index.html"><img class="imgNavbar" alt="logo du site" src="media/logo_annuaire_du_dev.png"></a>
-                    </li>
-                    <li class="navLogo">
-                        <a href="index.html">L'Annuaire du DEV</a>
-                    </li>
-                    <li class="item">
-                        <a href="front.html">Front-End</a>
-                        <ul class="subMenu">
-                            <li>
-                                <a class="subItem" href="PageLanguage.html">HTML</a>
-                            </li>
-                            <li>
-                                <a class="subItem" href="PageCSS.html">CSS</a>
-                            </li>
-                            <li>
-                                <a class="subItem" href="javaScript.html">JavaScript</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="item">
-                        <a href="back.html">Back-End</a>
-                        <ul class="subMenu">
-                            <li>
-                                <a class="subItem" href="php.html">PHP</a>
-                            </li>
-                            <li>
-                                <a class="subItem" href="java.html">Java</a>
-                            </li>
-                            <li>
-                                <a class="subItem" href="python.html">Python</a>
-                            </li>
-                            <li>
-                                <a class="subItem" href="ruby.html">Ruby</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li id="boxItem" class="item">
-                        <a href="outilsDuDevWeb.html">Boite à Outils</a>
-                    </li>
-                    <li class="toggle">
-                        <span class="bars"></span></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="description">
-                <h1><img src="media/ruby.png" alt="illustration">Ruby</h1>
-                </div>
-                <article class="artIntro">
-                    <h2>
-                        Qu'est-ce que ce language?
-                    </h2>
-                    <p>
-                        Ruby c’est ce langage de programmation libre publié en 1995 avec un paradigme fort: tout est objet. 
-                        Ce langage de script épuré a connu son heure de gloire avec l’expansion du web, notamment après la publication du framework Ruby on Rails (RoR) en 2005. 
-                        Mais alors… pourquoi ne pas utiliser Ruby ? S’il a été désigné comme langage de l’année 2006 par l’index TIOBE, Ruby reste bien moins utilisé que Java, Python, 
-                        JavaScript ou encore PHP (n.b. avec le framework web Symfony, concurrent de RoR).
-                    </p>
-                    <p>
-                        Finalement, tous ces avantages peuvent se retrouver dans d’autres langages et frameworks, 
-                        et notamment en JavaScript qui offre l’avantage d’être utile aussi bien pour le frontend que pour le backend. 
-                        Finalement, Ruby serait-il le langage de trop ? Celui que l’on a envie d’apprendre, mais dont on n’a jamais réellement besoin ? 
-                        De plus, malgré sa modularité et sa simplicité, Ruby n’est pas si simple lorsqu’il s’agit de mettre à l’échelle une application 
-                        (notamment à cause du typage dynamique). Enfin, sa flexibilité devient un défaut lorsque l’on en vient à évaluer les performances 
-                        du langage et sa lenteur en fait un language de backend de prototypage pour des entreprises qui recherchent l’efficacité et la rapidité que 
-                        l’on peut avoir avec Java, C++ ou Go.
-                    </p>
-                    <p>
-                        Même si c’est un langage très intéressant et encore très populaire, 
-                        Ruby n’est plus désormais le “petit nouveau à la mode”. Il s’est trouvé des concurrents qui ont réussi à le battre en 
-                        termes d’usages et de performances. Même si Ruby est simple, il ne l’est pas assez pour de petits scripts ou prototypes et l’est 
-                        trop pour de gros projets qui nécessitent de la maintenance. In fine, il sera toujours intéressant pour un développeur d’apprendre Ruby au moins pour en comprendre 
-                        les fondements et concepts créateurs… mais moins pour les futurs usages qu’il pourra en faire.
-                        “Mieux vaut rater sa chance que de ne pas l’avoir tentée”
-                    </p>
-                    <p>
-                        source : "Wikipédia"
-                    </p>
-                </article>
-            </section>
-            <section class="navSommaire">
-                <h2>Sommaire</h2>
-                <div class="navSommaireItems">
-                    <div><a href="#documentation">Documentation</a></div>
-                    <div><a href="#Former">Se Former</a></div>
-                    <div><a href="#exercices">Exercices</a></div>
-                    <div><a href="#tutos">Tuto Vidéo</a></div>
-                </div>
-                <div id="documentation"></div>
-            </section>
-                    <section class= "docSection">
-                        <h2><img src="media/logo_documentation100.jpg" alt="illustration">Documentation</h2>
-                        <div class="borderSection">
-                            <a href="https://ruby-doc.org"><h3>Ruby Doc</h3></a>
-                            <p>                   
-                                Site disposant de toute la documentation du language. Ruby est un langage de programmation orienté objet 
-                                interprété souvent utilisé pour le développement Web. Il offre également de nombreuses fonctionnalités de script pour 
-                                raiter du texte brut et des fichiers sérialisés, ou gérer les tâches système. C'est simple, direct et extensible.
-                            </p>
-                        </div>
-                    </section>
-                    <div id="Former"></div>
-                    <section class= "formationSection">
-                        <h2><img src="media/iconSeFormer100.jpeg" alt="illustration">Se former</h2>
-                        <div class="borderSection">
-                            <a href="https://rubyrails.ninja/formations"><h3>Ruby & Rails</h3></a>               
-                            <p>
-                                Diplomé en informatique, spécialisation en intelligence artificielle, 
-                                je travail dans la DSI d'un grand groupe de CAC40 depuis plus de 12 ans. 
-                                J'y ai occupé différents postes techniques sur différents périmètres fonctionnels. 
-                                C'est assez naturellement que je me suis dirigé vers le web (webanalytics, emailing,..) 
-                                car je "bricole" beaucoup durant mes loisirs (création d'applications web, développement, ..). 
-                                Et finalement le webmarketing car créer des produits c'est bien, mais les vendre c'est mieux. ``
-                                Je m'intéresse à beaucoup de domaines techniques (blockchain, machine learning, automatisation, ...)
-                            </p>
-                            
-                            <a href="https://www.codecademy.com/learn/learn-ruby"><h3>Codecademy</h3></a>                         
-                            <p>Site en Anglais 
-                                You will learn all the common HTML tags used to structure HTML pages, 
-                                the skeleton of all websites. You will also be able to create HTML 
-                                tables to present tabular data efficiently.
-                            </p>
-                            <a href="https://openclassrooms.com/fr/"><h3>OpenClassrooms</h3></a>                          
-                            <p>
-                                OpenClassrooms est un site web de formation en ligne qui propose à ses membres des cours certifiants et des parcours débouchant sur des métiers en croissance. Ses contenus sont réalisés en interne, par des écoles, des universités, des entreprises partenaires comme Microsoft ou IBM, ou historiquement par des bénévoles.
-                            </p>
-                        </div>
-                    </section>
-                    <div id="exercices"></div>
-                    <section class= "exoSection">
-                        <h2><img src="media/logo_exercices100.jpg" alt="illustration">Entrainez-vous</h2>
-                        <div class="borderSection">
-                            <a href="https://www.codewars.com/dashboard"><h3>CodeWars</h3></a>                            
-                            <p>
-                                Codewars est une communauté d'apprentissage pour les développeurs informatiques. 
-                                Sur la plateforme, les développeurs se perfectionnent en résolvant des exercices de programmation appelés kata. 
-                                Ces exercices ciblent des compétences informatiques variées disponibles dans de nombreux langages et les développeurs les complètent au moyen d'un EDI en ligne. 
-                                Les développeurs peuvent comparer leurs solutions et créer leurs propres kata. Les katas sont classés par ordre de difficulté, 
-                                allant de 8e KYU (le niveau d'entrée) à 1er KYU (le plus haut niveau actuel).
-                            </p>
-                        </div>
-                    </section>
-                    <div id="tutos"></div>
-                    <section class= "tutoSection">
-                        <h2><img src="media/icon_tutoVideo100.png" alt="illustration">Vidéos / Tutos</h2>
-                        <div class="borderSection">
-                            <a href="https://www.grafikart.fr/formations/ruby"><h3>Grafikart</h3></a>                            
-                            <p>
-                                Apprenez de nouvelles choses. Améliorez-vous et apprenez de nouvelles choses grâce à 
-                                568 heures de tutoriels vidéos gratuits. Voir tous les tutoriels Débuter ...
-                            </p>
-                            <a href="https://fr.tuto.com/ruby/"><h3>Tuto.com</h3></a>   
-                            <p>                      
-                                L’entreprise a été créée fin 2009 par des entrepreneurs trentenaires geeks et passionnés. 
-                                Baignant dans le monde de l’informatique depuis leur plus jeune âge et jouant déjà sur les premiers 
-                                Commodore 64 dans les années 80. Une équipe partageant des valeurs basées sur la qualité du produit proposé et l’écoute du client.                            
-                            </p>
-                        </div>
-                    </section>  
-        </main>
-        <footer class="contenuFooter" >
-            <div class="bloc footerSommaire">
-                <h3>Sommaire</h3>
-                <ul class="listPages">
-                    <li>
-                        <a href="index.html">Page d'Accueil</a>
-                    </li>
-                    <li>
-                        <a href="front.html">Front-end</a>
-                    </li>
-                    <li>
-                        <a href="back.html">Back-End</a>
-                    </li>
-                    <li>
-                        <a href="outilsDuDevWeb.html">Boite à Outils</a>
-                    </li>
-                </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styleLanguageBack.css" rel="stylesheet">
+    <link href="navBar.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <script>
+        $(function () {
+            $(".toggle").on("click", function () {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            })
+        });
+    </script>
+    <title>Ruby</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="index.html"><img class="imgNavbar" alt="logo du site" src="media/logo_annuaire_du_dev.png"></a>
+                </li>
+                <li class="navLogo">
+                    <a href="index.html">L'Annuaire du DEV</a>
+                </li>
+                <li class="item">
+                    <a href="front.html">Front-End</a>
+                    <ul class="subMenu">
+                        <li>
+                            <a class="subItem" href="PageLanguage.html">HTML</a>
+                        </li>
+                        <li>
+                            <a class="subItem" href="PageCSS.html">CSS</a>
+                        </li>
+                        <li>
+                            <a class="subItem" href="javaScript.html">JavaScript</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <a href="back.html">Back-End</a>
+                    <ul class="subMenu">
+                        <li>
+                            <a class="subItem" href="php.html">PHP</a>
+                        </li>
+                        <li>
+                            <a class="subItem" href="java.html">Java</a>
+                        </li>
+                        <li>
+                            <a class="subItem" href="python.html">Python</a>
+                        </li>
+                        <li>
+                            <a class="subItem" href="ruby.html">Ruby</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="boxItem" class="item">
+                    <a href="outilsDuDevWeb.html">Boite à Outils</a>
+                </li>
+                <li class="toggle">
+                    <span class="bars"></span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="description">
+            <h1 class="title-page"><img src="media/ruby.png" alt="illustration">RUBY</h1>
+            <article class="artIntro">
+                <h2>Qu'est-ce que ce language?</h2>
+                <p>
+                    Ruby c’est ce langage de programmation libre publié en 1995 avec un paradigme fort: tout est objet. 
+                    Ce langage de script épuré a connu son heure de gloire avec l’expansion du web, notamment après la publication du framework Ruby on Rails (RoR) en 2005. 
+                    Mais alors… pourquoi ne pas utiliser Ruby ? S’il a été désigné comme langage de l’année 2006 par l’index TIOBE, Ruby reste bien moins utilisé que Java, Python, 
+                    JavaScript ou encore PHP (n.b. avec le framework web Symfony, concurrent de RoR).
+                </p>
+                <p>
+                    Finalement, tous ces avantages peuvent se retrouver dans d’autres langages et frameworks, 
+                    et notamment en JavaScript qui offre l’avantage d’être utile aussi bien pour le frontend que pour le backend. 
+                    Finalement, Ruby serait-il le langage de trop ? Celui que l’on a envie d’apprendre, mais dont on n’a jamais réellement besoin ? 
+                    De plus, malgré sa modularité et sa simplicité, Ruby n’est pas si simple lorsqu’il s’agit de mettre à l’échelle une application 
+                    (notamment à cause du typage dynamique). Enfin, sa flexibilité devient un défaut lorsque l’on en vient à évaluer les performances 
+                    du langage et sa lenteur en fait un language de backend de prototypage pour des entreprises qui recherchent l’efficacité et la rapidité que 
+                    l’on peut avoir avec Java, C++ ou Go.
+                </p>
+                <p>
+                    Même si c’est un langage très intéressant et encore très populaire, 
+                    Ruby n’est plus désormais le “petit nouveau à la mode”. Il s’est trouvé des concurrents qui ont réussi à le battre en 
+                    termes d’usages et de performances. Même si Ruby est simple, il ne l’est pas assez pour de petits scripts ou prototypes et l’est 
+                    trop pour de gros projets qui nécessitent de la maintenance. In fine, il sera toujours intéressant pour un développeur d’apprendre Ruby au moins pour en comprendre 
+                    les fondements et concepts créateurs… mais moins pour les futurs usages qu’il pourra en faire.
+                    “Mieux vaut rater sa chance que de ne pas l’avoir tentée”
+                </p>
+                <p>
+                    source : "Wikipédia"
+                </p>
+            </article>
+        </section>
+        <section class="navSommaire">
+            <h2>Sommaire</h2>
+            <div class="navSommaireItems">
+                <div><a href="#documentation">Documentation</a></div>
+                <div><a href="#Former">Se Former</a></div>
+                <div><a href="#exercices">Exercices</a></div>
+                <div><a href="#tutos">Tuto Vidéo</a></div>
             </div>
-            <div class="bloc footerContact">
-                <h3>Restons en Contact</h3>
-                <p>support@contact.com</p>
-                <p>4 rue des Wilders, Tours, 37000</p>
+            <div id="documentation"></div>
+        </section>
+        <section class= "docSection">
+            <h2><img src="media/logo_documentation100.jpg" alt="illustration">Documentation</h2>
+            <div class="borderSection">
+                <a href="https://ruby-doc.org">
+                    <h3>Ruby Doc</h3>
+                </a>
+                <p>                   
+                    Site disposant de toute la documentation du language. Ruby est un langage de programmation orienté objet 
+                    interprété souvent utilisé pour le développement Web. Il offre également de nombreuses fonctionnalités de script pour 
+                    raiter du texte brut et des fichiers sérialisés, ou gérer les tâches système. C'est simple, direct et extensible.
+                </p>
             </div>
-            <div class="bloc footerSociaux">
-                <h3>Nos Réseaux</h3>
-                <ul class="listSociaux">
-                    <li>
-                        <a href="#"><img src="media/Facebook.svg" alt="icone réseaux sociaux"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="media/Twitter.svg" alt="icone réseaux sociaux"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="media/Instagram.svg" alt="icone réseaux sociaux"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="media/GitHub.png" alt="icone réseaux sociaux"></a>
-                    </li>
-                </ul>
+        </section>
+        <div id="Former"></div>
+        <section class= "formationSection">
+            <h2><img src="media/iconSeFormer100.jpeg" alt="illustration">Se former</h2>
+            <div class="borderSection">
+                <a href="https://rubyrails.ninja/formations">
+                    <h3>Ruby & Rails</h3>
+                </a>               
+                <p>
+                    Diplomé en informatique, spécialisation en intelligence artificielle, 
+                    je travail dans la DSI d'un grand groupe de CAC40 depuis plus de 12 ans. 
+                    J'y ai occupé différents postes techniques sur différents périmètres fonctionnels. 
+                    C'est assez naturellement que je me suis dirigé vers le web (webanalytics, emailing,..) 
+                    car je "bricole" beaucoup durant mes loisirs (création d'applications web, développement, ..). 
+                    Et finalement le webmarketing car créer des produits c'est bien, mais les vendre c'est mieux. ``
+                    Je m'intéresse à beaucoup de domaines techniques (blockchain, machine learning, automatisation, ...)
+                </p>
+                
+                <a href="https://www.codecademy.com/learn/learn-ruby">
+                    <h3>Codecademy</h3>
+                </a>                         
+                <p>Site en Anglais 
+                    You will learn all the common HTML tags used to structure HTML pages, 
+                    the skeleton of all websites. You will also be able to create HTML 
+                    tables to present tabular data efficiently.
+                </p>
+                <a href="https://openclassrooms.com/fr/">
+                    <h3>OpenClassrooms</h3>
+                </a>                          
+                <p>
+                    OpenClassrooms est un site web de formation en ligne qui propose à ses membres des cours certifiants et des parcours débouchant sur des métiers en croissance. Ses contenus sont réalisés en interne, par des écoles, des universités, des entreprises partenaires comme Microsoft ou IBM, ou historiquement par des bénévoles.
+                </p>
             </div>
-        </footer>
-    </body>
+        </section>
+        <div id="exercices"></div>
+        <section class= "exoSection">
+            <h2><img src="media/logo_exercices100.jpg" alt="illustration">Entrainez-vous</h2>
+            <div class="borderSection">
+                <a href="https://www.codewars.com/dashboard">
+                    <h3>CodeWars</h3>
+                </a>                            
+                <p>
+                    Codewars est une communauté d'apprentissage pour les développeurs informatiques. 
+                    Sur la plateforme, les développeurs se perfectionnent en résolvant des exercices de programmation appelés kata. 
+                    Ces exercices ciblent des compétences informatiques variées disponibles dans de nombreux langages et les développeurs les complètent au moyen d'un EDI en ligne. 
+                    Les développeurs peuvent comparer leurs solutions et créer leurs propres kata. Les katas sont classés par ordre de difficulté, 
+                    allant de 8e KYU (le niveau d'entrée) à 1er KYU (le plus haut niveau actuel).
+                </p>
+            </div>
+        </section>
+        <div id="tutos"></div>
+        <section class= "tutoSection">
+            <h2><img src="media/icon_tutoVideo100.png" alt="illustration">Vidéos / Tutos</h2>
+            <div class="borderSection">
+                <a href="https://www.grafikart.fr/formations/ruby">
+                    <h3>Grafikart</h3>
+                </a>                            
+                <p>
+                    Apprenez de nouvelles choses. Améliorez-vous et apprenez de nouvelles choses grâce à 
+                    568 heures de tutoriels vidéos gratuits. Voir tous les tutoriels Débuter ...
+                </p>
+                <a href="https://fr.tuto.com/ruby/">
+                    <h3>Tuto.com</h3>
+                </a>   
+                <p>                      
+                    L’entreprise a été créée fin 2009 par des entrepreneurs trentenaires geeks et passionnés. 
+                    Baignant dans le monde de l’informatique depuis leur plus jeune âge et jouant déjà sur les premiers 
+                    Commodore 64 dans les années 80. Une équipe partageant des valeurs basées sur la qualité du produit proposé et l’écoute du client.                            
+                </p>
+            </div>
+        </section>  
+    </main>
+    <footer class="contenuFooter" >
+        <div class="bloc footerSommaire">
+            <h3>Sommaire</h3>
+            <ul class="listPages">
+                <li>
+                    <a href="index.html">Page d'Accueil</a>
+                </li>
+                <li>
+                    <a href="front.html">Front-end</a>
+                </li>
+                <li>
+                    <a href="back.html">Back-End</a>
+                </li>
+                <li>
+                    <a href="outilsDuDevWeb.html">Boite à Outils</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bloc footerContact">
+            <h3>Restons en Contact</h3>
+            <p>support@contact.com</p>
+            <p>4 rue des Wilders, Tours, 37000</p>
+        </div>
+        <div class="bloc footerSociaux">
+            <h3>Nos Réseaux</h3>
+            <ul class="listSociaux">
+                <li>
+                    <a href="#"><img src="media/Facebook.svg" alt="icone réseaux sociaux"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="media/Twitter.svg" alt="icone réseaux sociaux"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="media/Instagram.svg" alt="icone réseaux sociaux"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="media/GitHub.png" alt="icone réseaux sociaux"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
 </html>

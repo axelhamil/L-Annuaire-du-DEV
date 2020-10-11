@@ -1,21 +1,3 @@
-.nav-carousel {
-    text-align: center;
-}
-@media screen and (min-width: 1205px) {
-    .nav-carousel {
-        padding: 30px 20px 20px 20px;
-    }
-}
-@media screen and (max-width: 1205px) {
-    .nav-carousel {
-        padding: 60px 20px 20px 20px;
-    }
-}
-.nav-carousel-title{
-    font-size: 30px;
-    padding: 20px;
-    text-transform: uppercase;
-}
 .nav-carousel-items div {
     background-color: #222;
     border-radius: 15px;

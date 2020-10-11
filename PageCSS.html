@@ -1,282 +1,311 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="styleLanguage.css" rel="stylesheet">
-        <link href="navBar.css" rel="stylesheet">
-        <link href="footer.css" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script>
-            $(function () {
-                $(".toggle").on("click", function () {
-                    if ($(".item").hasClass("active")) {
-                        $(".item").removeClass("active");
-                    } else {
-                        $(".item").addClass("active");
-                    }
-                })
-            });
-        </script>
-        <title>CSS</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul class="menu">
-                    <li>
-                        <a href="index.html"><img class="imgNavbar" alt="logo du site" src="media/logo_annuaire_du_dev.png"></a>
-                    </li>
-                    <li class="navLogo">
-                        <a href="index.html">L'Annuaire du DEV</a>
-                    </li>
-                    <li class="item">
-                        <a href="front.html">Front-End</a>
-                        <ul class="subMenu">
-                            <li>
-                                <a class="subItem" href="PageLanguage.html">HTML</a>
-                            </li>
-                            <li>
-                                <a class="subItem" href="PageCSS.html">CSS</a>
-                            </li>
-                            <li>
-                                <a class="subItem" href="javaScript.html">JavaScript</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="item">
-                        <a href="back.html">Back-End</a>
-                        <ul class="subMenu">
-                            <li>
-                                <a class="subItem" href="php.html">PHP</a>
-                            </li>
-                            <li>
-                                <a class="subItem" href="java.html">Java</a>
-                            </li>
-                            <li>
-                                <a class="subItem" href="python.html">Python</a>
-                            </li>
-                            <li>
-                                <a class="subItem" href="ruby.html">Ruby</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li id="boxItem" class="item">
-                        <a href="outilsDuDevWeb.html">Boite à Outils</a>
-                    </li>
-                    <li class="toggle">
-                        <span class="bars"></span></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="description">
-                <h1><img src="media/css.png" alt="illustration">CSS</h1>
-                </div>
-                <article class="artIntro">
-                    <h2>
-                        Qu'est-ce que ce language?
-                    </h2>
-                    <p>
-                        CSS est l'un des langages principaux du Web ouvert et a été standardisé par le W3C.
-                        Ce standard évolue sous forme de niveaux (levels), CSS1 est désormais considéré comme obsolète, 
-                        CSS2.1 correspond à la recommandation et CSS3, qui est découpé en modules plus petits, 
-                        est en voie de standardisation.</p>
-                    <p>
-                        Les Cascading StyleSheets — ou CSS — (Feuilles de style en cascade) sont la première technique à apprendre après le HTML. 
-                        Alors que HTML s'utilise pour définir la structure et la sémantique du contenu, 
-                        les CSS sont employées pour composer et déterminer l'apparence de ce contenu.
-                    </p>
-                    <p>
-                        Ainsi par exemple, vous utiliserez les CSS pour modifier les polices, la couleur, la taille et l'espacement de votre contenu,
-                        pour le répartir sur plusieurs colonnes ou bien pour ajouter des animations et autres fonctionnalités décoratives.
-                    </p>
-                    <p>
-                        source : "developer.mozilla.org"
-                    </p>
-                </article>
-            </section>
-            <section class="navSommaire">
-                <h2>Sommaire</h2>
-                <div class="navSommaireItems">
-                    <div><a href="#documentation">Documentation</a></div>
-                    <div><a href="#Former">Se Former</a></div>
-                    <div><a href="#exercices">Exercices</a></div>
-                    <div><a href="#tutos">Tuto Vidéo</a></div>
-                </div>
-                <div id="documentation"></div>
-            </section>
-                    <section class= "docSection">
-                        <h2><img src="media/logo_documentation100.jpg" alt="illustration">Documentation</h2>
-                        <div class="borderSection">
-                            <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Reference"><h3>Developpeur Mozilla</h3></a>   
-                            <p>
-                                Cette référence CSS fournit un index alphabétique de toutes les propriétés CSS standards, 
-                                des pseudo-classes, des pseudo-éléments, des types de données et des règles @. 
-                                Vous pouvez également trouver une liste alphabétique de tous les sélecteurs CSS par type 
-                                et une liste des concepts clés de CSS. Enfin est inclus un bref sommaire de référence sur DOM-CSS / CSSOM.
-                            </p> 
-                        </div>
-                    </section>
-                    <div id="Former"></div>
-                    <section class= "formationSection">
-                        <h2><img src="media/iconSeFormer100.jpeg" alt="illustration">Se former</h2>
-                        <div class="borderSection">
-                            <a href="https://developer.mozilla.org/fr/docs/Web/CSS"><h3>Developpeur Mozilla</h3></a>   
-                            <P>
-                                Les Cascading StyleSheets — ou CSS — (Feuilles de style en cascade) sont la première technique à apprendre après le HTML. 
-                                Alors que HTML s'utilise pour définir la structure et la sémantique du contenu, 
-                                les CSS sont employées pour composer et déterminer l'apparence de ce contenu. 
-                            </P>  
-                            <a href="https://www.w3schools.com/css/default.asp"><h3>w3schools</h3></a>  
-                            <p>                      
-                                Site en Anglais. 
-                                CSS est le langage que nous utilisons pour styliser un document HTML.
-                                CSS décrit comment les éléments HTML doivent être affichés.
-                                Ce tutoriel vous apprendra le CSS de base à avancé.
-                            </p>                                                
-                            <a href="https://www.codecademy.com/learn/learn-css"><h3> codecademy</h3></a>                           
-                            <p> 
-                                Site en Anglais. 
-                                Vous apprendrez de nombreux aspects du style des pages Web. Vous serez en mesure de configurer la structure de fichiers appropriée,
-                                modifiez le texte et les couleurs et créez des mises en page attrayantes. Avec ces compétences,
-                                vous pourrez personnaliser l’aspect de vos pages Web en fonction de vos besoins. 
-                            </p>                       
-                            <a href="https://www.theodinproject.com/courses/html-and-css"><h3>theodinproject</h3></a>                           
-                            <p> 
-                                Site en Anglais.
-                                Une bonne conception Web ne se produit pas par accident.
-                                Apprenez à faire en sorte que tout ce travail que vous avez effectué sur le backend soit superbe dans un navigateur Web! 
-                                Vous serez équipé pour comprendre en profondeur et créer vos propres cadres de conception.
-                            </p>
-                            <a href="https://www.freecodecamp.org/learn"><h3>freecodecamp</h3></a>  
-                            <p>                         
-                                freeCodeCamp est une organisation à but non lucratif qui se compose 
-                                d'une plate-forme Web d'apprentissage interactive ayant pour objectif de rendre l'apprentissage du développement Web 
-                                accessible à tous. freeCodeCamp est un chemin éprouvé vers votre premier emploi de développeur de logiciels.
-                            </p>                              
-                            <a href="https://openclassrooms.com/fr/"><h3>openclassrooms</h3></a>  
-                            <p>                       
-                                OpenClassrooms est un site web de formation en ligne qui propose à ses membres des cours certifiants. 
-                                Devenez qui vous voulez être avec OpenClassrooms. Choisissez votre carrière.
-                                suivez une formation constituée de projets professionnalisants et de séances individuelles avec un mentor dédié chaque semaine. 
-                                Obtenez un diplôme reconnu par l'état. Enrichissez votre CV avec les programmes en alternance proposés par OpenClassrooms
-                                et gagnez un salaire tout en suivant votre formation.
-                            </p>
-                            <a href="https://www.internetingishard.com/html-and-css/"><h3>internetingishard</h3></a> 
-                            <p>
-                                Tutoriels de développement Web conviviaux pour les débutants. Apprendre à coder ne devrait pas être difficile. 
-                                Nous vous facilitons la tâche en rassemblant un ensemble complet de didacticiels de développement Web 
-                                pour aider à transformer les débutants en professionnels talentueux de l’Internet. 
-                                Nous avons le programme, tout ce dont vous avez besoin est la motivation pour commencer à le lire.
-                            </p>  
-                            <a href="https://css-tricks.com/snippets/css/"><h3>css-tricks.com</h3></a>                            
-                            <p>
-                                CSS-Tricks consiste vraiment à créer des sites Web et tout ce que cela implique, 
-                                principalement d'un point de vue frontal. Nos guides approfondis sur les sujets de développement Web. 
-                                Ce ne sont pas des explications au niveau de la surface, elles représentent à peu près tout ce que vous devez savoir sur ces sujets 
-                                en tant que développeur Web.
-                            </p>
-                            <a href="https://www.sololearn.com/Course/CSS/"><h3>sololearn</h3></a>  
-                            <p>                       
-                                Site en Anglais. 
-                                Notre cours CSS vous apprendra à contrôler le style et la mise en page des sites Web.
-                                Effectuez une série d'exercices et entrainez-vous tout en remplissant des modèles CSS réels.
-                                Parcourez un contenu soigneusement sélectionné, répondez aux quiz interactifs, accumulez des points de contrôle,
-                                effectuez des exercices divertissants. 
-                                Que vous souhaitiez acquérir une nouvelle compétence pour faire avancer votre carrière ou simplement apprendre 
-                                quelque chose de nouveau, nous vous garantissons que vous apprécierez d'apprendre tout en jouant 
-                                et en jouant tout en apprenant avec notre tutoriel CSS!
-                            </p>
-                        </div>
-                    </section>
-                    <div id="exercices"></div>
-                    <section class= "exoSection">
-                        <h2><img src="media/logo_exercices100.jpg" alt="illustration">Entrainez-vous</h2>
-                        <div class="borderSection">
-                            <a href="https://www.freecodecamp.org/learn"><h3>Freecodecamp</h3></a>                            
-                            <p>
-                                freeCodeCamp est une organisation à but non lucratif qui se compose 
-                                d'une plate-forme Web d'apprentissage interactive ayant pour objectif de rendre le développement Web 
-                                d'apprentissage accessible à tous.
-                            </p>
-                            <a href="https://fr.khanacademy.org/computing/computer-programming/html-css"><h3>Khanacademy</h3></a>                           
-                            <p>
-                                Khan Academy est une association à but non lucratif fondée en 2008 par Salman Khan. 
-                                Sur le principe de « fournir un enseignement de grande qualité à tous, partout », le site web publie en ligne un ensemble gratuit 
-                                de plus de 2 200 mini-leçons, via des tutoriels vidéo hébergés sur YouTube.
-                                Cours interactif, avec beaucoup d'aide. Possibilité de mettre en français. Il y a également une appli.
-                            </p>
-                            <a href="https://codecombat.com/home"><h3>codecombat</h3></a>                            
-                            <p>
-                                Notre mission: faire en sorte que la programmation soit accessible à chaque élève sur la Terre.
-                                Jeux de rôles sur navigateur. Ce dernier enseigne différents langages de programmation 
-                                (JavaScript, CSS, HTML, Python, ...) ainsi que les fondamentaux de l'informatique.
-                            </p>
-                            
-                        </div>
-                    </section>
-                    <div id="tutos"></div>
-                    <section class= "tutoSection">
-                        <h2><img src="media/icon_tutoVideo100.png" alt="illustration">Vidéos / Tutos</h2>
-                        <div class="borderSection">
-                            <a href="https://www.grafikart.fr/formations/css"><h3>Grafikart</h3></a>                            
-                            <p>
-                                Découverte du css; 35 chapitres, plus de 15 heures de vidéos.
-                                Après avoir appris sur Internet quoi de plus normal que de partager à son tour ?
-                                Passionné par le web depuis un peu plus de 15 ans maintenant j'aime partager mes compétences et mes découvertes 
-                                avec les personnes qui ont cette même passion pour le web. 
-                            </p>
-                            <a href="https://fr.khanacademy.org/computing/computer-programming/html-css"><h3>khanacademy</h3></a>   
-                            <p>                      
-                                Khan Academy est une association à but non lucratif fondée en 2008 par Salman Khan. 
-                                Sur le principe de « fournir un enseignement de grande qualité à tous, partout », le site web publie en ligne un ensemble gratuit 
-                                de plus de 2 200 mini-leçons, via des tutoriels vidéo hébergés sur YouTube.
-                                Cours interactif, avec beaucoup d'aide. Possibilité de mettre en français. Il y a également une appli.
-                            </p>
-                        </div>
-                    </section>  
-        </main>
-        <footer class="contenuFooter" >
-            <div class="bloc footerSommaire">
-                <h3>Sommaire</h3>
-                <ul class="listPages">
-                    <li>
-                        <a href="index.html">Page d'Accueil</a>
-                    </li>
-                    <li>
-                        <a href="front.html">Front-end</a>
-                    </li>
-                    <li>
-                        <a href="back.html">Back-End</a>
-                    </li>
-                    <li>
-                        <a href="outilsDuDevWeb.html">Boite à Outils</a>
-                    </li>
-                </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styleLanguage.css" rel="stylesheet">
+    <link href="navBar.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <script>
+        $(function () {
+            $(".toggle").on("click", function () {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            })
+        });
+    </script>
+    <title>CSS</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="index.html"><img class="imgNavbar" alt="logo du site" src="media/logo_annuaire_du_dev.png"></a>
+                </li>
+                <li class="navLogo">
+                    <a href="index.html">L'Annuaire du DEV</a>
+                </li>
+                <li class="item">
+                    <a href="front.html">Front-End</a>
+                    <ul class="subMenu">
+                        <li>
+                            <a class="subItem" href="PageLanguage.html">HTML</a>
+                        </li>
+                        <li>
+                            <a class="subItem" href="PageCSS.html">CSS</a>
+                        </li>
+                        <li>
+                            <a class="subItem" href="javaScript.html">JavaScript</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <a href="back.html">Back-End</a>
+                    <ul class="subMenu">
+                        <li>
+                            <a class="subItem" href="php.html">PHP</a>
+                        </li>
+                        <li>
+                            <a class="subItem" href="java.html">Java</a>
+                        </li>
+                        <li>
+                            <a class="subItem" href="python.html">Python</a>
+                        </li>
+                        <li>
+                            <a class="subItem" href="ruby.html">Ruby</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="boxItem" class="item">
+                    <a href="outilsDuDevWeb.html">Boite à Outils</a>
+                </li>
+                <li class="toggle">
+                    <span class="bars"></span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="description">
+            <h1 class="title-page"><img src="media/css.png" alt="illustration">CSS</h1>
+            <article class="artIntro">
+                <h2>Qu'est-ce que ce language?</h2>
+                <p>
+                    CSS est l'un des langages principaux du Web ouvert et a été standardisé par le W3C.
+                    Ce standard évolue sous forme de niveaux (levels), CSS1 est désormais considéré comme obsolète, 
+                    CSS2.1 correspond à la recommandation et CSS3, qui est découpé en modules plus petits, 
+                    est en voie de standardisation.</p>
+                <p>
+                    Les Cascading StyleSheets — ou CSS — (Feuilles de style en cascade) sont la première technique à apprendre après le HTML. 
+                    Alors que HTML s'utilise pour définir la structure et la sémantique du contenu, 
+                    les CSS sont employées pour composer et déterminer l'apparence de ce contenu.
+                </p>
+                <p>
+                    Ainsi par exemple, vous utiliserez les CSS pour modifier les polices, la couleur, la taille et l'espacement de votre contenu,
+                    pour le répartir sur plusieurs colonnes ou bien pour ajouter des animations et autres fonctionnalités décoratives.
+                </p>
+                <p>
+                    source : "developer.mozilla.org"
+                </p>
+            </article>
+        </section>
+        <section class="navSommaire">
+            <h2>Sommaire</h2>
+            <div class="navSommaireItems">
+                <div><a href="#documentation">Documentation</a></div>
+                <div><a href="#Former">Se Former</a></div>
+                <div><a href="#exercices">Exercices</a></div>
+                <div><a href="#tutos">Tuto Vidéo</a></div>
             </div>
-            <div class="bloc footerContact">
-                <h3>Restons en Contact</h3>
-                <p>support@contact.com</p>
-                <p>4 rue des Wilders, Tours, 37000</p>
+            <div id="documentation"></div>
+        </section>
+        <section class= "docSection">
+            <h2><img src="media/logo_documentation100.jpg" alt="illustration">Documentation</h2>
+            <div class="borderSection">
+                <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Reference">
+                    <h3>Developpeur Mozilla</h3>
+                </a>   
+                <p>
+                    Cette référence CSS fournit un index alphabétique de toutes les propriétés CSS standards, 
+                    des pseudo-classes, des pseudo-éléments, des types de données et des règles @. 
+                    Vous pouvez également trouver une liste alphabétique de tous les sélecteurs CSS par type 
+                    et une liste des concepts clés de CSS. Enfin est inclus un bref sommaire de référence sur DOM-CSS / CSSOM.
+                </p> 
             </div>
-            <div class="bloc footerSociaux">
-                <h3>Nos Réseaux</h3>
-                <ul class="listSociaux">
-                    <li>
-                        <a href="#"><img src="media/Facebook.svg" alt="icone réseaux sociaux"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="media/Twitter.svg" alt="icone réseaux sociaux"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="media/Instagram.svg" alt="icone réseaux sociaux"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="media/GitHub.png" alt="icone réseaux sociaux"></a>
-                    </li>
-                </ul>
+        </section>
+        <div id="Former"></div>
+        <section class= "formationSection">
+            <h2><img src="media/iconSeFormer100.jpeg" alt="illustration">Se former</h2>
+            <div class="borderSection">
+                <a href="https://developer.mozilla.org/fr/docs/Web/CSS">
+                    <h3>Developpeur Mozilla</h3>
+                </a>   
+                <P>
+                    Les Cascading StyleSheets — ou CSS — (Feuilles de style en cascade) sont la première technique à apprendre après le HTML. 
+                    Alors que HTML s'utilise pour définir la structure et la sémantique du contenu, 
+                    les CSS sont employées pour composer et déterminer l'apparence de ce contenu. 
+                </P>  
+                <a href="https://www.w3schools.com/css/default.asp">
+                    <h3>w3schools</h3>
+                </a>  
+                <p>                      
+                    Site en Anglais. 
+                    CSS est le langage que nous utilisons pour styliser un document HTML.
+                    CSS décrit comment les éléments HTML doivent être affichés.
+                    Ce tutoriel vous apprendra le CSS de base à avancé.
+                </p>                                                
+                <a href="https://www.codecademy.com/learn/learn-css">
+                    <h3> codecademy</h3>
+                </a>                           
+                <p> 
+                    Site en Anglais. 
+                    Vous apprendrez de nombreux aspects du style des pages Web. Vous serez en mesure de configurer la structure de fichiers appropriée,
+                    modifiez le texte et les couleurs et créez des mises en page attrayantes. Avec ces compétences,
+                    vous pourrez personnaliser l’aspect de vos pages Web en fonction de vos besoins. 
+                </p>                       
+                <a href="https://www.theodinproject.com/courses/html-and-css">
+                    <h3>theodinproject</h3>
+                </a>                           
+                <p> 
+                    Site en Anglais.
+                    Une bonne conception Web ne se produit pas par accident.
+                    Apprenez à faire en sorte que tout ce travail que vous avez effectué sur le backend soit superbe dans un navigateur Web! 
+                    Vous serez équipé pour comprendre en profondeur et créer vos propres cadres de conception.
+                </p>
+                <a href="https://www.freecodecamp.org/learn">
+                    <h3>freecodecamp</h3>
+                </a>  
+                <p>                         
+                    freeCodeCamp est une organisation à but non lucratif qui se compose 
+                    d'une plate-forme Web d'apprentissage interactive ayant pour objectif de rendre l'apprentissage du développement Web 
+                    accessible à tous. freeCodeCamp est un chemin éprouvé vers votre premier emploi de développeur de logiciels.
+                </p>                              
+                <a href="https://openclassrooms.com/fr/">
+                    <h3>openclassrooms</h3>
+                </a>  
+                <p>                       
+                    OpenClassrooms est un site web de formation en ligne qui propose à ses membres des cours certifiants. 
+                    Devenez qui vous voulez être avec OpenClassrooms. Choisissez votre carrière.
+                    suivez une formation constituée de projets professionnalisants et de séances individuelles avec un mentor dédié chaque semaine. 
+                    Obtenez un diplôme reconnu par l'état. Enrichissez votre CV avec les programmes en alternance proposés par OpenClassrooms
+                    et gagnez un salaire tout en suivant votre formation.
+                </p>
+                <a href="https://www.internetingishard.com/html-and-css/">
+                    <h3>internetingishard</h3>
+                </a> 
+                <p>
+                    Tutoriels de développement Web conviviaux pour les débutants. Apprendre à coder ne devrait pas être difficile. 
+                    Nous vous facilitons la tâche en rassemblant un ensemble complet de didacticiels de développement Web 
+                    pour aider à transformer les débutants en professionnels talentueux de l’Internet. 
+                    Nous avons le programme, tout ce dont vous avez besoin est la motivation pour commencer à le lire.
+                </p>  
+                <a href="https://css-tricks.com/snippets/css/">
+                    <h3>css-tricks.com</h3>
+                </a>                            
+                <p>
+                    CSS-Tricks consiste vraiment à créer des sites Web et tout ce que cela implique, 
+                    principalement d'un point de vue frontal. Nos guides approfondis sur les sujets de développement Web. 
+                    Ce ne sont pas des explications au niveau de la surface, elles représentent à peu près tout ce que vous devez savoir sur ces sujets 
+                    en tant que développeur Web.
+                </p>
+                <a href="https://www.sololearn.com/Course/CSS/">
+                    <h3>sololearn</h3>
+                </a>  
+                <p>                       
+                    Site en Anglais. 
+                    Notre cours CSS vous apprendra à contrôler le style et la mise en page des sites Web.
+                    Effectuez une série d'exercices et entrainez-vous tout en remplissant des modèles CSS réels.
+                    Parcourez un contenu soigneusement sélectionné, répondez aux quiz interactifs, accumulez des points de contrôle,
+                    effectuez des exercices divertissants. 
+                    Que vous souhaitiez acquérir une nouvelle compétence pour faire avancer votre carrière ou simplement apprendre 
+                    quelque chose de nouveau, nous vous garantissons que vous apprécierez d'apprendre tout en jouant 
+                    et en jouant tout en apprenant avec notre tutoriel CSS!
+                </p>
             </div>
-        </footer>
-    </body>
+        </section>
+        <div id="exercices"></div>
+        <section class= "exoSection">
+            <h2><img src="media/logo_exercices100.jpg" alt="illustration">Entrainez-vous</h2>
+            <div class="borderSection">
+                <a href="https://www.freecodecamp.org/learn">
+                    <h3>Freecodecamp</h3>
+                </a>                            
+                <p>
+                    freeCodeCamp est une organisation à but non lucratif qui se compose 
+                    d'une plate-forme Web d'apprentissage interactive ayant pour objectif de rendre le développement Web 
+                    d'apprentissage accessible à tous.
+                </p>
+                <a href="https://fr.khanacademy.org/computing/computer-programming/html-css">
+                    <h3>Khanacademy</h3>
+                </a>                           
+                <p>
+                    Khan Academy est une association à but non lucratif fondée en 2008 par Salman Khan. 
+                    Sur le principe de « fournir un enseignement de grande qualité à tous, partout », le site web publie en ligne un ensemble gratuit 
+                    de plus de 2 200 mini-leçons, via des tutoriels vidéo hébergés sur YouTube.
+                    Cours interactif, avec beaucoup d'aide. Possibilité de mettre en français. Il y a également une appli.
+                </p>
+                <a href="https://codecombat.com/home">
+                    <h3>codecombat</h3>
+                </a>                            
+                <p>
+                    Notre mission: faire en sorte que la programmation soit accessible à chaque élève sur la Terre.
+                    Jeux de rôles sur navigateur. Ce dernier enseigne différents langages de programmation 
+                    (JavaScript, CSS, HTML, Python, ...) ainsi que les fondamentaux de l'informatique.
+                </p>
+                
+            </div>
+        </section>
+        <div id="tutos"></div>
+        <section class= "tutoSection">
+            <h2><img src="media/icon_tutoVideo100.png" alt="illustration">Vidéos / Tutos</h2>
+            <div class="borderSection">
+                <a href="https://www.grafikart.fr/formations/css">
+                    <h3>Grafikart</h3>
+                </a>                            
+                <p>
+                    Découverte du css; 35 chapitres, plus de 15 heures de vidéos.
+                    Après avoir appris sur Internet quoi de plus normal que de partager à son tour ?
+                    Passionné par le web depuis un peu plus de 15 ans maintenant j'aime partager mes compétences et mes découvertes 
+                    avec les personnes qui ont cette même passion pour le web. 
+                </p>
+                <a href="https://fr.khanacademy.org/computing/computer-programming/html-css">
+                    <h3>khanacademy</h3>
+                </a>   
+                <p>                      
+                    Khan Academy est une association à but non lucratif fondée en 2008 par Salman Khan. 
+                    Sur le principe de « fournir un enseignement de grande qualité à tous, partout », le site web publie en ligne un ensemble gratuit 
+                    de plus de 2 200 mini-leçons, via des tutoriels vidéo hébergés sur YouTube.
+                    Cours interactif, avec beaucoup d'aide. Possibilité de mettre en français. Il y a également une appli.
+                </p>
+            </div>
+        </section>  
+    </main>
+    <footer class="contenuFooter" >
+        <div class="bloc footerSommaire">
+            <h3>Sommaire</h3>
+            <ul class="listPages">
+                <li>
+                    <a href="index.html">Page d'Accueil</a>
+                </li>
+                <li>
+                    <a href="front.html">Front-end</a>
+                </li>
+                <li>
+                    <a href="back.html">Back-End</a>
+                </li>
+                <li>
+                    <a href="outilsDuDevWeb.html">Boite à Outils</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bloc footerContact">
+            <h3>Restons en Contact</h3>
+            <p>support@contact.com</p>
+            <p>4 rue des Wilders, Tours, 37000</p>
+        </div>
+        <div class="bloc footerSociaux">
+            <h3>Nos Réseaux</h3>
+            <ul class="listSociaux">
+                <li>
+                    <a href="#"><img src="media/Facebook.svg" alt="icone réseaux sociaux"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="media/Twitter.svg" alt="icone réseaux sociaux"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="media/Instagram.svg" alt="icone réseaux sociaux"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="media/GitHub.png" alt="icone réseaux sociaux"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
 </html>

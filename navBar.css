@@ -43,14 +43,17 @@ nav a{
 }
 .navLogo a{
     justify-content: center;
-    font-size: 18px;
+    font-size: 25px;
+    font-family: 'Saira Stencil One', cursive;
     transition: color 1s;
 }
 .navLogo a:hover{
     color: greenyellow;
 }
 #boxItem a:hover{
-    color: #F82360;
+    color: white;
+    background-color: #F82360;
+    border-radius: 5px;
 }
 /* Menu mobile */
 .menu {
@@ -170,7 +173,6 @@ nav a{
         display:block;
         padding:8px 32px;
         color:#fff;
-        font-family:arial;
     }
     .menu ul a{
         padding:8px 0;
@@ -328,5 +330,51 @@ nav a{
         height: 0;
         border-bottom: 30px solid #28A1ED;
         border-right: 30px solid transparent;
+    }
+}
+/***TITRES DES PAGES***/
+
+.title-page {
+    font-family: 'Saira Stencil One', cursive;
+}
+
+@media screen and (min-width: 1205px) {
+    .title-page {
+        font-size: 3.5rem;
+        margin: 1rem;
+    }
+    .nav-carousel {
+        text-align: center;
+        margin-top: 0;
+        padding: 30px 20px 20px 20px;
+    }
+}
+@media screen and (max-width: 1205px) {
+    .title-page {
+        font-size: 3rem;
+        margin: 1rem;
+    }
+    .nav-carousel {
+        text-align: center;
+        margin-top: 1rem;
+        padding: 60px 20px 20px 20px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .title-page {
+        font-size: 2.5rem;
+        margin: 1rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .title-page {
+        font-size: 2rem;
+        margin: 1rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .title-page {
+        font-size: 1.5rem;
+        margin: 1rem;
     }
 }
