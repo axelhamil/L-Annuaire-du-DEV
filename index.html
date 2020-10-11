@@ -1,92 +1,100 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta
-            name="description"
-            content="Site regroupant différente source et document utile au Développeur">
-        <link href="navBar.css" rel="stylesheet">
-        <link href="styleAccueil.css" rel="stylesheet">
-        <link href="footer.css" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script>
-            $(function () {
-                $(".toggle").on("click", function () {
-                    if ($(".item").hasClass("active")) {
-                        $(".item").removeClass("active");
-                    } else {
-                        $(".item").addClass("active");
-                    }
-                })
-            });
-        </script>
-        <title>L'Annuaire du DEV</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul class="menu">
-                    <li>
-                        <a href="index.html"><img class="imgNavbar" alt="Logo du site" src="media/logo_annuaire_du_dev.png"></a>
-                    </li>
-                    <li class="navLogo">
-                        <a href="index.html">L'Annuaire du DEV</a>
-                    </li>
-                    <li class="item">
-                        <a href="front.html">Front-End</a>
-                        <ul class="subMenu">
-                            <li>
-                                <a class="subItem" href="PageLanguage.html">HTML</a>
-                            </li>
-                            <li>
-                                <a class="subItem" href="PageCSS.html">CSS</a>
-                            </li>
-                            <li>
-                                <a class="subItem" href="javaScript.html">JavaScript</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="item">
-                        <a href="back.html">Back-End</a>
-                        <ul class="subMenu">
-                            <li>
-                                <a class="subItem" href="php.html">PHP</a>
-                            </li>
-                            <li>
-                                <a class="subItem" href="java.html">Java</a>
-                            </li>
-                            <li>
-                                <a class="subItem" href="python.html">Python</a>
-                            </li>
-                            <li>
-                                <a class="subItem" href="ruby.html">Ruby</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li id="boxItem" class="item">
-                        <a href="outilsDuDevWeb.html">Boite à Outils</a>
-                    </li>
-                    <li class="toggle">
-                        <span class="bars"></span></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-                <article title="Description du site" class="intro">
-                    <p>L’annuaire du DEV est un petit site sans prétention, réalisé dans le cadre d’un
-                        projet au sein de la Wild Code School afin de répondre à une simple question
-                        fréquemment posée: « Quels sont les ressources et outils utiles aux développeurs
-                        web ? » </p>
-                        <p>Evidemment, il existe une multitude de site sur le web, mais on a vite
-                        fait de s’y perdre.</p>
-                        <p>Nous voulons donc référencer les plus utiles selon les
-                        languages informatiques les plus utilisés et ainsi proposer un annuaire clair et
-                        efficace.</p>
-                        <p>Bonne visite.</p>
-                        <p>L’Annuaire du DEV</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Site regroupant différente source et document utile au Développeur">
+    <link href="navBar.css" rel="stylesheet">
+    <link href="styleAccueil.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <script>
+        $(function () {
+            $(".toggle").on("click", function () {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            })
+        });
+    </script>
+    <title>L'Annuaire du DEV</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="index.html"><img class="imgNavbar" alt="Logo du site" src="media/logo_annuaire_du_dev.png"></a>
+                </li>
+                <li class="navLogo">
+                    <a href="index.html">L'Annuaire du DEV</a>
+                </li>
+                <li class="item">
+                    <a href="front.html">Front-End</a>
+                    <ul class="subMenu">
+                        <li>
+                            <a class="subItem" href="PageLanguage.html">HTML</a>
+                        </li>
+                        <li>
+                            <a class="subItem" href="PageCSS.html">CSS</a>
+                        </li>
+                        <li>
+                            <a class="subItem" href="javaScript.html">JavaScript</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <a href="back.html">Back-End</a>
+                    <ul class="subMenu">
+                        <li>
+                            <a class="subItem" href="php.html">PHP</a>
+                        </li>
+                        <li>
+                            <a class="subItem" href="java.html">Java</a>
+                        </li>
+                        <li>
+                            <a class="subItem" href="python.html">Python</a>
+                        </li>
+                        <li>
+                            <a class="subItem" href="ruby.html">Ruby</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="boxItem" class="item">
+                    <a href="outilsDuDevWeb.html">Boite à Outils</a>
+                </li>
+                <li class="toggle">
+                    <span class="bars"></span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article title="Description du site" class="intro">
+            <p>
+                L’annuaire du DEV est un petit site sans prétention, réalisé dans le cadre d’un
+                projet au sein de la Wild Code School afin de répondre à une simple question
+                fréquemment posée: « Quels sont les ressources et outils utiles aux développeurs
+                web ? »
+            </p>
+            <p>
+                Evidemment, il existe une multitude de site sur le web, mais on a vite fait de s’y perdre.
+            </p>
+            <p>
+                Nous voulons donc référencer les plus utiles selon les languages informatiques les plus 
+                utilisés et ainsi proposer un annuaire clair et efficace.</p>
+            <p>
+                Bonne visite.
+            </p>
+            <p>
+                L’Annuaire du DEV.
+            </p>
         </article>
-
         <div class="grid">
             <div id="item1" class="item1">
                 <a class="ghost-button" href="front.html">Front-End</a>
@@ -95,34 +103,33 @@
                 <a class="ghost-button" href="back.html">Back-End</a>
             </div>
         </div>
-        
-    <article title="Conclusion du site" class="conclusion">
-        <p>
-            En génie logiciel, les termes "front-end" et "Back-End" font référence à la
-            séparation des préoccupations entre la couche de présentation (Front-End) et la
-            couche d'accès aux données (Back-End) d'un logiciel ou l'infrastructure
-            physique ou le matériel.
-        </p>
-        <p>
-            Dans le modèle client-serveur, le client est généralement considéré comme le
-            serveur frontal et le serveur est généralement considéré comme le serveur
-            principal, même lorsque certains travaux de présentation sont effectivement
-            effectués sur le serveur lui-même.
-        </p>
-        <p>
-            Le développeur full-stack maîtrise les principales technologies et les
-            principaux langages de programmation actuels. Il est ainsi capable d’intervenir
-            aussi bien sur le front end que sur le back end des sites Internet ou des
-            applications. Il peut de ce fait être amené à travailler sur des missions très
-            différentes les unes des autres.</p>
-        <p>
-            Le développeur full stack est très apprécié par
-            les start-ups pour ses compétences variées. Toutefois, pour des projets
-            d’envergure, il est conseillé de faire appel aux compétences spécifiques des
-            développeurs Front-End et Back-End.
-        </p>
-    </article>
-        </main>
+        <article title="Conclusion du site" class="conclusion">
+            <p>
+                En génie logiciel, les termes "front-end" et "Back-End" font référence à la
+                séparation des préoccupations entre la couche de présentation (Front-End) et la
+                couche d'accès aux données (Back-End) d'un logiciel ou l'infrastructure
+                physique ou le matériel.
+            </p>
+            <p>
+                Dans le modèle client-serveur, le client est généralement considéré comme le
+                serveur frontal et le serveur est généralement considéré comme le serveur
+                principal, même lorsque certains travaux de présentation sont effectivement
+                effectués sur le serveur lui-même.
+            </p>
+            <p>
+                Le développeur full-stack maîtrise les principales technologies et les
+                principaux langages de programmation actuels. Il est ainsi capable d’intervenir
+                aussi bien sur le front end que sur le back end des sites Internet ou des
+                applications. Il peut de ce fait être amené à travailler sur des missions très
+                différentes les unes des autres.</p>
+            <p>
+                Le développeur full stack est très apprécié par
+                les start-ups pour ses compétences variées. Toutefois, pour des projets
+                d’envergure, il est conseillé de faire appel aux compétences spécifiques des
+                développeurs Front-End et Back-End.
+            </p>
+        </article>
+    </main>
     <footer class="contenuFooter">
         <div class="bloc footerSommaire">
             <h3>Sommaire</h3>

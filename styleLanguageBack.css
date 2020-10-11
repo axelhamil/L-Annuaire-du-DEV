@@ -101,7 +101,7 @@ main p {
 .artIntro p {
     text-indent: 3%;
     margin: 10px 0;
-    font-size: 1.3vw;
+    font-size: 20px;
     text-align: justify;
 }
 .artIntro p:nth-last-of-type(1) {
@@ -161,6 +161,10 @@ main h2 img {
     box-shadow: 0 5px 10px #264354;
     background: #28a1ed12;
 }
+.borderSection h3 {
+    color: blue;
+    text-decoration: underline;
+}
 .borderSection p {
     padding: 10px;
     text-align: justify;
@@ -181,7 +185,7 @@ main h2 img {
         margin: 0;
     }
     .artIntro p {
-        font-size: 4vw;
+        font-size: 16px;
     }
     .navSommaire h2 {
         font-size: 5vw;
