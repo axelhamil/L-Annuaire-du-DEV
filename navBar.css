@@ -235,7 +235,7 @@ nav a{
 }
 @media screen and (max-width: 320px){
     .navLogo a{
-        font-size: 14px;
+        font-size: 12px;
     }
     .subItem{
         margin: 0 10px;
