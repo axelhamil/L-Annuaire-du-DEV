@@ -59,55 +59,55 @@ main p{
   width: 50px;
   height: 50px;
 }
-  #description h1, #description img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3vw;
+#description h1, #description img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+}
+#title {
+  display: flex;
+}
+@media screen and (max-width: 1150px){
+  .grid{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    font-size: 3.5vw;
+    margin: 110px 0 0 0;
   }
-  #title {
-    display: flex;
+}
+@media screen and (max-width: 850px){
+  .grid{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    font-size: 3.5vw;
+    margin: 100px 0 0 0;
   }
-  @media screen and (max-width: 1150px){
-    .grid{
-      display: grid;
-      grid-template-columns: 40% 60%;
-      font-size: 3.5vw;
-      margin: 110px 0 0 0;
+}
+@media screen and (max-width: 600px){
+  .grid{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    font-size: 3.5vw;
+    margin: 50px 0 0 0;
   }
-  }
-  @media screen and (max-width: 850px){
-    .grid{
-      display: grid;
-      grid-template-columns: 40% 60%;
-      font-size: 3.5vw;
-      margin: 100px 0 0 0;
-  }
-  }
-  @media screen and (max-width: 600px){
-    .grid{
-      display: grid;
-      grid-template-columns: 40% 60%;
-      font-size: 3.5vw;
-      margin: 50px 0 0 0;
-    }
-  }
-  /*Intro Part*/
-  .artIntro h2{
-    font-size: 3vw;
-    padding: 10px 0;
-  }
-  .artIntro p {
-    text-indent: 3%;
-    margin: 10px 0;
-    font-size: 1.3vw;
-    text-align: justify;
-  }
-  .artIntro p:nth-last-of-type(1){
-    text-indent: 0%;
-    font-size: 1vw;
-    display: flex;
-    justify-content: flex-end;
+}
+/*Intro Part*/
+.artIntro h2{
+  font-size: 3vw;
+  padding: 10px 0;
+}
+.artIntro p {
+  text-indent: 3%;
+  margin: 10px 0;
+  font-size: 1.3vw;
+  text-align: justify;
+}
+.artIntro p:nth-last-of-type(1){
+  text-indent: 0%;
+  font-size: 1vw;
+  display: flex;
+  justify-content: flex-end;
 }
 main{
   margin: 0 5px 10px 0;
