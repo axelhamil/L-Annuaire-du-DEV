@@ -1,6 +1,6 @@
 # 🗄️ ARCHIVED - My First HTML/CSS Website
 
-This repository contains my very first website, created almost 10 years ago during my studies. It represents my initial discovery of HTML and CSS - pure memories that remind me where I started and how I began my journey in web development.
+This repository contains my very first website, created during my studies years ago. It represents my initial discovery of HTML and CSS - pure memories that remind me where I started and how I began my journey in web development.
 
 ## 💭 Why Keep This?
 
